@@ -1,0 +1,511 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{tcolorbox}
+
+\geometry{margin=2.5cm}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+% Définition des boîtes colorées
+\newtcolorbox{keypoint}{
+    colback=blue!5!white,
+    colframe=blue!75!black,
+    title=Point clé
+}
+
+\newtcolorbox{mechanism}{
+    colback=green!5!white,
+    colframe=green!75!black,
+    title=Mécanisme
+}
+
+\title{\textbf{Hypersensibilité Cellulaire aux Faibles Doses de Radiation}\\[0.3cm]
+\Large Phénomène HRS/IRR dans le Domaine des Centigrays\\[0.3cm]
+\large Mécanismes Moléculaires et Modèles Explicatifs}
+\author{Rapport de Synthèse Bibliographique}
+\date{Décembre 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Ce rapport présente une synthèse complète du phénomène d'hyper-radiosensibilité aux faibles doses (HRS -- \textit{Hyper-RadioSensitivity}) et de la radioresistance induite (IRR -- \textit{Induced RadioResistance}) observés dans le domaine des centigrays (1-100 cGy). Nous examinons les mécanismes moléculaires actuellement proposés, notamment le rôle central du checkpoint G2/M précoce et de la protéine ATM, ainsi que le nouveau modèle de charge mutationnelle minimale (MML) proposé par Polgár et al. en 2025. Les implications thérapeutiques pour la radiothérapie pulsée à faible débit de dose (PLDR) sont également discutées.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+%==============================================================================
+\section{Introduction}
+%==============================================================================
+
+\subsection{Définition du phénomène HRS/IRR}
+
+L'hyper-radiosensibilité aux faibles doses (HRS) décrit un phénomène par lequel les cellules présentent une sensibilité excessive à de petites doses uniques de rayonnement ionisant, typiquement inférieures à 20-50 cGy selon la lignée cellulaire. Ce phénomène n'est pas prédit par l'extrapolation rétrograde de la réponse de survie cellulaire à partir des doses plus élevées utilisant le modèle linéaire-quadratique (LQ) standard.
+
+\begin{keypoint}
+L'HRS se manifeste par une pente initiale de la courbe de survie ($\alpha_s$) significativement plus élevée que celle observée à doses plus importantes ($\alpha_r$), avec un rapport $\alpha_s/\alpha_r$ typiquement compris entre 2 et 5.
+\end{keypoint}
+
+À mesure que la dose augmente au-delà d'environ 20-40 cGy, on observe une augmentation de la radioresistance (IRR) jusqu'à ce que, au-delà d'environ 1 Gy, la radioresistance soit maximale et que la survie cellulaire suive la courbe descendante habituelle décrite par le modèle LQ.
+
+\subsection{Plages de doses caractéristiques}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcc}
+\toprule
+\textbf{Phase} & \textbf{Plage de dose} & \textbf{Caractéristique} \\
+\midrule
+HRS maximale & 5--20 cGy & Hypersensibilité marquée \\
+Transition (Dc) & 20--40 cGy & Point d'inflexion \\
+IRR & 40--100 cGy & Radioresistance induite \\
+Comportement LQ & $>$ 100 cGy & Modèle classique \\
+\bottomrule
+\end{tabular}
+\caption{Plages de doses caractéristiques du phénomène HRS/IRR}
+\end{table}
+
+\subsection{Historique des découvertes}
+
+Le phénomène a d'abord été observé in vivo par Joiner et Johns en 1988 dans des études sur les dommages rénaux chez la souris. La première démonstration in vitro a été réalisée par Marples et Joiner en 1993 sur les cellules V79 de hamster chinois, où ils ont montré que l'effet par unité de dose augmentait d'un facteur $\sim$2, passant de 0,19 Gy$^{-1}$ à 1 Gy à 0,37 Gy$^{-1}$ à 0,1 Gy.
+
+%==============================================================================
+\section{Mécanismes Moléculaires Expliquant l'HRS}
+%==============================================================================
+
+\subsection{Le modèle centré sur la phase G2}
+
+Les données expérimentales démontrent fortement que l'HRS est exclusivement associée à la réponse de survie des cellules en phase G2 du cycle cellulaire. Ce concept ``G2-centrique'' est apparu lorsque le profil de survie caractéristique de l'HRS n'a pas été détecté dans les populations cellulaires enrichies en phase G1 ou S.
+
+\begin{mechanism}
+\textbf{Observations clés :}
+\begin{itemize}[noitemsep]
+    \item Les cellules T98G et V79 en phase G2 montrent une HRS exagérée
+    \item Les cellules U373 (HRS-négatives en asynchrone) montrent l'HRS uniquement en G2
+    \item L'enrichissement en G2 amplifie la réponse HRS
+    \item L'abrogation du checkpoint G2 augmente la radiosensibilité aux faibles doses
+\end{itemize}
+\end{mechanism}
+
+\subsection{Le checkpoint G2/M précoce et le seuil d'activation ATM}
+
+Deux checkpoints G2/M distincts sont activés après exposition aux rayonnements ionisants, selon le compartiment du cycle cellulaire dans lequel les cellules sont irradiées :
+
+\subsubsection{Checkpoint G2 précoce (ATM-dépendant)}
+
+\begin{itemize}
+    \item Empêche la progression des cellules irradiées en G2 vers la mitose
+    \item Nécessite l'activité ATM pour les doses $>$ 0,5 Gy
+    \item Possède un \textbf{seuil d'activation dose-dépendant} selon la lignée cellulaire
+    \item N'est \textbf{pas activé} en dessous d'environ 20-30 cGy dans les lignées HRS-positives
+\end{itemize}
+
+\subsubsection{Accumulation G2/M (ATM-indépendante)}
+
+\begin{itemize}
+    \item Bloque en G2 les cellules qui étaient en phases plus précoces lors de l'irradiation
+    \item ATM-indépendant mais dose-dépendant
+    \item Implique la voie ATR/Chk1
+    \item Activé dès 0,2 Gy
+\end{itemize}
+
+\subsection{Seuil d'activation ATM : le nœud du problème}
+
+La protéine ATM (Ataxia Telangiectasia Mutated) est le régulateur principal du checkpoint G2 précoce. Son activation présente un profil dose-réponse caractéristique :
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lp{8cm}}
+\toprule
+\textbf{Dose} & \textbf{Réponse ATM} \\
+\midrule
+$<$ 10 cGy & Pas d'augmentation mesurable de la phosphorylation ATM-Ser1981 jusqu'à 4h post-irradiation \\
+25 cGy & Augmentation 2-4$\times$ de la phosphorylation ATM-Ser1981 \\
+$>$ 50 cGy & Activation complète du checkpoint \\
+$\sim$ 1 Gy & Saturation de l'activité kinase ATM \\
+\bottomrule
+\end{tabular}
+\caption{Profil dose-réponse de l'activation ATM}
+\end{table}
+
+\begin{keypoint}
+Les cellules T98G et V79, qui présentent l'HRS, \textbf{échouent à arrêter l'entrée en mitose} des cellules G2 endommagées à des doses inférieures à 30 cGy, comme déterminé par l'évaluation de la phosphorylation de l'histone H3.
+\end{keypoint}
+
+\subsection{Cascade de signalisation et réparation de l'ADN}
+
+\subsubsection{Voie de signalisation}
+
+\begin{enumerate}
+    \item \textbf{Reconnaissance des dommages} : Le complexe MRN (MRE11-RAD50-NBS1) reconnaît les cassures double-brin (DSB)
+    \item \textbf{Activation ATM} : ATM est activée par autophosphorylation sur Ser1981
+    \item \textbf{Phosphorylation de substrats} :
+    \begin{itemize}
+        \item H2AX $\rightarrow$ $\gamma$H2AX (marqueur des DSB)
+        \item Chk2 $\rightarrow$ pChk2 (arrêt du cycle)
+        \item p53 $\rightarrow$ activation de la réponse apoptotique
+    \end{itemize}
+    \item \textbf{Arrêt du cycle} : Blocage de la transition G2$\rightarrow$M via Cdc25C
+\end{enumerate}
+
+\subsubsection{Réparation des DSB}
+
+Les données montrent que la réparation des DSB est moins efficace aux très faibles doses :
+
+\begin{itemize}
+    \item \textbf{24h après 25 cGy} : Réduction efficace des foci $\gamma$H2AX
+    \item \textbf{24h après 10 cGy} : Réduction \textbf{moins efficace} des foci $\gamma$H2AX
+\end{itemize}
+
+Ceci suggère que la réparation des DSB est plus efficace pendant la phase IRR que pendant la phase HRS.
+
+\subsection{Rôle de l'apoptose}
+
+L'HRS est associée à un processus apoptotique dépendant de p53 et de la caspase-3. Les cellules en phase G2 sont particulièrement vulnérables car, en l'absence d'activation du checkpoint précoce, elles progressent vers la mitose sans réparation adéquate, entraînant la mort cellulaire.
+
+\subsection{Synthèse du modèle mécanistique actuel}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccl}
+\toprule
+\textbf{Dose} & \textbf{ATM} & \textbf{Checkpoint G2} & \textbf{Réparation} & \textbf{Survie} \\
+\midrule
+$<$ 10-20 cGy & Insuffisante & Non activé & Inefficace & \textcolor{red}{Faible (HRS)} \\
+20-50 cGy & Activée & Activé & Efficace & \textcolor{green}{Augmentée (IRR)} \\
+$>$ 1 Gy & Maximale & Activé & Efficace & Modèle LQ \\
+\bottomrule
+\end{tabular}
+\caption{Récapitulatif du mécanisme HRS/IRR}
+\end{table}
+
+%==============================================================================
+\section{Le Modèle MML : Nouvelle Perspective (Polgár et al., 2025)}
+%==============================================================================
+
+\subsection{Présentation du modèle}
+
+En mai 2025, Polgár S., Schofield P.N. et Madas B.G. ont proposé un nouveau cadre conceptuel pour expliquer l'HRS/IRR : le modèle de \textbf{Charge Mutationnelle Minimale} (MML -- \textit{Minimum Mutation Load}).
+
+\begin{tcolorbox}[colback=yellow!5!white, colframe=orange!75!black, title=Publication de référence]
+\textbf{Polgár S, Schofield PN, Madas BG (2025)}\\
+\textit{Minimising mutation load as a mechanism for low-dose hyper-radiosensitivity and induced radioresistance.}\\
+Research Square (preprint), rs-6674497/v1.\\
+\url{https://www.researchsquare.com/article/rs-6674497/v1}
+\end{tcolorbox}
+
+\subsection{Hypothèse centrale}
+
+Contrairement aux modèles précédents qui se concentrent sur les mécanismes cellulaires intrinsèques, le modèle MML propose que l'HRS et l'IRR reflètent une \textbf{stratégie évoluée} par laquelle les tissus minimisent la charge mutationnelle à travers une élimination cellulaire dépendante du contexte.
+
+\begin{keypoint}
+L'HRS/IRR n'est pas un ``défaut'' de la réponse aux dommages à l'ADN, mais plutôt un comportement \textbf{coopératif tissulaire} optimisé pour maintenir l'intégrité génomique de l'ensemble du tissu.
+\end{keypoint}
+
+\subsection{Principes du modèle MML}
+
+\subsubsection{Cadre conceptuel}
+
+\begin{enumerate}
+    \item \textbf{Signaux intercellulaires} : Les cellules irradiées évaluent leur survie en fonction de signaux locaux reflétant les dommages dans leur voisinage
+    
+    \item \textbf{Équilibre coût-bénéfice} : Le comportement coopératif équilibre :
+    \begin{itemize}
+        \item Le \textbf{bénéfice} d'éliminer les cellules fortement endommagées
+        \item Le \textbf{coût mutationnel} de leur remplacement par division cellulaire
+    \end{itemize}
+    
+    \item \textbf{Minimisation de la charge mutationnelle} : La survie cellulaire est optimisée pour minimiser le nombre total de mutations dans le tissu
+\end{enumerate}
+
+\subsubsection{Formulation mathématique}
+
+Le modèle considère deux sources de mutations :
+\begin{itemize}
+    \item Les lésions mutagènes induites par les radiations
+    \item Les mutations survenant lors des divisions cellulaires de remplacement
+\end{itemize}
+
+Les hypothèses du modèle sont :
+\begin{itemize}
+    \item Le nombre de cellules est en équilibre dynamique dans le tissu
+    \item Le nombre de mutations suit une distribution de Poisson
+    \item La moyenne est proportionnelle à la dose absorbée
+\end{itemize}
+
+Pour chaque valeur de dose absorbée, le modèle calcule le nombre minimum de mutations pour différentes fractions de survie, puis trace la fraction de survie qui minimise le nombre de mutations.
+
+\subsection{Validation du modèle}
+
+\subsubsection{Base de données utilisée}
+
+Le modèle a été validé sur une base de données curée de \textbf{99 expériences de survie clonogénique} provenant de la littérature (base de données constituée par les mêmes auteurs en 2022).
+
+\subsubsection{Performance}
+
+\begin{itemize}
+    \item \textbf{R² ajusté moyen} : 0,74
+    \item Le modèle MML réplique les caractéristiques clés de l'HRS et de l'IRR à travers diverses conditions
+    \item Performance comparable au modèle de Réparation Induite (IR) établi
+\end{itemize}
+
+\subsection{Avantages du modèle MML}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{p{6cm}p{6cm}}
+\toprule
+\textbf{Modèle IR (phénoménologique)} & \textbf{Modèle MML (mécanistique)} \\
+\midrule
+Paramètres empiriques sans interprétation biologique claire & Paramètres biologiquement interprétables avec fondement théorique indépendant \\
+Décrit ``comment'' l'HRS/IRR se manifeste & Explique ``pourquoi'' l'HRS/IRR existe \\
+Centré sur la cellule individuelle & Intègre la coopération tissulaire \\
+\bottomrule
+\end{tabular}
+\caption{Comparaison des modèles IR et MML}
+\end{table}
+
+\subsection{Implications conceptuelles}
+
+Le modèle MML suggère que :
+
+\begin{enumerate}
+    \item La \textbf{minimisation des mutations} pourrait être un principe organisateur de l'homéostasie tissulaire
+    
+    \item La \textbf{coopération au niveau tissulaire}, plutôt que les réponses purement cellulaires intrinsèques, gouverne le maintien somatique et la suppression tumorale
+    
+    \item L'HRS/IRR est principalement observée dans les lignées cellulaires avec une réparation de l'ADN défectueuse, ce qui est cohérent avec le principe de charge mutationnelle minimale
+\end{enumerate}
+
+%==============================================================================
+\section{Données Expérimentales sur les Lignées Cellulaires}
+%==============================================================================
+
+\subsection{Lignées cellulaires présentant l'HRS}
+
+\begin{longtable}{llccc}
+\toprule
+\textbf{Lignée} & \textbf{Type} & \textbf{$D_c$ (cGy)} & \textbf{$\alpha_s/\alpha_r$} & \textbf{Référence} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Lignée} & \textbf{Type} & \textbf{$D_c$ (cGy)} & \textbf{$\alpha_s/\alpha_r$} & \textbf{Référence} \\
+\midrule
+\endhead
+V79 & Hamster chinois & 20-30 & $\sim$2 & Marples 1993 \\
+T98G & Glioblastome humain & 20-30 & 2-3 & Short 1999 \\
+U87MG & Glioblastome humain & 20-30 & $\sim$2 & Short 2001 \\
+A7 & Glioblastome humain & -- & $\sim$2 & Short 2001 \\
+U138MG & Glioblastome humain & 20 & -- & Krueger 2013 \\
+HT-29 & Colon humain & 30-40 & -- & Wouters 1997 \\
+BMG-1 & Gliome humain & 10-30 & Marquée & Chandna 2002 \\
+PC3 & Prostate humain & 30 & -- & Mitchell 2002 \\
+HeLa & Col utérus humain & 25-40 & -- & Das 2015 \\
+A549 & Poumon humain & 30-40 & -- & Dai 2009 \\
+MCF-7 & Sein humain & $\sim$50 & -- & Guirado 2012 \\
+\bottomrule
+\caption{Lignées cellulaires présentant l'HRS avec paramètres caractéristiques}
+\end{longtable}
+
+\subsection{Lignées cellulaires HRS-négatives}
+
+Certaines lignées ne présentent pas d'HRS en conditions asynchrones mais peuvent la montrer après enrichissement en G2 :
+
+\begin{itemize}
+    \item \textbf{U373} : Gliome humain -- HRS uniquement visible en G2
+    \item \textbf{SiHa} : Col utérus -- Pas d'HRS détectée
+    \item Cellules AT (déficientes en ATM) : Pas d'IRR, confirmant le rôle central d'ATM
+\end{itemize}
+
+%==============================================================================
+\section{Modèles Mathématiques}
+%==============================================================================
+
+\subsection{Modèle Linéaire-Quadratique (LQ) standard}
+
+Le modèle LQ classique décrit la survie cellulaire par :
+
+\begin{equation}
+SF = \exp\left[-\alpha D - \beta D^2\right]
+\end{equation}
+
+où $\alpha$ (Gy$^{-1}$) et $\beta$ (Gy$^{-2}$) sont des constantes caractéristiques de la lignée cellulaire.
+
+\textbf{Limitation} : Ce modèle ne capture pas l'HRS aux faibles doses.
+
+\subsection{Modèle de Réparation Induite (IR)}
+
+Proposé par Joiner et Johns, ce modèle introduit une variation de $\alpha$ avec la dose :
+
+\begin{equation}
+\alpha(D) = \alpha_r + (\alpha_s - \alpha_r) \exp\left(-\frac{D}{D_c}\right)
+\end{equation}
+
+La fraction de survie devient :
+
+\begin{equation}
+SF = \exp\left[-\alpha_r D \left(1 + \frac{\alpha_s - \alpha_r}{\alpha_r} \cdot \frac{1 - \exp(-D/D_c)}{D/D_c}\right) - \beta D^2\right]
+\end{equation}
+
+\textbf{Paramètres} :
+\begin{itemize}
+    \item $\alpha_s$ : Pente initiale (hypersensibilité)
+    \item $\alpha_r$ : Pente à haute dose (résistance)
+    \item $D_c$ : Dose de transition caractéristique
+\end{itemize}
+
+\subsection{Modèle MML (2025)}
+
+Le modèle de charge mutationnelle minimale optimise la survie cellulaire pour minimiser :
+
+\begin{equation}
+M_{total} = M_{radiation} + M_{division}
+\end{equation}
+
+où $M_{radiation}$ représente les mutations induites par les radiations et $M_{division}$ les mutations survenant lors des divisions cellulaires de remplacement.
+
+%==============================================================================
+\section{Applications Thérapeutiques : Radiothérapie PLDR}
+%==============================================================================
+
+\subsection{Principe de la radiothérapie pulsée à faible débit de dose}
+
+La radiothérapie PLDR (\textit{Pulsed Low Dose Rate}) exploite le phénomène HRS en délivrant la dose quotidienne de 2 Gy en 10 sous-fractions (pulses) de 0,2 Gy avec un intervalle de 3 minutes.
+
+\begin{keypoint}
+À faibles doses, l'HRS survient dans les tumeurs tandis que les tissus normaux bénéficient d'effets de sur-réparation, créant potentiellement une \textbf{fenêtre thérapeutique} favorable.
+\end{keypoint}
+
+\subsection{Protocole standard PLDR}
+
+\begin{itemize}
+    \item Dose par pulse : 0,2 Gy (dans la zone HRS)
+    \item Nombre de pulses : 10
+    \item Intervalle entre pulses : 3 minutes
+    \item Dose totale par séance : 2 Gy
+    \item Débit de dose effectif : 0,067 Gy/min
+\end{itemize}
+
+\subsection{Résultats cliniques}
+
+Les études cliniques préliminaires montrent :
+
+\begin{itemize}
+    \item Efficacité équivalente à la radiothérapie conventionnelle pour le contrôle tumoral
+    \item Réduction significative de la toxicité des tissus normaux
+    \item Particulièrement prometteur pour la ré-irradiation des tumeurs récurrentes
+    \item Taux de contrôle loco-régional à 1 an : $\sim$40\% dans les tumeurs réfractaires
+\end{itemize}
+
+\subsection{Essais cliniques en cours}
+
+\begin{itemize}
+    \item \textbf{NCT03061162} : PLDR pour tumeurs réfractaires
+    \item \textbf{NCT04452357} : PLDR pour cancer du pancréas
+\end{itemize}
+
+%==============================================================================
+\section{Conclusions et Perspectives}
+%==============================================================================
+
+\subsection{Synthèse des mécanismes}
+
+L'hypersensibilité aux faibles doses dans le domaine des centigrays résulte principalement de :
+
+\begin{enumerate}
+    \item Un \textbf{seuil d'activation} du checkpoint G2/M précoce dépendant d'ATM
+    \item L'incapacité des cellules en phase G2 à arrêter leur progression vers la mitose aux doses $<$ 20-30 cGy
+    \item Une \textbf{réparation inefficace} des cassures double-brin aux très faibles doses
+    \item Un processus apoptotique qui élimine les cellules progressant vers la mitose avec des dommages non réparés
+\end{enumerate}
+
+\subsection{Apport du modèle MML}
+
+Le modèle de charge mutationnelle minimale de Polgár et al. (2025) apporte une nouvelle perspective en proposant que l'HRS/IRR est une \textbf{stratégie évoluée} optimisant la survie tissulaire plutôt qu'un simple défaut de la réponse aux dommages à l'ADN.
+
+\subsection{Perspectives de recherche}
+
+\begin{itemize}
+    \item Validation clinique élargie de la radiothérapie PLDR
+    \item Combinaison avec des modulateurs du cycle cellulaire pour amplifier l'HRS
+    \item Développement de biomarqueurs prédictifs de la réponse HRS
+    \item Intégration des effets bystander dans les modèles
+\end{itemize}
+
+%==============================================================================
+\section{Références Bibliographiques Clés}
+%==============================================================================
+
+\subsection{Publications fondatrices}
+
+\begin{enumerate}
+    \item Joiner MC, Johns H (1988). Renal damage in the mouse: the response to very small doses per fraction. \textit{Radiat Res}, 114(2):385-398. PMID: 3375433
+    
+    \item Marples B, Joiner MC (1993). The response of Chinese hamster V79 cells to low radiation doses. \textit{Radiat Res}, 133(1):41-51. PMID: 8434112
+    
+    \item Wouters BG, Sy AM, Skarsgard LD (1996). Low-dose hypersensitivity and increased radioresistance in a panel of human tumor cell lines. \textit{Radiat Res}, 146(4):399-413. PMID: 8927712
+    
+    \item Joiner MC et al. (2001). Low-dose hypersensitivity: current status and possible mechanisms. \textit{Int J Radiat Oncol Biol Phys}, 49(2):379-389. PMID: 11173131
+    
+    \item Marples B et al. (2004). Low-dose hyper-radiosensitivity: a consequence of ineffective cell cycle arrest. \textit{Radiat Res}, 161(3):247-255. PMID: 14982490
+\end{enumerate}
+
+\subsection{Publications sur les mécanismes}
+
+\begin{enumerate}
+    \setcounter{enumi}{5}
+    \item Fernet M et al. (2010). Control of the G2/M checkpoints after exposure to low doses of ionising radiation. \textit{DNA Repair}, 9(1):48-57. PMID: 19926348
+    
+    \item Krueger SA et al. (2010). The effects of G2-phase enrichment and checkpoint abrogation on low-dose hyper-radiosensitivity. \textit{Int J Radiat Oncol Biol Phys}, 77(5):1509-17. PMID: 20637979
+    
+    \item Enns L et al. (2015). Association of ATM activation and DNA repair with induced radioresistance. \textit{Radiat Prot Dosimetry}, 166(1-4):131-136. PMID: 25903461
+\end{enumerate}
+
+\subsection{Publications récentes et modèle MML}
+
+\begin{enumerate}
+    \setcounter{enumi}{8}
+    \item Polgár S, Schofield PN, Madas BG (2022). Datasets of in vitro clonogenic assays showing low dose hyper-radiosensitivity. \textit{Sci Data}, 9(1):555. PMID: 36075916\\
+    \url{https://www.nature.com/articles/s41597-022-01653-3}
+    
+    \item Polgár S, Schofield PN, Madas BG (2025). Minimising mutation load as a mechanism for low-dose hyper-radiosensitivity and induced radioresistance. \textit{Research Square} (preprint).\\
+    \url{https://www.researchsquare.com/article/rs-6674497/v1}
+\end{enumerate}
+
+\subsection{Applications cliniques PLDR}
+
+\begin{enumerate}
+    \setcounter{enumi}{10}
+    \item Ma CMC (2022). Pulsed low dose-rate radiotherapy: radiobiology and dosimetry. \textit{Phys Med Biol}, 67(3). PMID: 35038688
+    
+    \item Wong RX et al. (2024). Pulsed low-dose rate radiotherapy for recurrent bone sarcomas. \textit{Radiat Oncol J}, 42(1):88-94. PMID: 38549388
+    
+    \item Atak et al. (2025). Pulsed reduced dose rate radiotherapy: a narrative review. \textit{Chinese Clinical Oncology}.\\
+    \url{https://cco.amegroups.org/article/view/139535/html}
+\end{enumerate}
+
+\end{document}

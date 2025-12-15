@@ -1,0 +1,630 @@
+\documentclass[11pt,a4paper]{article}
+
+% === ENCODAGE ET LANGUE ===
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+% === ESPACEMENT ===
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{lmodern}
+% === PACKAGES DE BASE ===
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{bm}
+\usepackage{float}
+
+% === POUR L'ENVIRONNEMENT COMMENT ===
+\usepackage{comment}
+
+% === TIKZ ET PGFPLOTS ===
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,shapes.geometric,calc}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+
+% === AUTRES PACKAGES ===
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
+
+% === CONFIGURATION DES ESPACES ===
+\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\floatsep}{8pt plus 2pt minus 2pt}
+\setlength{\intextsep}{8pt plus 2pt minus 2pt}
+\setlength{\abovecaptionskip}{4pt}
+\setlength{\belowcaptionskip}{0pt}
+
+\setlist[itemize]{itemsep=0pt, topsep=2pt, parsep=0pt, partopsep=0pt}
+\setlist[enumerate]{itemsep=0pt, topsep=2pt, parsep=0pt, partopsep=0pt}
+
+\titlespacing*{\section}{0pt}{2ex plus 1ex minus .2ex}{1ex plus .5ex minus .2ex}
+\titlespacing*{\subsection}{0pt}{1.5ex plus .5ex minus .2ex}{0.7ex plus .3ex minus .1ex}
+
+\setlength{\abovedisplayskip}{6pt}
+\setlength{\belowdisplayskip}{6pt}
+\setlength{\abovedisplayshortskip}{4pt}
+\setlength{\belowdisplayshortskip}{4pt}
+
+\captionsetup{font=footnotesize,labelfont=bf,textfont=it,skip=0pt}
+
+% === COULEURS ===
+\definecolor{misty}{rgb}{1.0,0.89,0.88}
+\definecolor{MyBlue}{rgb}{0.8,1.0,1.0}
+\definecolor{Carnelian}{rgb}{0.7,0.11,0.11}
+\definecolor{MyGreen}{rgb}{0.0,0.5,0.0}
+\definecolor{MyGreen2}{rgb}{0.0,0.42,0.24}
+\definecolor{lightblue}{RGB}{220,235,255}
+\definecolor{airblue}{RGB}{135,206,250}
+\definecolor{sourcemagenta}{RGB}{255,0,255}
+\definecolor{conecolor}{RGB}{255,200,0}
+\definecolor{kermacolor}{RGB}{0,255,255}
+\definecolor{upstreamblue}{RGB}{0,0,255}
+\definecolor{downstreamred}{RGB}{255,0,0}
+\definecolor{slabcolor}{RGB}{255,255,0}
+\definecolor{plaquecolor}{RGB}{100,200,100}
+
+% === BOITES COLOREES ===
+\newtcolorbox{databox}[1]{
+    colback=blue!5,
+    colframe=blue!75!black,
+    fonttitle=\bfseries,
+    title=#1
+}
+
+\newtcolorbox{resultbox}[1]{
+    colback=green!5,
+    colframe=green!75!black,
+    fonttitle=\bfseries,
+    title=#1
+}
+
+\newtcolorbox{mechanism}{
+    colback=green!5!white,
+    colframe=green!75!black,
+    title=Mécanisme
+}
+
+
+\newtcolorbox{warningbox}[1]{
+    colback=orange!5,
+    colframe=orange!75!black,
+    fonttitle=\bfseries,
+    title=#1
+}
+
+% === ENVIRONNEMENT KEYPOINT ===
+\newenvironment{keypoint}
+  {\begin{quotation}\itshape\bfseries}
+  {\end{quotation}}
+
+% ============================================================
+\begin{document}
+
+\title{\textbf{Hypersensibilit\'e Cellulaire aux Faibles Doses de Radiation}\\[0.3cm]
+\Large Ph\'enom\`ene HRS/IRR dans le Domaine des Centigrays\\[0.3cm]
+\large M\'ecanismes Mol\'eculaires et Mod\`eles Explicatifs}
+
+\author{GM}
+\date{\today}
+
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+%==============================================================================
+\section{Introduction}
+%==============================================================================
+\footnotesize
+
+%------------------------------------------------------------------------------
+\subsection{D\'efinition du ph\'enom\`ene HRS/IRR}
+%------------------------------------------------------------------------------
+\footnotesize
+
+\noindent L'hyper-radiosensibilit\'e aux faibles doses (HRS) d\'ecrit un ph\'enom\`ene par lequel les cellules pr\'esentent une sensibilit\'e excessive \`a de petites doses uniques de rayonnement ionisant, typiquement inf\'erieures \`a 20-50 cGy selon la lign\'ee cellulaire. Ce ph\'enom\`ene n'est pas pr\'edit par l'extrapolation r\'etrograde de la r\'eponse de survie cellulaire \`a partir des doses plus \'elev\'ees utilisant le mod\`ele lin\'eaire-quadratique (LQ) standard.
+
+\begin{keypoint}
+\noindent \footnotesize L'HRS se manifeste par une pente initiale de la courbe de survie ($\alpha_s$) significativement plus \'elev\'ee que celle observ\'ee \`a doses plus importantes ($\alpha_r$), avec un rapport $\alpha_s/\alpha_r$ typiquement compris entre 2 et 5.
+\end{keypoint}
+
+\footnotesize
+\noindent \`A mesure que la dose augmente au-del\`a d'environ 20-40 cGy, on observe une augmentation de la radior\'esistance (IRR) jusqu'\`a ce que, au-del\`a d'environ 1 Gy, la radior\'esistance soit maximale et que la survie cellulaire suive la courbe descendante habituelle d\'ecrite par le mod\`ele LQ.
+
+%------------------------------------------------------------------------------
+\subsection{\footnotesize Plages de doses caract\'eristiques}
+%------------------------------------------------------------------------------
+\footnotesize
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{lcc}
+\toprule
+\footnotesize \textbf{Phase} &\footnotesize \textbf{Plage de dose} &\footnotesize \textbf{Caract\'eristique} \\
+\midrule
+\footnotesize HRS maximale &\footnotesize 5--20 cGy &\footnotesize Hypersensibilit\'e marqu\'ee \\
+\footnotesize Transition (Dc) &\footnotesize 20--40 cGy &\footnotesize Point d'inflexion \\
+\footnotesize IRR &\footnotesize 40--100 cGy &\footnotesize Radior\'esistance induite \\
+\footnotesize Comportement LQ &\footnotesize $>$ 100 cGy &\footnotesize Mod\`ele classique \\
+\bottomrule
+\end{tabular}
+\captionsetup{labelformat=empty}
+\caption{\footnotesize Plages de doses caract\'eristiques du ph\'enom\`ene HRS/IRR}
+\end{table}
+
+%------------------------------------------------------------------------------
+\subsection{\footnotesize Historique des d\'ecouvertes}
+%------------------------------------------------------------------------------
+\footnotesize
+
+\noindent Le ph\'enom\`ene a d'abord \'et\'e observ\'e in vivo par Joiner et Johns en 1988 dans des \'etudes sur les dommages r\'enaux chez la souris. La premi\`ere d\'emonstration in vitro a \'et\'e r\'ealis\'ee par Marples et Joiner en 1993 sur les cellules V79 de hamster chinois, o\`u ils ont montr\'e que l'effet par unit\'e de dose augmentait d'un facteur $\sim$2, passant de 0,19 Gy$^{-1}$ \`a 1 Gy \`a 0,37 Gy$^{-1}$ \`a 0,1 Gy.\par
+\medskip
+
+
+%==============================================================================
+\section{Mécanismes Moléculaires Expliquant l'HRS}
+%==============================================================================
+
+\subsection{Le modèle centré sur la phase G2}
+
+Les données expérimentales démontrent fortement que l'HRS est exclusivement associée à la réponse de survie des cellules en phase G2 du cycle cellulaire. Ce concept ``G2-centrique'' est apparu lorsque le profil de survie caractéristique de l'HRS n'a pas été détecté dans les populations cellulaires enrichies en phase G1 ou S.
+
+\begin{mechanism}
+\textbf{Observations clés :}
+\begin{itemize}[noitemsep]
+    \item Les cellules T98G et V79 en phase G2 montrent une HRS exagérée
+    \item Les cellules U373 (HRS-négatives en asynchrone) montrent l'HRS uniquement en G2
+    \item L'enrichissement en G2 amplifie la réponse HRS
+    \item L'abrogation du checkpoint G2 augmente la radiosensibilité aux faibles doses
+\end{itemize}
+\end{mechanism}
+
+\subsection{Le checkpoint G2/M précoce et le seuil d'activation ATM}
+
+Deux checkpoints G2/M distincts sont activés après exposition aux rayonnements ionisants, selon le compartiment du cycle cellulaire dans lequel les cellules sont irradiées :
+
+\subsubsection{Checkpoint G2 précoce (ATM-dépendant)}
+
+\begin{itemize}
+    \item Empêche la progression des cellules irradiées en G2 vers la mitose
+    \item Nécessite l'activité ATM pour les doses $>$ 0,5 Gy
+    \item Possède un \textbf{seuil d'activation dose-dépendant} selon la lignée cellulaire
+    \item N'est \textbf{pas activé} en dessous d'environ 20-30 cGy dans les lignées HRS-positives
+\end{itemize}
+
+\subsubsection{Accumulation G2/M (ATM-indépendante)}
+
+\begin{itemize}
+    \item Bloque en G2 les cellules qui étaient en phases plus précoces lors de l'irradiation
+    \item ATM-indépendant mais dose-dépendant
+    \item Implique la voie ATR/Chk1
+    \item Activé dès 0,2 Gy
+\end{itemize}
+
+\subsection{Seuil d'activation ATM : le nœud du problème}
+
+La protéine ATM (Ataxia Telangiectasia Mutated) est le régulateur principal du checkpoint G2 précoce. Son activation présente un profil dose-réponse caractéristique :
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lp{8cm}}
+\toprule
+\textbf{Dose} & \textbf{Réponse ATM} \\
+\midrule
+$<$ 10 cGy & Pas d'augmentation mesurable de la phosphorylation ATM-Ser1981 jusqu'à 4h post-irradiation \\
+25 cGy & Augmentation 2-4$\times$ de la phosphorylation ATM-Ser1981 \\
+$>$ 50 cGy & Activation complète du checkpoint \\
+$\sim$ 1 Gy & Saturation de l'activité kinase ATM \\
+\bottomrule
+\end{tabular}
+\caption{Profil dose-réponse de l'activation ATM}
+\end{table}
+
+\begin{keypoint}
+Les cellules T98G et V79, qui présentent l'HRS, \textbf{échouent à arrêter l'entrée en mitose} des cellules G2 endommagées à des doses inférieures à 30 cGy, comme déterminé par l'évaluation de la phosphorylation de l'histone H3.
+\end{keypoint}
+
+\subsection{Cascade de signalisation et réparation de l'ADN}
+
+\subsubsection{Voie de signalisation}
+
+\begin{enumerate}
+    \item \textbf{Reconnaissance des dommages} : Le complexe MRN (MRE11-RAD50-NBS1) reconnaît les cassures double-brin (DSB)
+    \item \textbf{Activation ATM} : ATM est activée par autophosphorylation sur Ser1981
+    \item \textbf{Phosphorylation de substrats} :
+    \begin{itemize}
+        \item H2AX $\rightarrow$ $\gamma$H2AX (marqueur des DSB)
+        \item Chk2 $\rightarrow$ pChk2 (arrêt du cycle)
+        \item p53 $\rightarrow$ activation de la réponse apoptotique
+    \end{itemize}
+    \item \textbf{Arrêt du cycle} : Blocage de la transition G2$\rightarrow$M via Cdc25C
+\end{enumerate}
+
+\subsubsection{Réparation des DSB}
+
+Les données montrent que la réparation des DSB est moins efficace aux très faibles doses :
+
+\begin{itemize}
+    \item \textbf{24h après 25 cGy} : Réduction efficace des foci $\gamma$H2AX
+    \item \textbf{24h après 10 cGy} : Réduction \textbf{moins efficace} des foci $\gamma$H2AX
+\end{itemize}
+
+Ceci suggère que la réparation des DSB est plus efficace pendant la phase IRR que pendant la phase HRS.
+
+\subsection{Rôle de l'apoptose}
+
+L'HRS est associée à un processus apoptotique dépendant de p53 et de la caspase-3. Les cellules en phase G2 sont particulièrement vulnérables car, en l'absence d'activation du checkpoint précoce, elles progressent vers la mitose sans réparation adéquate, entraînant la mort cellulaire.
+
+\subsection{Synthèse du modèle mécanistique actuel}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccl}
+\toprule
+\textbf{Dose} & \textbf{ATM} & \textbf{Checkpoint G2} & \textbf{Réparation} & \textbf{Survie} \\
+\midrule
+$<$ 10-20 cGy & Insuffisante & Non activé & Inefficace & \textcolor{red}{Faible (HRS)} \\
+20-50 cGy & Activée & Activé & Efficace & \textcolor{green}{Augmentée (IRR)} \\
+$>$ 1 Gy & Maximale & Activé & Efficace & Modèle LQ \\
+\bottomrule
+\end{tabular}
+\caption{Récapitulatif du mécanisme HRS/IRR}
+\end{table}
+
+
+
+
+
+%------------------------------------------------------------------------------
+\subsection{\footnotesize \'Etudes fondatrices}
+%------------------------------------------------------------------------------
+
+\begin{enumerate}
+\item \footnotesize \hyperref[sec:resume1]{\color{blue}\textbf{Joiner MC, Johns H (1988)}\color{black}}.\ \\
+\footnotesize \textit{Renal damage in the mouse: the response to very small doses per fraction.}\\
+\footnotesize Radiation Research, 114(2):385-398.\\
+\footnotesize PMID: 3375433\\
+\scriptsize \url{https://pubmed.ncbi.nlm.nih.gov/3375433/}\\
+\footnotesize \color{Carnelian}\textit{\textbf{Exp\'eriences utilisant des doses de rayons X de 0.2 \`a 1.6 Gy par fraction et des neutrons de 0.05 \`a 0.25 Gy par fraction sur les reins de souris.}}\color{black}
+\end{enumerate}
+
+%------------------------------------------------------------------------------
+\subsection{\footnotesize Premi\`eres \'etudes in vitro sur lign\'ees cellulaires (1993--1997)}
+%------------------------------------------------------------------------------
+
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item \footnotesize \hyperref[sec:resume2]{\color{blue}\textbf{Marples B, Joiner MC (1993)}\color{black}}.\ \\
+\footnotesize \textit{The response of Chinese hamster V79 cells to low radiation doses: evidence of enhanced sensitivity of the whole cell population.}\\
+\footnotesize Radiation Research, 133(1):41-51.\\
+\footnotesize PMID: 8434112\\
+\scriptsize \url{https://pubmed.ncbi.nlm.nih.gov/8434112/}\\
+\footnotesize \color{Carnelian}\textit{\textbf{Mesures haute r\'esolution de la survie des cellules V79-379A apr\`es doses uniques de rayons X (0.01--10.0 Gy). L'effet par unit\'e de dose a augment\'e d'un facteur $\sim$2, passant de 0.19 Gy$^{-1}$ \`a 1 Gy \`a 0.37 Gy$^{-1}$ \`a 0.1 Gy.}}\color{black}
+
+\item \footnotesize \hyperref[sec:resume3]{\color{blue}\textbf{Lambin P, Marples B, Fertil B, Malaise EP, Joiner MC (1993)}\color{black}}.\ \\
+\footnotesize \textit{Hypersensitivity of a human tumour cell line to very low radiation doses.}\\
+\footnotesize International Journal of Radiation Biology, 63:639-650.\\
+\footnotesize PMID: 8099110\\
+\scriptsize \url{https://pubmed.ncbi.nlm.nih.gov/8099110/}
+
+\item \footnotesize \hyperref[sec:resume4]{\color{blue}\textbf{Malaise EP, Lambin P, Joiner MC (1994)}\color{black}}.\ \\
+\footnotesize \textit{Radiosensitivity of human cell lines to small doses. Are there some clinical implications?}\\
+\footnotesize Radiation Research, 138(1 Suppl):S25-27.\\
+\footnotesize PMID: 8146319\\
+\scriptsize \url{https://pubmed.ncbi.nlm.nih.gov/8146319/}\\
+\footnotesize \color{Carnelian}\textit{\textbf{Revue utilisant cytom\'etrie de flux et DMIPS montrant l'hypersensibilit\'e \`a tr\`es faibles doses ($<$0.5 Gy) suivie d'une augmentation de radior\'esistance.}}\color{black}
+
+\item \footnotesize \hyperref[sec:resume5]{\color{blue}\textbf{Lambin P, Fertil B, Malaise EP, Joiner MC (1994)}\color{black}}.\ \\
+\footnotesize \textit{Multiphasic Survival Curves for Cells of Human Tumor Cell Lines: Induced Repair or Hypersensitive Subpopulation?}\\
+\footnotesize Radiation Research, 138(1 Suppl):S32-S36.\\
+\footnotesize PMID: 8146321\\
+\scriptsize \url{https://www.jstor.org/stable/3578756}
+
+\item \footnotesize \hyperref[sec:resume6]{\color{blue}\textbf{Wouters BG, Skarsgard LDb(1994)}\color{black}}.\ \\
+\footnotesize \textit{The response of a human tumor cell line to low radiation doses: Evidence of enhanced sensitivity.}\\
+\footnotesize Radiation Research, 138(1 Suppl):S76-S80.\\
+\scriptsize \url{https://pubmed.ncbi.nlm.nih.gov/8146333/}
+
+\item \footnotesize \hyperref[sec:resume7]{\color{blue}\textbf{Marples B, Adomat H, Koch CJ, Skov KA (1996)}\color{black}}.\ \\
+\footnotesize \textit{Response of V79 cells to low doses of X-rays and negative pi-mesons: Clonogenic survival and DNA strand breaks.}\\
+\footnotesize International Journal of Radiation Biology, 70(4):429-436.\\
+\scriptsize \url{https://pubmed.ncbi.nlm.nih.gov/8862454/}
+
+\item \footnotesize \hyperref[sec:resume8]{\color{blue}\textbf{Wouters BG, Sy AM, Skarsgard LD (1996)}\color{black}}.\ \\
+\footnotesize \textit{Low-Dose Hypersensitivity and Increased Radioresistance in a Panel of Human Tumor Cell Lines with Different Radiosensitivity.}\\
+\footnotesize Radiation Research, 146(4):399-413.\\
+\scriptsize \url{https://pubmed.ncbi.nlm.nih.gov/8927712/}\\
+\footnotesize  \color{Carnelian}\textit{\textbf{\'Etude de 5 lign\'ees tumorales humaines avec sensibilit\'es variables. Les 4 lign\'ees les plus r\'esistantes montrent une hypersensibilit\'e initiale aux faibles doses suivie d'une augmentation de radior\'esistance entre 0.3 et 0.7 Gy.}}\color{black}
+
+\item  \footnotesize \hyperref[sec:resume9]{\color{blue}\textbf{Skarsgard LD, Skwarchuk MW, Wouters BG, Durand RE (1996)}\color{black}}.\ \\
+\footnotesize \textit{Substructure in the radiation survival response at low dose in cells of human tumor cell lines.}\\
+\footnotesize Radiation Research, 146(4):388-398.\\
+\scriptsize \url{https://pubmed.ncbi.nlm.nih.gov/8927711/}
+
+\item  \footnotesize  \hyperref[sec:resume10]{\color{blue}\textbf{Joiner MC, Lambin P, Malaise EP, Robson T, Arrand JE, Skov KA, Marples B (1996)}\color{black}}.\ \\
+\footnotesize \textit{Hypersensitivity to very-low single radiation doses: its relationship to the adaptive response and induced radioresistance.}\\
+\footnotesize Mutation Research, 358(2):171-183.\\
+\scriptsize \url{https://pubmed.ncbi.nlm.nih.gov/8946022/}\\
+\footnotesize \color{Carnelian}{\textit{\textbf{Revue \'etablissant qu'une petite dose de conditionnement ($<$30 cGy) peut prot\'eger contre une exposition ult\'erieure plus importante (r\'eponse adaptative).}}}\color{black}
+
+\item  \footnotesize  \hyperref[sec:resume11]{\color{blue}\textbf{Marples B, Lambin P, Skov KA, Joiner MC (1997)}\color{black}}.\  \\
+\footnotesize  \textit{Low dose hyper-radiosensitivity and increased radioresistance in mammalian cells.}\\
+\footnotesize  International Journal of Radiation Biology, 71(6):721-735.\\
+\scriptsize \url{https://pubmed.ncbi.nlm.nih.gov/9246186/}\\
+\footnotesize  \color{Carnelian}\textit{\textbf{Revue des travaux du Gray Laboratory (UK) et du BC Cancer Research Centre (Canada) sur l'HRS d\'etect\'ee apr\`es doses uniques de rayons X $<$0.3 Gy et la r\'eponse IRR jusqu'\`a 1 Gy.}}\color{black}
+
+\item  \footnotesize \hyperref[sec:resume12]{\color{blue}\textbf{Wouters BG, Skarsgard LD (1997)}\color{black}}.\  \\
+\footnotesize \textit{Low-dose radiation sensitivity and induced radioresistance to cell killing in HT-29 cells is distinct from the `adaptive response' and cannot be explained by a subpopulation of sensitive cells.}\\
+\footnotesize Radiation Research, 148(5):435-442.\\
+\scriptsize \url{https://pubmed.ncbi.nlm.nih.gov/9355868/}
+
+\end{enumerate}
+
+%------------------------------------------------------------------------------
+\subsection{Etudes sur lignees specifiques (1999--2004)}
+%------------------------------------------------------------------------------
+
+\begin{enumerate}
+\setcounter{enumi}{12}
+
+\item \textbf{Short S, Mayes C, Woodcock M, Johns H, Joiner MC (1999)}\\
+\textit{Low dose hypersensitivity in the T98G human glioblastoma cell line.}\\
+International Journal of Radiation Biology, 75(7):847-855.\\
+PMID: 10489896\\
+\url{https://pubmed.ncbi.nlm.nih.gov/10489896/}\\
+\textcolor{gray}{\textit{Note: T98G montre une HRS marquee, caracteristique de toute la population cellulaire plutot que d'une sous-population hypersensible.}}
+
+\item \textbf{Vaganay-Juery S et al. (2000)}\\
+\textit{Decreased DNA-PK activity in human cancer cells exhibiting hypersensitivity to low-dose irradiation.}\\
+British Journal of Cancer, 83(4):514-518.\\
+PMID: 10945500\\
+\url{https://pubmed.ncbi.nlm.nih.gov/10945500/}\\
+\textcolor{gray}{\textit{Note: Etude de 10 lignees cancereuses humaines montrant une diminution marquee de l'activite DNA-PK dans les 6 lignees presentant HRS apres irradiation a 0.2 Gy.}}
+
+\end{enumerate}
+
+\newpage
+\appendix
+\section{\color{blue}\textbf{Joiner MC, Johns H (1988)}\color{black}}
+\label{sec:resume1}
+\medskip
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue,title=\textbf{Radiat Res., Vol.114(2), pp.385-98, 1988\\
+Renal damage in the mouse: the response to very small doses per fraction\\
+M C Joiner, H Johns}]
+\footnotesize
+
+\noindent Experiments were undertaken to study the effect on the mouse kidney of repeated X-ray doses in the range 0.2 to 1.6 Gy per fraction and neutron doses in the range 0.05 to 0.25 Gy per fraction. A top-up design of experiment was used, so that additional graded doses of d(4)-Be neutrons ($\bm{EN}$ = 2.3 MeV) were given to bring the subthreshold damage produced by these treatments into the measurable range. This approach avoided the necessity to use a large number of fractions to study low doses per fraction. Renal damage was assessed using three methods: 51Cr-EDTA clearance, urine output, and hematocrit at 16-50 weeks postirradiation. The dose-response curves obtained were resolved best at 29 weeks. However, the results were also examined by fitting second-order polynomials to the data for response versus time postirradiation and using interpolated values from these functions at 29 weeks to construct dose-response curves. This method reduced slightly the variation in the dose-response data, but the interrelationship between the dose-response curves remained the same. The data were used to test the linear-quadratic ($LQ$) description of the underlying X-ray dose-fractionation relationship. The model fits well down to X-ray doses per fraction of approximately 1 Gy, but lower X-ray doses were more effective per gray than predicted by $LQ$, as seen previously in skin [M. C. Joiner et al., Int. J. Radiat. Biol. 49, 565-580 (1986)]. This increased X-ray effectiveness and deviation from LQ are reflected directly in a decrease in the RBE of d(4)-Be neutrons relative to X-rays at low doses, since the underlying response to these neutrons is linear in this low-dose region. The RBE decreases from 9.9 to 4.7 as the X-ray dose per fraction is reduced below 0.8 Gy to 0.2 Gy, reflecting an increase in X-ray effectiveness by a factor of 2.1. A model is discussed which attempts to explain this behavior at low doses per fraction.
+
+\begin{center}
+    \includegraphics[width=0.8\linewidth]{Figures/Joiner_RadRes_1988.png}
+    %\captionof{figure}{Schéma de l’expérience}
+\end{center}
+\end{tcolorbox}
+
+\section{\color{blue}\textbf{Marples B, Joiner MC (1993)}\color{black}}
+\label{sec:resume2}
+\medskip
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue,title=\textbf{Radiation Research, Vol.133(1), pp.41-51, 1993\\
+The response of Chinese hamster V79 cells to low radiation doses: evidence of enhanced sensitivity of the whole cell population\\
+B Marples, M C Joiner}]
+\footnotesize
+
+\noindent High-resolution measurements of the survival of asynchronous Chinese hamster V79-379A cells in vitro after single doses of X rays (0.01-10.0 Gy) and neutrons (0.02-3.0 Gy) were made using a computerized microscope for locating and identifying cells (Palcic and Jaggi, Int. J. Radiat. Biol. 50, 345-352, 1986). The X-ray response from 1 to 10 Gy showed a good fit to a linear-quadratic (LQ) dose-survival model, but with X-ray doses below 0.6 Gy, an increased X-ray effectiveness was observed, with cell survival below the prediction made from the data above 1 Gy using the LQ model. The effect per unit dose (-log(e)SF/dose) increased by a factor of approximately 2, from 0.19 Gy-1 at a dose of 1 Gy to 0.37 Gy-1 at a dose of 0.1 Gy. This phenomenon was not seen with neutrons, and cell survival decreased exponentially over the whole neutron dose range studied. Further data suggest that this phenomenon is unlikely to be due to a subpopulation of X-ray-sensitive cells determined either genetically or phenotypically by distribution of the population within the cell cycle. The existence of low-dose sensitivity also appeared to be independent of dose rate in the range 0.016-1.7 Gy min-1. A possible explanation of these results is that the phenomenon reflects "induced repair" or a stress response: low doses in vitro (or low doses per fraction in vivo) are more effective per gray than higher doses because only at the higher doses is there sufficient damage to trigger repair systems or other radioprotective mechanisms. 
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{Figures/Marples_RadRes_1993.png}
+    %\captionof{figure}{Schéma de l’expérience}
+\end{center}
+
+\end{tcolorbox}
+
+\section{\color{blue}\textbf{P Lambin, B Marples, B Fertil, E P Malaise, M C Joiner (1993)}\color{black}}
+\label{sec:resume3}
+\medskip
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue,title=\textbf{Int J Radiat Biol.,Vol.63(5), pp.639-50, 1993\\
+Hypersensitivity of a human tumour cell line to very low radiation doses\\
+P Lambin, B Marples, B Fertil, E P Malaise, M C Joiner}]
+\footnotesize
+
+\noindent Survival of HT29 cells was measured after irradiation with single doses of X-rays (0.05-5 Gy) and neutrons (0.025-1.5 Gy), using a Dynamic Microscopic Imaging Processing Scanner (DMIPS) with which individual cells can be accurately located in tissue culture flasks, their positions recorded, and after an appropriate incubation time the recorded positions revisited to allow the scoring of survivors. The response over the X-ray dose range 2-5 Gy showed a good fit to a Linear-Quadratic (LQ) model. For X-ray doses below 1 Gy, an increased X-ray effectiveness was observed with cell survival below the high-dose LQ prediction. The value of --dose/loge (SF) for each experimental data point, plotted against dose, demonstrated clearly how X-rays are maximally effective at doses approaching zero, becoming less effective as the dose increases and with minimal effectiveness at about 0.6 Gy then becoming more effective again as the dose increases above 1.5 Gy. This phenomenon was not seen with neutrons. Neutron RBE was calculated for each X-ray data point by taking each X-ray survival value and comparing it with the common LQ fit to all the neutron data. Over the X-ray dose range 0.05-0.2 Gy, the RBE is close to 1 indicating that these very low doses of X-rays are of similar effectiveness to neutrons in killing cells. The increase in RBE with increasing dose over the range 0.05-1 Gy, and the slight decrease in RBE above 1 Gy, reflect primarily the changes in X-ray sensitivity over the whole dose range of 0.05-5 Gy. Several arguments suggest that this phenomenon could reflect an induced radioresistance so that in this system low single doses of X-rays are more effective per Gy than higher doses in reducing cell survival because only at higher doses, above a threshold, is there sufficient damage to trigger radioprotective mechanisms.
+
+\end{tcolorbox}
+
+
+\section{\color{blue}\textbf{E P Malaise,~P Lambin,~M C Joiner (1994)}\color{black}}
+\label{sec:resume4}
+\medskip
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue,title=\textbf{Radiat Res., Vol.138(1 Suppl),pp.S25-7, 1994\\
+Radiosensitivity of human cell lines to small doses. Are there some clinical implications?\\
+E P Malaise,~P Lambin,~M C Joiner}]
+\footnotesize
+\noindent The concept of intrinsic radiosensitivity is now strongly associated with the linear-quadratic ($LQ$) model which is currently the best and the most reliable method to fit the first three decades of a survival curve for both human fibroblast and human tumor cell lines. This approach has led to the major conclusions that it is the initial part, and not the distal part, of the survival curve which truly characterizes intrinsic cellular radiosensitivity and there is a correlation between the parameters describing mainly the initial part of the survival curve ($\alpha$, $SF2$, $D$) and the clinical radioresponsiveness. More accurate analysis with flow cytometry or a dynamic microscopic image processing scanner ($DMIPS$) has allowed further study of the survival curve which has shown two sorts of substructure. On one hand, the overall survival curve of exponentially growing cells is described by two or more sets of alpha, beta parameters (heterogeneity in radiosensitivity due to the cell cycle). On the other hand, hypersensitivity at very low doses ($\mathrm{<}$ 0.5 Gy) followed by an increase of the radioresistance of the whole population at higher doses has also been observed. This phenomenon is not described by the conventional $LQ$ model and has been interpreted as an induced radioresistance which seems to be negatively correlated with intrinsic radiosensitivity. In clinical radiotherapy, there are two sorts of response of normal tissues: (1) the early and late damage and (2) the carcinogenesis. Concerning the first point, the clinically detectable radiation damage appears at doses usually around 20 Gy (in 2-Gy fractions) with the exception of the hemopoietic and the lymphatic tissues. Therefore, the small doses delivered at the edges or in the penumbrae of treatment fields in routine radiotherapy cannot create detectable damage, despite a potentially much higher effect per unit dose, because the total doses are still very small. However, it may be important to bear in mind the possible extra effect of low doses outside the target volume if regions in the vicinity are subsequently retreated. Concerning clinical radiation-induced carcinogenesis, three studies described a higher relative risk associated with small doses per fraction or very low dose rate. The results and the interpretation of these studies are discussed. 
+\end{tcolorbox}
+
+\section{\color{blue}\textbf{P. Lambin, B. Fertil, E. P. Malaise, M. C. Joiner (1994)}\color{black}}
+\label{sec:resume5}
+\medskip
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue,title=\textbf{Radiation Research, Vol.138(1), 1994\\
+Multiphasic Survival Curves for Cells of Human Tumor Cell Lines: Induced Repair or Hypersensitive Subpopulation?\\
+P. Lambin, B. Fertil, E. P. Malaise, M. C. Joiner}]
+\footnotesize
+\noindent Survival of the cells of three human tumor cell lines of differing radiosensitivity was measured after irradiation with single doses of X rays (0.05-5 Gy). At doses below 1 Gy, cells were more radiosensitive than predicted by back-extrapolating the high-dose response. This difference was more marked for cells of the radioresistant cell lines than the radiosensitive cell line so that the "true" initial slopes of the survival curves, at very low doses, were similar for the cells of the three cell lines. This phenomenon could reflect an induced radioresistance so that low doses of X rays are more effective per gray than higher doses, because only at higher doses is there sufficient damage to trigger repair systems or other radioprotective mechanisms which can then act during the time course for repair of DNA injury
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{Figures/Lambin_RadRes_1994.png}
+\end{center}
+\end{tcolorbox}
+
+\section{\color{blue}\textbf{B G Wouters ,~L D Skarsgard (1994)}\color{black}}
+\label{sec:resume6}
+\medskip
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue,title=\textbf{Radiat Res., Vol.138(1 Suppl), pp.S76-80, 1994\\
+The response of a human tumor cell line to low radiation doses: evidence of enhanced sensitivity\\
+B G Wouters ,~L D Skarsgard}]
+\footnotesize
+\noindent The survival of asynchronous, exponentially growing DU-145 human tumor cells was measured after single doses of X rays in the dose range of 0.05-4 Gy using the cell sorting assay. When the response was modeled with the linear-quadratic (LQ) equation, a good fit to the data was observed for dose levels above 1 Gy; however, a region of enhanced sensitivity was observed at doses less than this. One possible explanation of this low-dose substructure is that a small, sensitive subpopulation of cells is selectively killed at low doses. Modeling of the radiation response with a two-population LQ model suggests that for these data this explanation is unlikely. Another possibility is that the whole cell population is initially hypersensitive, becoming radioresistant as damage is sustained by the cell. Conceivably this radioprotective mechanism could act in one of two ways. The cell could move from a radiation-sensitive to a radiation-resistant state by a continuous function of dose, or alternatively, only after a sufficient accumulation of damage, i.e. a "triggering dose." Both of these possibilities have been explored in the results of fitting two "induced resistance" models. 
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{Figures/Wouters_RadRes_1994.png}
+\end{center}
+\end{tcolorbox}
+
+\section{\color{blue}\textbf{Marples B, Adomat H, Koch CJ, Skov KA (1996)}\color{black}}
+\label{sec:resume7}
+\medskip
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue,title=\textbf{Int J Radiat Biol., Vol.70(4),pp. 429-36, 1996\\
+Response of V79 cells to low doses of X-rays and negative pi-mesons: clonogenic survival and DNA strand breaks\\
+B Marples, H Adomat,~C J Koch,~K A Skov}]
+\footnotesize
+\noindent Mammalian cells are hypersensitive to very low doses of X-rays ($\mathrm{<}$ 0.2 Gy), a response which is followed by increased radioresistance up to 1 Gy. Increased radioresistance is postulated to be a response to DNA damage, possibly single-strand breaks, and it appears to be a characteristic of low linear energy transfer (LET) radiation. Here we demonstrate a correspondence between the extent of the increased radioresistance and linear energy transfer of 250 kVp X-rays and plateau and Bragg peak negative pi-mesons. The results support our hypothesis since the size of the increased radioresistant response appears to correspond to the number of radiation induced single-strand breaks. Furthermore, since survival prior to the increased radioresistant response ($\mathrm{<}$ 0.2 Gy) was LET-independent, these data support the notion that the increased radioresistant response may dictate the overall survival response to higher doses. However, while these data provide further circumstantial evidence for the involvement of DNA strand breaks in the triggering of increased radioresistance, more direct conclusions cannot be made. The data are not accurate enough to detect structure in the single-strand break profiles, the production of single-strand breaks being apparently linear with dose
+
+%\begin{center}
+%    \includegraphics[width=0.5\linewidth]{Figures/Wouters_RadRes_1994.png}
+%\end{center}
+\end{tcolorbox}
+
+\section{\color{blue}\textbf{B G Wouters,~A M Sy,~L D Skarsgard (1996)}\color{black}}
+\label{sec:resume8}
+\medskip
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue,title=\textbf{Radiat Res., Vol.146(4), pp.399-413, 1996\\
+Low-dose hypersensitivity and increased radioresistance in a panel of human tumor cell lines with different radiosensitivity\\
+B G Wouters,~A M Sy,~L D Skarsgard}]
+\footnotesize
+\noindent It is well known that cells of human tumor cell lines display a wide range of sensitivity to radiation, at least a part of which can be attributed to different capacities to process and repair radiation damage correctly. We have examined the response to very low-dose radiation of cells of five human tumor cell lines that display varying sensitivity to radiation, using an improved assay for measurement of radiation survival. This assay improves on the precision of conventional techniques by accurately determining the numbers of cells at risk, and has allowed us to measure radiation survival to doses as low as 0.05 Gy. Because of the statistical limitations in measuring radiation survival at very low doses, extensive averaging of data was used to determine the survival response accurately. Our results show that the four most resistant cell lines exhibit a region of initial low-dose hypersensitivity. This hypersensitivity is followed by an increase in radioresistance over the dose range 0.3 to 0.7 Gy, beyond which the response is typical of that seen in most survival curves. Mathematical modeling of the responses suggests that this phenomenon is not due to a small subpopulation of sensitive cells (e.g. mitotic), but rather is a reflection of the induction of resistance in the whole cell population, or at least a significant proportion of the whole cell population. These results suggest that a dose-dependent alteration in the processing of DNA damage over the initial low-dose region of cell survival may contribute to radioresistance in some cell lines. 
+%\begin{center}
+%    \includegraphics[width=0.5\linewidth]{Figures/Wouters_RadRes_1994.png}
+%\end{center}
+\end{tcolorbox}
+
+\section{\color{blue}\textbf{L D Skarsgard,~M W Skwarchuk,~B G Wouters,~R E Durand (1996)}\color{black}}
+\label{sec:resume9}
+\medskip
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue,title=\textbf{Radiat Res., Vol.146(4), pp.388-98, 1996 1996\\
+Substructure in the radiation survival response at low dose in cells of human tumor cell lines\\
+L D Skarsgard,~M W Skwarchuk,~B G Wouters,~R E Durand}]
+\footnotesize
+\noindent In earlier studies using asynchronously growing Chinese hamster cells, we observed substructure in the survival response at low doses. The substructure appeared to result from subpopulations of cells having different, cell cycle phase-dependent radiosensitivity. We have now applied the same flow cytometry and cell sorting technique to accurately measure the responses of cells of eight different asynchronously growing human tumor cell lines, representing a wide range in radiosensitivity. When the data were fitted with a linear-quadratic (LQ) function, most of these lines showed substructure similar to that observed in Chinese hamster cells, with the result that values of alpha and beta were dependent on the dose range used for fitting. Values of alpha describing the low-dose response were typically smaller (by as much as 2.2 times) than the alpha describing the high-dose response, while values of beta were larger at low doses. Values of alpha/beta from our measurements are in reasonable agreement with other values published recently if we fit the data for the high-dose range (excluding, for example, 0-4 Gy), which corresponds to a conventional survival response measurement. However, the values of alpha/beta describing the low-dose range were, on average, 2.8-fold smaller. The results show that the usual laboratory measurement of cell survival over 2 or 3 logs of cell killing, if fitted with a single LQ function, will yield alpha and beta values which may give a rather poor description of cell inactivation at low dose in asynchronous cells, no matter how carefully those measurements are done, unless the low-dose range is fitted separately. The contribution of killing represented by the beta coefficient at low doses was found to be surprisingly large, accounting for 40-70\% of cell inactivation at 2 Gy in these cell lines. A two-population LQ model provides excellent fits to the data for most of the cell lines though, as one might expect with a five-parameter model, the best-fitting value of the various parameters is far from unique, and the values are probably not reliable indicators of the size and radiosensitivity of the different cell subpopulations. At very low dose, below 0.5-1 Gy, another order of substructure is observed: the hypersensitive response; this is described in the accompanying paper (Wouters et al., Radiat. Res. 146, 399-413, 1996). 
+%\begin{center}
+%    \includegraphics[width=0.5\linewidth]{Figures/Wouters_RadRes_1994.png}
+%\end{center}
+\end{tcolorbox}
+
+\section{\color{blue}\textbf{L D Skarsgard, M W Skwarchuk,~B G Wouters,~R E Durand (1996)}\color{black}}
+\label{sec:resume10}
+\medskip
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue,title=\textbf{Radiat Res., Vol.146(4), pp.388-98, 1996\\
+Substructure in the radiation survival response at low dose in cells of human tumor cell lines\\
+L D Skarsgard, M W Skwarchuk,~B G Wouters,~R E Durand }]
+\footnotesize
+\noindent In earlier studies using asynchronously growing Chinese hamster cells, we observed substructure in the survival response at low doses. The substructure appeared to result from subpopulations of cells having different, cell cycle phase-dependent radiosensitivity. We have now applied the same flow cytometry and cell sorting technique to accurately measure the responses of cells of eight different asynchronously growing human tumor cell lines, representing a wide range in radiosensitivity. When the data were fitted with a linear-quadratic (LQ) function, most of these lines showed substructure similar to that observed in Chinese hamster cells, with the result that values of alpha and beta were dependent on the dose range used for fitting. Values of alpha describing the low-dose response were typically smaller (by as much as 2.2 times) than the alpha describing the high-dose response, while values of beta were larger at low doses. Values of alpha/beta from our measurements are in reasonable agreement with other values published recently if we fit the data for the high-dose range (excluding, for example, 0-4 Gy), which corresponds to a conventional survival response measurement. However, the values of alpha/beta describing the low-dose range were, on average, 2.8-fold smaller. The results show that the usual laboratory measurement of cell survival over 2 or 3 logs of cell killing, if fitted with a single LQ function, will yield alpha and beta values which may give a rather poor description of cell inactivation at low dose in asynchronous cells, no matter how carefully those measurements are done, unless the low-dose range is fitted separately. The contribution of killing represented by the beta coefficient at low doses was found to be surprisingly large, accounting for 40-70\% of cell inactivation at 2 Gy in these cell lines. A two-population LQ model provides excellent fits to the data for most of the cell lines though, as one might expect with a five-parameter model, the best-fitting value of the various parameters is far from unique, and the values are probably not reliable indicators of the size and radiosensitivity of the different cell subpopulations. At very low dose, below 0.5-1 Gy, another order of substructure is observed: the hypersensitive response; this is described in the accompanying paper (Wouters et al., Radiat. Res. 146, 399-413, 1996). 
+%\begin{center}
+%    \includegraphics[width=0.5\linewidth]{Figures/Wouters_RadRes_1994.png}
+%\end{center}
+\end{tcolorbox}
+
+\begin{comment}
+
+\section{\color{blue}\textbf{M C Joiner, P Lambin,~E P Malaise,~T Robson,~J E Arrand,~K A Skov,~B Marples (1996)}\color{black}}
+\label{sec:resume11}
+\medskip
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue,title=\textbf{Mutat Res., Vol.358(2) ,pp.171-83, 1996}\\
+Hypersensitivity to very-low single radiation doses: its relationship to the adaptive response and induced radioresistance \\
+M C Joiner, P Lambin,~E P Malaise,~T Robson,~J E Arrand,~K A Skov,~B Marples}]
+\footnotesize
+\noindent There is now little doubt of the existence of radioprotective mechanisms, or stress responses, that are upregulated in response to exposure to small doses of ionizing radiation and other DNA-damaging agents. Phenomenologically, there are two ways in which these induced mechanisms operate. First, a small conditioning dose (generally below 30 cGy) may protect against a subsequent, separate, exposure to radiation that may be substantially larger than the initial dose. This has been termed the adaptive response. Second, the response to single doses may itself be dose-dependent so that small acute radiation exposures, or exposures at very low dose rates, are more effective per unit dose than larger exposures above the threshold where the induced radioprotection is triggered. This combination has been termed low-dose hypersensitivity (HRS) and induced radioresistance (IRR) as the dose increases. Both the adaptive response and HRS/IRR have been well documented in studies with yeast, bacteria, protozoa, algae, higher plant cells, insect cells, mammalian and human cells in vitro, and in studies on animal models in vivo. There is indirect evidence that the HRS/IRR phenomenon in response to single doses is a manifestation of the same underlying mechanism that determines the adaptive response in the two-dose case and that it can be triggered by high and low LET radiations as well as a variety of other stress-inducing agents such as hydrogen peroxide and chemotherapeutic agents although exact homology remains to be tested. Little is currently known about the precise nature of this underlying mechanism, but there is evidence that it operates by increasing the amount and rate of DNA repair, rather than by indirect mechanisms such as modulation of cell-cycle progression or apoptosis. Changed expression of some genes, only in response to low and not high doses, may occur within a few hours of irradiation and this would be rapid enough to explain the phenomenon of induced radioresistance although its specific molecular components have yet to be identified.
+%\begin{center}
+%    \includegraphics[width=0.5\linewidth]{Figures/Wouters_RadRes_1994.png}
+%\end{center}
+\end{tcolorbox}
+
+\section{\color{blue}\textbf{B Marples , P Lambin, K A Skov, M C Joiner (1997)}\color{black}}
+\label{sec:resume12}
+\medskip
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue,title=\textbf{Int J Radiat Biol., Vol.71(6), pp.721-35, B Marples , P Lambin, K A Skov, M C Joiner\\
+Low dose hyper-radiosensitivity and increased radioresistance in mammalian cells\\
+B Marples , P Lambin, K A Skov, M C Joiner}]
+\footnotesize
+\noindent This manuscript reviews the low-dose survival work using the DMIPS cell analyser that has been carried out at the Gray Laboratory in the U.K. and the British Columbia Cancer Research Centre in Canada. It describes low dose hyper-radiosensitivity (HRS) detected after single doses of X-rays less than approximately 0.3 Gy and the subsequent increased radioresistant response (IRR) seen as the dose increases up to 1 Gy. Work is summarized from studies in V79 cells, normal human and human tumour cell lines and mutant cell lines deficient in DNA repair. The data are considered in light of the hypothesis that hyper-radiosensitivity and increased radioresistance reflect the existence of an inducible protective mechanism, possibly triggered by DNA damage
+%\begin{center}
+%    \includegraphics[width=0.5\linewidth]{Figures/Wouters_RadRes_1994.png}
+%\end{center}
+\end{tcolorbox}
+
+\section{\color{blue}\textbf{}\color{black}}
+\label{sec:resume8}
+\medskip
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue,title=\textbf{ 1996\\
+\\
+}]
+\footnotesize
+\noindent 
+%\begin{center}
+%    \includegraphics[width=0.5\linewidth]{Figures/Wouters_RadRes_1994.png}
+%\end{center}
+\end{tcolorbox}
+
+\section{\color{blue}\textbf{}\color{black}}
+\label{sec:resume8}
+\medskip
+
+\begin{tcolorbox}[colback=blue!5,colframe=blue,title=\textbf{ 1996\\
+\\
+}]
+\footnotesize
+\noindent 
+%\begin{center}
+%    \includegraphics[width=0.5\linewidth]{Figures/Wouters_RadRes_1994.png}
+%\end{center}
+\end{tcolorbox}
+
+\end{comment}
+
+
+
+
+
+
+
+
+
+
+
+
+\noindent Mutat Res . 1996 Nov 4;358\eqref{GrindEQ__2_}:171-83. 
+\noindent Hypersensitivity to very-low single radiation doses: its relationship to the adaptive response and induced radioresistance 
+\noindent M C Joiner${}^{~}$,~P Lambin,~E P Malaise,~T Robson,~J E Arrand,~K A Skov,~B Marples 
+
+\noindent There is now little doubt of the existence of radioprotective mechanisms, or stress responses, that are upregulated in response to exposure to small doses of ionizing radiation and other DNA-damaging agents. Phenomenologically, there are two ways in which these induced mechanisms operate. First, a small conditioning dose (generally below 30 cGy) may protect against a subsequent, separate, exposure to radiation that may be substantially larger than the initial dose. This has been termed the adaptive response. Second, the response to single doses may itself be dose-dependent so that small acute radiation exposures, or exposures at very low dose rates, are more effective per unit dose than larger exposures above the threshold where the induced radioprotection is triggered. This combination has been termed low-dose hypersensitivity (HRS) and induced radioresistance (IRR) as the dose increases. Both the adaptive response and HRS/IRR have been well documented in studies with yeast, bacteria, protozoa, algae, higher plant cells, insect cells, mammalian and human cells in vitro, and in studies on animal models in vivo. There is indirect evidence that the HRS/IRR phenomenon in response to single doses is a manifestation of the same underlying mechanism that determines the adaptive response in the two-dose case and that it can be triggered by high and low LET radiations as well as a variety of other stress-inducing agents such as hydrogen peroxide and chemotherapeutic agents although exact homology remains to be tested. Little is currently known about the precise nature of this underlying mechanism, but there is evidence that it operates by increasing the amount and rate of DNA repair, rather than by indirect mechanisms such as modulation of cell-cycle progression or apoptosis. Changed expression of some genes, only in response to low and not high doses, may occur within a few hours of irradiation and this would be rapid enough to explain the phenomenon of induced radioresistance although its specific molecular components have yet to be identified. 
+
+
+
+
+
+
+
+
+
+
+\bibliographystyle{plain}
+\end{document}
