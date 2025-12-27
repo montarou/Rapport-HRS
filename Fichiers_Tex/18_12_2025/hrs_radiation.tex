@@ -1,0 +1,138 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french,provide=*]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage[numbers,sort&compress]{natbib}
+
+\geometry{margin=2.5cm}
+\onehalfspacing
+
+\title{\textbf{Causes du phénomène d'hyper-radiosensibilité (HRS) aux faibles doses de radiation}}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction}
+
+L'hyper-radiosensibilité (HRS) est un phénomène par lequel les cellules présentent une sensibilité excessive aux faibles doses de rayonnements ionisants (typiquement $<$ 0.5 Gy), sensibilité qui n'est pas prédite par l'extrapolation du modèle linéaire-quadratique depuis les doses plus élevées. Ce document synthétise les principales causes moléculaires et cellulaires de ce phénomène telles que publiées dans la littérature scientifique.
+
+\section{Défaut d'arrêt du cycle cellulaire en phase G2}
+
+Le modèle prédominant expliquant l'HRS repose sur un arrêt inefficace du cycle cellulaire des cellules endommagées en phase G2 \cite{Marples2004}. Un modèle à trois composantes a été proposé, comprenant : la reconnaissance des dommages, la transduction du signal et la réparation des dommages. Le fondement de ce modèle est un checkpoint prémitotique dose-dépendant, spécifique aux cellules irradiées en phase G2.
+
+Le checkpoint précoce G2/M, dépendant de la protéine ATM (\textit{Ataxia Telangiectasia Mutated}), est critique pour les cellules irradiées à faibles doses durant la phase G2 \cite{Krueger2010}. La protéine ATM apparaît comme le régulateur principal de ce checkpoint précoce, phosphorylant Chk2 et arrêtant la progression cellulaire vers la mitose. Les cellules endommagées qui échappent à ce point de contrôle entrent en mitose avec des cassures double-brin de l'ADN (DSB) non réparées, conduisant à la mort cellulaire.
+
+\section{Évasion des mécanismes de détection des dommages ADN}
+
+Les dommages ADN introduits à faibles doses ou à faible débit de dose échappent à la détection par les senseurs cellulaires des dommages ADN \cite{Collis2004}. Une réduction de l'activation du senseur de dommages ATM et de sa cible en aval, l'histone H2AX (formant $\gamma$-H2AX), a été observée après exposition à faible débit de dose comparé à haut débit de dose, tant dans les cellules cancéreuses que normales.
+
+Cette absence de signalisation des dommages ADN est associée à une augmentation de la mort cellulaire. Ces effets peuvent être abolis par une pré-activation d'ATM ou simulés dans des cellules traitées à haut débit de dose par inhibition de la fonction ATM. Ces données démontrent que les dommages ADN introduits à un taux réduit n'activent pas le senseur ATM et que ce défaut d'activation des voies de réparation associées à ATM contribue à la létalité accrue des expositions continues à faible débit de dose.
+
+\section{Implication de la kinase DNA-PK}
+
+Le complexe de réparation DNA-PK (\textit{DNA-dependent Protein Kinase}) joue un rôle important dans le phénomène HRS \cite{VaganayJuery2000}. L'activité du complexe DNA-PK, comprenant l'activité de liaison de Ku aux extrémités de l'ADN et l'activité kinase du complexe entier, a été étudiée dans 10 lignées cellulaires cancéreuses humaines après irradiation à 0.2, 0.5 et 1 Gy.
+
+Après irradiation à faibles doses (0.2 Gy), une diminution marquée de l'activité DNA-PK a été observée dans les six lignées cellulaires présentant l'HRS, tandis que l'activité DNA-PK était augmentée dans les quatre lignées ne présentant pas d'HRS. Cette modulation de l'activité DNA-PK est un phénomène rapide survenant dans les 2 heures suivant l'exposition aux faibles doses de radiation. Ces données suggèrent fortement l'implication du complexe de réparation DNA-PK dans le phénomène HRS.
+
+Des études ultérieures ont toutefois nuancé ces résultats, montrant que l'absence d'activité fonctionnelle ATM ou DNA-PK n'affectait pas la survie cellulaire en dessous de 0.2 Gy, supportant le concept que l'HRS est une mesure de la radiosensibilité en l'absence de réparation pleinement fonctionnelle \cite{Wykes2006}.
+
+\section{Mort cellulaire par apoptose}
+
+L'HRS est associée à un niveau élevé d'apoptose après exposition à faibles doses \cite{Krueger2007}. En utilisant une technique mesurant l'activation de la caspase 3, une relation a été établie entre l'apoptose détectée 24 heures après exposition aux faibles doses de radiation et l'HRS dans plusieurs lignées cellulaires de mammifères et lignées lymphoblastoïdes humaines normales.
+
+L'existence de l'HRS dans les expériences de survie clonogénique est associée à un niveau élevé d'apoptose après exposition aux faibles doses. De plus, l'enrichissement des populations cellulaires MR4 et V79 en cellules en phase G1, minimisant le nombre de cellules en phase G2, abolit l'apoptose accrue aux faibles doses. Ces expériences d'enrichissement du cycle cellulaire renforcent l'association rapportée entre l'hypersensibilité aux faibles doses et la radioréponse des cellules en phase G2.
+
+Ces données sont cohérentes avec l'hypothèse actuelle expliquant l'HRS, à savoir que la sensibilité accrue des cellules aux faibles doses de radiation ionisante reflète l'échec des processus de réparation dépendants d'ATM à arrêter complètement la progression des cellules G2 endommagées qui entrent en mitose avec des cassures d'ADN non réparées.
+
+\section{Spécificité de la phase G2}
+
+L'HRS est exclusivement associée à la réponse de survie des cellules en phase G2 du cycle cellulaire \cite{Marples2004b}. Ce concept centré sur G2 est apparu lorsque le pattern de survie cellulaire caractéristique dénotant l'HRS n'a pas été détecté dans la réponse de survie des populations cellulaires enrichies en phase G1 ou S. En revanche, une réponse HRS étendue ou exagérée était évidente dans les populations sélectionnées pour contenir uniquement des cellules en phase G2 par cytométrie de flux.
+
+Le checkpoint précoce de phase G2 présente un profil d'expression dose-dépendant comparable au pattern de survie cellulaire qui définit l'HRS et est donc probablement un régulateur clé du phénomène.
+
+\section{Rôle des checkpoints ATM et ATR}
+
+Deux checkpoints G2/M distincts sont activés après exposition aux radiations ionisantes \cite{Fernet2010}. Le premier, ou checkpoint précoce, empêche la progression des cellules irradiées en G2 vers la mitose et est ATM-dépendant. Le second, l'accumulation G2/M, bloque en G2 les cellules qui étaient dans des phases antérieures du cycle au moment de l'irradiation.
+
+Un blocage de la transition G2 vers M a été observé après irradiation en G2, mais ne survient qu'au-dessus d'une dose seuil, qui dépend de la lignée cellulaire, et nécessite l'activité ATM après exposition à des doses supérieures à 0.5 Gy. L'échec d'activation de ce checkpoint précoce G2/M corrèle avec la radiosensibilisation aux faibles doses.
+
+Ces résultats fournissent la preuve qu'après exposition à de faibles doses de rayonnement ionisant, deux checkpoints G2/M distincts sont activés, chacun de manière dose-dépendante, avec des doses seuils distinctes et impliquant différentes voies de signalisation des dommages, confirmant les liens entre le checkpoint précoce G2/M et l'hyper-radiosensibilité.
+
+La signalisation ATR coopère également avec ATM dans le mécanisme d'hypersensibilité aux faibles doses, comme démontré avec les faisceaux d'ions carbone \cite{Slonina2016}.
+
+\section*{Conclusion}
+
+Le phénomène d'hyper-radiosensibilité aux faibles doses résulte principalement d'une combinaison de facteurs : (1) l'évasion des mécanismes de détection des dommages ADN par ATM, (2) le défaut d'activation du checkpoint précoce G2/M, (3) la modulation de l'activité DNA-PK, et (4) l'induction d'apoptose dans les cellules endommagées en phase G2 qui entrent en mitose avec des cassures double-brin non réparées. La compréhension de ces mécanismes ouvre des perspectives pour l'exploitation clinique de l'HRS en radiothérapie.
+
+\begin{thebibliography}{99}
+
+\bibitem{Marples2004}
+Marples B, Wouters BG, Collis SJ, Chalmers AJ, Joiner MC.
+\textit{Low-dose hyper-radiosensitivity: a consequence of ineffective cell cycle arrest of radiation-damaged G2-phase cells.}
+Radiat Res. 2004;161(3):247-255. doi: 10.1667/rr3130
+
+\bibitem{Krueger2010}
+Krueger SA, Wilson GD, Piasentin E, Joiner MC, Marples B.
+\textit{The effects of G2-phase enrichment and checkpoint abrogation on low-dose hyper-radiosensitivity.}
+Int J Radiat Oncol Biol Phys. 2010;77(5):1509-1517. doi: 10.1016/j.ijrobp.2010.01.028
+
+\bibitem{Collis2004}
+Collis SJ, Schwaninger JM, Ntambi AJ, Keller TW, Nelson WG, Dillehay LE, DeWeese TL.
+\textit{Evasion of early cellular response mechanisms following low level radiation-induced DNA damage.}
+J Biol Chem. 2004;279(48):49624-49632. doi: 10.1074/jbc.M409600200
+
+\bibitem{VaganayJuery2000}
+Vaganay-Juéry S, Muller C, Marangoni E, Abdulkarim B, Deutsch E, Lambin P, Calsou P, Eschwege F, Salles B, Joiner M, Bourhis J.
+\textit{Decreased DNA-PK activity in human cancer cells exhibiting hypersensitivity to low-dose irradiation.}
+Br J Cancer. 2000;83(4):514-518. doi: 10.1054/bjoc.2000.1258
+
+\bibitem{Wykes2006}
+Wykes SM, Piasentin E, Joiner MC, Wilson GD, Marples B.
+\textit{Low-dose hyper-radiosensitivity is not caused by a failure to recognize DNA double-strand breaks.}
+Radiat Res. 2006;165(5):516-524. doi: 10.1667/RR3553.1
+
+\bibitem{Krueger2007}
+Krueger SA, Joiner MC, Weinfeld M, Piasentin E, Marples B.
+\textit{Role of apoptosis in low-dose hyper-radiosensitivity.}
+Radiat Res. 2007;167(3):260-267. doi: 10.1667/RR0776.1
+
+\bibitem{Marples2004b}
+Marples B.
+\textit{Is low-dose hyper-radiosensitivity a measure of G2-phase cell radiosensitivity?}
+Cancer Metastasis Rev. 2004;23(3-4):197-207. doi: 10.1023/B:CANC.0000031761.61361.2a
+
+\bibitem{Fernet2010}
+Fernet M, Mégnin-Chanet F, Hall J, Favaudon V.
+\textit{Control of the G2/M checkpoints after exposure to low doses of ionising radiation: implications for hyper-radiosensitivity.}
+DNA Repair. 2010;9(1):48-57. doi: 10.1016/j.dnarep.2009.10.006
+
+\bibitem{Slonina2016}
+Słonina D, Gasińska A, Biesaga B, Janecka A, Kabat D.
+\textit{An association between low-dose hyper-radiosensitivity and the early G2-phase checkpoint in normal fibroblasts of cancer patients.}
+DNA Repair. 2016;39:41-45. doi: 10.1016/j.dnarep.2015.12.001
+
+\bibitem{Marples2008}
+Marples B, Collis SJ.
+\textit{Low-dose hyper-radiosensitivity: past, present, and future.}
+Int J Radiat Oncol Biol Phys. 2008;70(5):1310-1318. doi: 10.1016/j.ijrobp.2007.11.071
+
+\bibitem{Joiner1996}
+Joiner MC, Lambin P, Malaise EP, Robson T, Arrand JE, Skov KA, Marples B.
+\textit{Hypersensitivity to very-low single radiation doses: its relationship to the adaptive response and induced radioresistance.}
+Mutat Res. 1996;358(2):171-183. doi: 10.1016/s0027-5107(96)00118-2
+
+\bibitem{Marples1997}
+Marples B, Lambin P, Skov KA, Joiner MC.
+\textit{Low dose hyper-radiosensitivity and increased radioresistance in mammalian cells.}
+Int J Radiat Biol. 1997;71(6):721-735. doi: 10.1080/095530097143725
+
+\end{thebibliography}
+
+\end{document}

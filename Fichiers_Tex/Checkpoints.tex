@@ -1,0 +1,160 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{geometry}
+\usepackage{cite}
+\geometry{margin=2.5cm}
+
+\title{Checkpoints du cycle cellulaire et réponse aux rayonnements ionisants\\
+Approche de radiobiologie fondamentale}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+La radiobiologie fondamentale vise à comprendre les mécanismes cellulaires et moléculaires
+impliqués dans la réponse aux rayonnements ionisants. Ces derniers induisent principalement
+des lésions de l’ADN, parmi lesquelles les cassures double brin (DSB) sont considérées comme
+les plus létales. La survie cellulaire dépend alors de la capacité à détecter ces dommages,
+à activer les voies de signalisation appropriées et à contrôler la progression du cycle
+cellulaire via des \textit{checkpoints} spécifiques \cite{HallGiaccia}.
+
+\section{Les checkpoints du cycle cellulaire}
+
+Le cycle cellulaire comprend les phases G1, S, G2 et M. Les checkpoints assurent une
+coordination étroite entre progression du cycle, réparation de l’ADN et décisions de
+destin cellulaire \cite{Morgan2007}.
+
+\subsection{Checkpoint G1/S}
+
+Le checkpoint G1/S empêche l’entrée en phase S en présence de dommages à l’ADN. Les DSB
+activent les kinases ATM et ATR, qui phosphorylent et stabilisent le facteur de transcription
+p53. Celui-ci induit l’expression de p21\textsuperscript{Cip1/Waf1}, inhibiteur des complexes
+Cycline E/CDK2, bloquant ainsi la réplication de l’ADN \cite{Kastan1992}.
+
+Ce checkpoint constitue une barrière majeure contre la fixation de mutations, mais il est
+souvent défaillant dans les cellules tumorales.
+
+\subsection{Checkpoint intra-S}
+
+Durant la phase S, le checkpoint intra-S contrôle la progression des fourches de réplication.
+L’activation de l’axe ATR--Chk1 permet de ralentir la synthèse d’ADN, de stabiliser les fourches
+bloquées et de prévenir l’effondrement réplicatif, source majeure de DSB secondaires
+\cite{Ciccia2010}.
+
+\subsection{Checkpoint G2/M}
+
+Le checkpoint G2/M empêche l’entrée en mitose tant que l’ADN n’est pas intégralement réparé.
+Il repose sur l’inhibition du complexe Cycline B/CDK1 par Chk1 et Chk2 via l’inactivation de
+Cdc25 \cite{OConnell2007}. Ce checkpoint est central en radiobiologie, car les cellules en G2/M
+sont parmi les plus radiosensibles.
+
+\section{Schéma des checkpoints du cycle cellulaire}
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[font=\small]
+
+\draw[thick] (0,0) circle (3cm);
+
+\node at (0,3.4) {G1};
+\node at (3.4,0) {S};
+\node at (0,-3.4) {G2};
+\node at (-3.6,0) {M};
+
+\node[draw, rounded corners, fill=blue!20] at (1.8,1.8) {G1/S};
+\node[draw, rounded corners, fill=blue!20] at (2.2,-0.2) {Intra-S};
+\node[draw, rounded corners, fill=blue!20] at (-0.2,-2.2) {G2/M};
+
+\node[draw, rounded corners, fill=red!20] at (5,0) {Rayonnements ionisants};
+\draw[->, thick] (4.2,0) -- (2.8,0);
+
+\end{tikzpicture}
+\caption{Cycle cellulaire, checkpoints majeurs et points d’action des rayonnements ionisants.}
+\end{figure}
+
+\section{Checkpoints et réponse aux rayonnements ionisants}
+
+Les rayonnements ionisants activent principalement les voies ATM/ATR en réponse aux DSB et
+au stress réplicatif. L’efficacité de cette signalisation conditionne la survie cellulaire,
+la réparation fidèle de l’ADN ou l’induction de la mort cellulaire \cite{JacksonBartek}.
+
+À faibles doses, l’activation des checkpoints peut être partielle, notamment pour le
+checkpoint G2/M, contribuant à des réponses non linéaires telles que l’hypersensibilité
+aux faibles doses. À doses plus élevées, l’activation robuste des checkpoints favorise
+la réparation ou l’élimination des cellules gravement endommagées, participant à la
+radiorésistance induite.
+
+\section{Impact de la mutation de \textit{p53}}
+
+La protéine p53 est un régulateur central de la réponse aux dommages de l’ADN. Sa mutation,
+fréquente dans les cellules cancéreuses, entraîne :
+
+\begin{itemize}
+    \item une perte du checkpoint G1/S ;
+    \item une réplication de l’ADN endommagé ;
+    \item une dépendance accrue au checkpoint G2/M ;
+    \item une mort cellulaire souvent différée, par catastrophe mitotique.
+\end{itemize}
+
+En radiobiologie fondamentale, les cellules p53 mutées constituent un modèle clé pour
+étudier l’instabilité génomique, la tolérance aux dommages et les mécanismes alternatifs
+de mort cellulaire induite par irradiation \cite{Vousden2009}.
+
+\section{Conclusion}
+
+Les checkpoints du cycle cellulaire représentent un réseau de contrôle essentiel de la
+réponse aux rayonnements ionisants. Leur intégrité conditionne la radiosensibilité, la
+stabilité génomique et le devenir cellulaire. L’étude de ces mécanismes en radiobiologie
+fondamentale est indispensable pour comprendre les réponses cellulaires complexes à
+l’irradiation et pour identifier de nouvelles cibles de radiosensibilisation.
+
+\bibliographystyle{unsrt}
+\begin{thebibliography}{10}
+
+\bibitem{HallGiaccia}
+E.~J. Hall and A.~J. Giaccia.
+\newblock \emph{Radiobiology for the Radiologist}.
+\newblock Lippincott Williams \& Wilkins, 7th edition, 2012.
+
+\bibitem{Morgan2007}
+D.~O. Morgan.
+\newblock The cell cycle: principles of control.
+\newblock \emph{New Science Press}, 2007.
+
+\bibitem{Kastan1992}
+M.~B. Kastan et~al.
+\newblock A mammalian cell cycle checkpoint pathway utilizing p53 and GADD45.
+\newblock \emph{Cell}, 71:587--597, 1992.
+
+\bibitem{Ciccia2010}
+A.~Ciccia and S.~J. Elledge.
+\newblock The DNA damage response: making it safe to play with knives.
+\newblock \emph{Molecular Cell}, 40:179--204, 2010.
+
+\bibitem{OConnell2007}
+M.~J. O’Connell, N.~Cimprich.
+\newblock G2 damage checkpoints: what is the turn-on?
+\newblock \emph{Journal of Cell Science}, 120:1--6, 2007.
+
+\bibitem{JacksonBartek}
+S.~P. Jackson and J.~Bartek.
+\newblock The DNA-damage response in human biology and disease.
+\newblock \emph{Nature}, 461:1071--1078, 2009.
+
+\bibitem{Vousden2009}
+K.~H. Vousden and D.~P. Lane.
+\newblock p53 in health and disease.
+\newblock \emph{Nature Reviews Molecular Cell Biology}, 8:275--283, 2007.
+
+\end{thebibliography}
+
+\end{document}

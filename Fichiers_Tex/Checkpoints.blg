@@ -1,13 +1,19 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: Rapport HRS.aux
+The top-level auxiliary file: Checkpoints.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
-The style file: plain.bst
-I found no \citation commands---while reading file Rapport HRS.aux
-I found no \bibdata command---while reading file Rapport HRS.aux
+The style file: unsrt.bst
+I found no \bibdata command---while reading file Checkpoints.aux
+Warning--I didn't find a database entry for "HallGiaccia"
+Warning--I didn't find a database entry for "Morgan2007"
+Warning--I didn't find a database entry for "Kastan1992"
+Warning--I didn't find a database entry for "Ciccia2010"
+Warning--I didn't find a database entry for "OConnell2007"
+Warning--I didn't find a database entry for "JacksonBartek"
+Warning--I didn't find a database entry for "Vousden2009"
 You've used 0 entries,
-            2118 wiz_defined-function locations,
-            496 strings with 3995 characters,
+            1791 wiz_defined-function locations,
+            458 strings with 3674 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
@@ -46,4 +52,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 2
-(There were 2 error messages)
+(There was 1 error message)

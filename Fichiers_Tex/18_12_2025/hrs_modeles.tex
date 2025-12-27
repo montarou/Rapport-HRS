@@ -1,0 +1,426 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french,provide=*]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{graphicx}
+
+\geometry{margin=2.5cm}
+\onehalfspacing
+
+\title{\textbf{Modèles mathématiques du phénomène d'hyper-radiosensibilité (HRS) aux faibles doses de radiation}}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+
+\section{Modèle de Réparation Induite (Induced Repair Model - IR)}
+
+\subsection{Hypothèse biologique}
+
+Le modèle de réparation induite, développé par Joiner et Johns \cite{Joiner1988} puis affiné par Marples et Joiner \cite{Marples1993, Joiner1996}, repose sur l'hypothèse qu'un mécanisme de réparation protecteur est activé au-dessus d'une dose seuil $D_c$. En dessous de ce seuil, les cellules sont hypersensibles car le système de réparation n'est pas pleinement activé.
+
+\subsection{Équation du modèle IR}
+
+Le modèle IR modifie le paramètre $\alpha$ pour le rendre dose-dépendant:
+
+\begin{equation}
+\alpha(D) = \alpha_r \left[1 + \left(\frac{\alpha_s}{\alpha_r} - 1\right) \exp\left(-\frac{D}{D_c}\right)\right]
+\label{eq:alpha_IR}
+\end{equation}
+
+L'équation complète de survie devient alors \cite{Joiner2001, Marples2008}:
+
+\begin{equation}
+\boxed{S = \exp\left\{-\alpha_r \left[1 + \left(\frac{\alpha_s}{\alpha_r} - 1\right) \exp\left(-\frac{D}{D_c}\right)\right] D - \beta D^2\right\}}
+\label{eq:IR}
+\end{equation}
+
+où:
+\begin{itemize}
+    \item $\alpha_s$ = pente initiale à très faible dose (sensibilité accrue), typiquement 5--15 Gy$^{-1}$
+    \item $\alpha_r$ = pente dans la région de l'épaule (résistance), typiquement 0.1--0.5 Gy$^{-1}$
+    \item $D_c$ = dose critique de transition HRS $\rightarrow$ IRR, typiquement 0.2--0.5 Gy
+    \item $\beta$ = composante quadratique (identique au modèle LQ)
+\end{itemize}
+
+\subsection{Critères de présence de l'HRS}
+
+La présence de l'HRS est confirmée lorsque \cite{Krueger2010}:
+\begin{enumerate}
+    \item Les intervalles de confiance de $\alpha_s$ et $\alpha_r$ ne se chevauchent pas
+    \item Le ratio $\alpha_s/\alpha_r > 1$ (typiquement $> 3$)
+    \item $D_c$ est significativement différent de zéro
+\end{enumerate}
+
+\subsection{Comportement asymptotique}
+
+\begin{itemize}
+    \item Quand $D \rightarrow 0$: $\alpha(D) \rightarrow \alpha_s$ (hypersensibilité)
+    \item Quand $D \gg D_c$: $\alpha(D) \rightarrow \alpha_r$ (résistance induite)
+\end{itemize}
+
+\section{Modèle de Réparation Induite Modifié (MIRM)}
+
+Une version modifiée du modèle IR a été proposée pour améliorer l'ajustement aux données expérimentales \cite{Xue2016}:
+
+\begin{equation}
+\boxed{S = \exp\left\{-\alpha_r \left[1 + \left(\frac{\alpha_s}{\alpha_r} - 1\right) \exp\left(-\frac{D^2}{D_c^2}\right)\right] D - \beta D^2\right\}}
+\label{eq:MIRM}
+\end{equation}
+
+Cette modification utilise une dépendance en $D^2/D_c^2$ plutôt qu'en $D/D_c$, ce qui peut mieux décrire certaines transitions HRS/IRR plus abruptes.
+
+\section{Modèle à Réparation Variable (Variable IR Model)}
+
+\subsection{Concept}
+
+Dionet et collaborateurs \cite{Dionet2012} ont proposé un modèle considérant que la dose critique $D_c$ n'est pas uniforme dans la population cellulaire mais suit une distribution statistique. Cette approche reconnaît l'hétérogénéité intrinsèque des populations cellulaires.
+
+\subsection{Formulation}
+
+Si $f(D_c)$ représente la distribution de probabilité de la dose critique dans la population, la fraction de survie moyenne devient:
+
+\begin{equation}
+\boxed{\langle S \rangle = \int_0^{\infty} S(D, D_c) \cdot f(D_c) \, dD_c}
+\label{eq:VIR}
+\end{equation}
+
+Une distribution log-normale ou gaussienne tronquée est souvent utilisée pour $f(D_c)$.
+
+\section{Modèle basé sur la dynamique du checkpoint G2}
+
+\subsection{Fondement biologique}
+
+Ce modèle, développé par Olobatuyi, de Vries et Hillen \cite{Olobatuyi2018}, intègre explicitement la dynamique du checkpoint G2/M dans un système d'équations différentielles du cycle cellulaire.
+
+\subsection{Système d'équations}
+
+Le modèle utilise un système d'équations différentielles ordinaires (EDO) décrivant les populations cellulaires dans chaque phase du cycle:
+
+\begin{equation}
+\begin{cases}
+\dfrac{dG_1}{dt} = 2k_M \cdot M - k_{G_1} \cdot G_1 \\[10pt]
+\dfrac{dS}{dt} = k_{G_1} \cdot G_1 - k_S \cdot S \\[10pt]
+\dfrac{dG_2}{dt} = k_S \cdot S - k_{G_2}(D) \cdot G_2 \\[10pt]
+\dfrac{dM}{dt} = k_{G_2}(D) \cdot G_2 - k_M \cdot M
+\end{cases}
+\label{eq:G2model}
+\end{equation}
+
+où $k_{G_2}(D)$ est le taux de transition G2$\rightarrow$M dépendant de la dose, modélisant l'activation du checkpoint.
+
+\subsection{Relation avec le ratio $\alpha_s/\alpha_r$}
+
+Les auteurs ont dérivé une formule explicite reliant le ratio d'hypersensibilité à la fraction de survie à 2 Gy (SF2):
+
+\begin{equation}
+\boxed{\frac{\alpha_s}{\alpha_r} = f(SF_2, \text{paramètres du checkpoint})}
+\label{eq:ratio_SF2}
+\end{equation}
+
+Cette relation logarithmique confirme le lien entre HRS/IRR et la radiosensibilité aux doses cliniquement pertinentes \cite{Alsbeih2013}.
+
+\section{Modèle Microdosiométrique-Cinétique (MK Model)}
+
+\subsection{Principe}
+
+Le modèle microdosiométrique-cinétique (MK), développé par Hawkins \cite{Hawkins1994} et adapté par Matsuya et collaborateurs \cite{Matsuya2017}, considère la distribution stochastique de l'énergie déposée à l'échelle subcellulaire.
+
+\subsection{Équation fondamentale}
+
+\begin{equation}
+\boxed{S = \exp\left[-(\alpha_0 + \beta z_1^*) D - \beta D^2\right]}
+\label{eq:MK}
+\end{equation}
+
+où:
+\begin{itemize}
+    \item $\alpha_0$ = composante linéaire intrinsèque
+    \item $z_1^*$ = dose spécifique moyenne par événement unique
+    \item $\beta$ = composante quadratique
+\end{itemize}
+
+\subsection{Extension MK-DNA}
+
+Le modèle MK-DNA \cite{Matsuya2017} incorpore les variations de contenu en ADN pendant l'irradiation:
+
+\begin{equation}
+\alpha_{MK-DNA}(t) = \alpha_0 \cdot \frac{\langle DNA(t) \rangle}{\langle DNA_0 \rangle}
+\label{eq:MK_DNA}
+\end{equation}
+
+où $\langle DNA(t) \rangle$ représente la quantité moyenne d'ADN par noyau au temps $t$, tenant compte de l'accumulation des cellules en phase G2.
+
+\section{Modèle Intégré Microdosiométrique-Cinétique (IMK)}
+
+\subsection{Intégration des effets non-ciblés}
+
+Le modèle IMK \cite{Matsuya2018} étend le modèle MK en incorporant les effets bystander (non-ciblés):
+
+\begin{equation}
+\boxed{S_{IMK} = S_{TE} \cdot S_{NTE}}
+\label{eq:IMK}
+\end{equation}
+
+où:
+\begin{itemize}
+    \item $S_{TE}$ = survie due aux effets ciblés (targeted effects)
+    \item $S_{NTE}$ = survie due aux effets non-ciblés (non-targeted effects)
+\end{itemize}
+
+\subsection{Contribution à l'HRS}
+
+Le modèle IMK attribue l'HRS à la combinaison de:
+\begin{enumerate}
+    \item L'induction de cassures double-brin (DSB) par les signaux intercellulaires
+    \item La faible efficacité de réparation de l'ADN dans les cellules non-touchées
+\end{enumerate}
+
+\section{Modèle du Principe de Charge Mutationnelle Minimale}
+
+\subsection{Hypothèse}
+
+Madas \cite{Madas2019} a proposé un modèle basé sur l'hypothèse que le système cellulaire optimise la fraction de survie pour minimiser la charge mutationnelle totale dans le tissu.
+
+\subsection{Formulation}
+
+Pour chaque dose $D$, la fraction de survie optimale $S^*(D)$ est celle qui minimise le nombre total de mutations:
+
+\begin{equation}
+\boxed{S^*(D) = \arg\min_S \left[ N_0 \cdot S \cdot \mu(D) + N_0 \cdot (1-S) \cdot \mu_{div} \right]}
+\label{eq:MMM}
+\end{equation}
+
+où:
+\begin{itemize}
+    \item $N_0$ = nombre initial de cellules
+    \item $\mu(D)$ = taux de mutation radio-induit
+    \item $\mu_{div}$ = taux de mutation spontané par division cellulaire
+\end{itemize}
+
+Ce modèle prédit que l'HRS est plus prononcé dans les lignées cellulaires avec des défauts de réparation de l'ADN.
+
+\section{Modèle RCR (Repairable-Conditionally Repairable)}
+
+Le modèle RCR \cite{Lind2003} propose une alternative au modèle IR:
+
+\begin{equation}
+\boxed{S = \exp(-aD) + bD \cdot \exp(-cD)}
+\label{eq:RCR}
+\end{equation}
+
+où $a$, $b$ et $c$ sont des paramètres ajustables. Ce modèle ne fournit pas directement $\alpha_s$ et $\alpha_r$ mais peut décrire certaines courbes HRS/IRR avec moins de paramètres.
+
+\section{Modèle pour la leucémie myéloïde aiguë (rAML)}
+
+\subsection{Application de l'HRS à la carcinogenèse}
+
+Stouten et collaborateurs \cite{Stouten2022} ont développé un modèle mathématique mécanistique intégrant l'HRS pour prédire l'incidence de leucémie myéloïde aiguë radio-induite (rAML) chez la souris CBA.
+
+\subsection{Équations du modèle}
+
+Le modèle utilise un système de trois équations différentielles pour les populations de cellules normales ($N$), intermédiaires ($I$) et malignes ($M$):
+
+\begin{equation}
+\begin{cases}
+\dfrac{dN}{dt} = -\delta_N(D) \cdot N - \mu_{del}(D) \cdot N \\[10pt]
+\dfrac{dI}{dt} = \mu_{del}(D) \cdot N - \delta_I(D) \cdot I + r_I \cdot I - \mu_{pt} \cdot I \\[10pt]
+\dfrac{dM}{dt} = \mu_{pt} \cdot I
+\end{cases}
+\label{eq:rAML}
+\end{equation}
+
+où les taux de mort cellulaire $\delta(D)$ incorporent l'effet HRS via le modèle IR.
+
+\section{Tableau récapitulatif des modèles}
+
+\begin{table}[h!]
+\centering
+\caption{Comparaison des modèles mathématiques pour l'HRS}
+\label{tab:comparaison}
+\begin{tabular}{p{3.5cm}p{2cm}p{5cm}p{3cm}}
+\toprule
+\textbf{Modèle} & \textbf{Paramètres} & \textbf{Caractéristiques} & \textbf{Référence} \\
+\midrule
+IR (Induced Repair) & $\alpha_s$, $\alpha_r$, $D_c$, $\beta$ & Standard pour l'HRS & \cite{Joiner2001} \\
+\addlinespace
+Variable IR & + distribution de $D_c$ & Hétérogénéité cellulaire & \cite{Dionet2012} \\
+\addlinespace
+G2-checkpoint & EDO cycle cellulaire & Mécanistique & \cite{Olobatuyi2018} \\
+\addlinespace
+MK-DNA & Microdosimétriques & Contenu ADN variable & \cite{Matsuya2017} \\
+\addlinespace
+IMK & + effets bystander & Effets non-ciblés & \cite{Matsuya2018} \\
+\addlinespace
+Charge mutationnelle & Taux de mutation & Optimisation évolutive & \cite{Madas2019} \\
+\addlinespace
+RCR & $a$, $b$, $c$ & Formulation alternative & \cite{Lind2003} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Paramètres typiques du modèle IR}
+
+\begin{table}[h!]
+\centering
+\caption{Valeurs typiques des paramètres du modèle IR pour différentes lignées cellulaires}
+\label{tab:parametres}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Lignée cellulaire} & $\alpha_s$ (Gy$^{-1}$) & $\alpha_r$ (Gy$^{-1}$) & $\alpha_s/\alpha_r$ & $D_c$ (Gy) & \textbf{Réf.} \\
+\midrule
+V79 (hamster) & 8.9 & 0.24 & 37.1 & 0.31 & \cite{Marples1993} \\
+T98G (gliome) & 11.0 & 0.15 & 73.3 & 0.25 & \cite{Short1999} \\
+HeLa (col utérin) & 11.0 & 1.55 & 7.1 & 0.28 & \cite{Das2015} \\
+MR4 (fibroblaste) & 5.2 & 0.18 & 28.9 & 0.41 & \cite{Krueger2010} \\
+A549 (poumon) & 9.5 & 0.31 & 30.6 & 0.35 & \cite{Dai2009} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Conclusion}
+
+Les modèles mathématiques de l'HRS ont évolué depuis le modèle empirique de réparation induite vers des approches plus mécanistiques intégrant la dynamique du cycle cellulaire, la microdosiométrie et les effets non-ciblés. Le modèle IR reste le plus utilisé en pratique pour sa simplicité et sa capacité à extraire des paramètres biologiquement interprétables ($\alpha_s$, $\alpha_r$, $D_c$). Les modèles plus récents offrent une meilleure compréhension des mécanismes sous-jacents et permettent d'explorer les implications de l'HRS pour la radiothérapie et l'évaluation des risques aux faibles doses.
+
+\begin{thebibliography}{99}
+
+\bibitem{Marples1993}
+Marples B, Joiner MC.
+\textit{The response of Chinese hamster V79 cells to low radiation doses: evidence of enhanced sensitivity of the whole cell population.}
+Radiat Res. 1993;133(1):41-51.
+
+\bibitem{Joiner1988}
+Joiner MC, Johns H.
+\textit{Renal damage in the mouse: the response to very small doses per fraction.}
+Radiat Res. 1988;114(2):385-398.
+
+\bibitem{Joiner1996}
+Joiner MC, Lambin P, Malaise EP, Robson T, Arrand JE, Skov KA, Marples B.
+\textit{Hypersensitivity to very-low single radiation doses: its relationship to the adaptive response and induced radioresistance.}
+Mutat Res. 1996;358(2):171-183.
+
+\bibitem{Joiner2001}
+Joiner MC, Marples B, Lambin P, Short SC, Turesson I.
+\textit{Low-dose hypersensitivity: current status and possible mechanisms.}
+Int J Radiat Oncol Biol Phys. 2001;49(2):379-389.
+
+\bibitem{Marples2008}
+Marples B, Collis SJ.
+\textit{Low-dose hyper-radiosensitivity: past, present, and future.}
+Int J Radiat Oncol Biol Phys. 2008;70(5):1310-1318.
+
+\bibitem{Kellerer1972}
+Kellerer AM, Rossi HH.
+\textit{The theory of dual radiation action.}
+Curr Top Radiat Res Q. 1972;8:85-158.
+
+\bibitem{Krueger2010}
+Krueger SA, Wilson GD, Piasentin E, Joiner MC, Marples B.
+\textit{The effects of G2-phase enrichment and checkpoint abrogation on low-dose hyper-radiosensitivity.}
+Int J Radiat Oncol Biol Phys. 2010;77(5):1509-1517.
+
+\bibitem{Xue2016}
+Xue J, Zong Y, Li PD, Wang LX, Li YQ, Niu YF.
+\textit{Low-dose hyper-radiosensitivity in human hepatocellular HepG2 cells is associated with Cdc25C-mediated G2/M cell cycle checkpoint control.}
+Int J Radiat Biol. 2016;92(10):543-547.
+
+\bibitem{Dionet2012}
+Dionet C, Müller-Barthélémy M, Marceau G, et al.
+\textit{Low-dose radiation hyper-radiosensitivity in multicellular tumour spheroids.}
+Br J Radiol. 2012;85(1018):e823-e830.
+
+\bibitem{Olobatuyi2018}
+Olobatuyi O, de Vries G, Hillen T.
+\textit{Effects of G2-checkpoint dynamics on low-dose hyper-radiosensitivity.}
+J Math Biol. 2018;77(6-7):1969-1997.
+
+\bibitem{Alsbeih2013}
+Alsbeih G, Al-Meer RS, Al-Harbi N, et al.
+\textit{A Logarithmic Formula to Describe the Relationship between the Increased Radiosensitivity at Low Doses and the Survival at 2 Gray.}
+Sultan Qaboos Univ Med J. 2013;13(4):538-543.
+
+\bibitem{Hawkins1994}
+Hawkins RB.
+\textit{A statistical theory of cell killing by radiation of varying linear energy transfer.}
+Radiat Res. 1994;140(3):366-374.
+
+\bibitem{Matsuya2017}
+Matsuya Y, Sasaki K, Yoshii Y, Okuyama G, Date H.
+\textit{Modeling cell survival and change in amount of DNA during protracted irradiation.}
+J Radiat Res. 2017;58(3):302-312.
+
+\bibitem{Matsuya2018}
+Matsuya Y, McMahon SJ, Tsutsumi K, et al.
+\textit{Integrated Modelling of Cell Responses after Irradiation for DNA-Targeted Effects and Non-Targeted Effects.}
+Sci Rep. 2018;8(1):4849.
+
+\bibitem{Madas2019}
+Madas BG.
+\textit{Computational modeling of low dose hyper-radiosensitivity and induced radioresistance applying the principle of minimum mutation load.}
+Radiat Prot Dosimetry. 2019;183(1-2):147-152.
+
+\bibitem{Lind2003}
+Lind BK, Persson LM, Edgren MR, Hedlöf I, Brahme A.
+\textit{Repairable-conditionally repairable damage model based on dual Poisson processes.}
+Radiat Res. 2003;160(3):366-375.
+
+\bibitem{Stouten2022}
+Stouten S, Balkenende B, Roobol L, Lunel SV, Badie C, Dekkers F.
+\textit{Hyper-radiosensitivity affects low-dose acute myeloid leukemia incidence in a mathematical model.}
+Radiat Environ Biophys. 2022;61(3):361-373.
+
+\bibitem{Short1999}
+Short SC, Mayes C, Woodcock M, Johns H, Joiner MC.
+\textit{Low dose hypersensitivity in the T98G human glioblastoma cell line.}
+Int J Radiat Biol. 1999;75(7):847-855.
+
+\bibitem{Das2015}
+Das S.
+\textit{Radiobiological response of cervical cancer cell line in low dose region: evidence of low dose hypersensitivity (HRS) and induced radioresistance (IRR).}
+J Clin Diagn Res. 2015;9(7):XC01-XC04.
+
+\bibitem{Dai2009}
+Dai X, Tao D, Wu H, Cheng J.
+\textit{Low dose hyper-radiosensitivity in human lung cancer cell line A549 and its possible mechanisms.}
+J Huazhong Univ Sci Technolog Med Sci. 2009;29(1):101-106.
+
+\bibitem{Marples2004}
+Marples B, Wouters BG, Collis SJ, Chalmers AJ, Joiner MC.
+\textit{Low-dose hyper-radiosensitivity: a consequence of ineffective cell cycle arrest of radiation-damaged G2-phase cells.}
+Radiat Res. 2004;161(3):247-255.
+
+\bibitem{Krueger2007}
+Krueger SA, Joiner MC, Weinfeld M, Piasentin E, Marples B.
+\textit{Role of apoptosis in low-dose hyper-radiosensitivity.}
+Radiat Res. 2007;167(3):260-267.
+
+\bibitem{Collis2004}
+Collis SJ, Schwaninger JM, Ntambi AJ, et al.
+\textit{Evasion of early cellular response mechanisms following low level radiation-induced DNA damage.}
+J Biol Chem. 2004;279(48):49624-49632.
+
+\bibitem{Fernet2010}
+Fernet M, Mégnin-Chanet F, Hall J, Favaudon V.
+\textit{Control of the G2/M checkpoints after exposure to low doses of ionising radiation: implications for hyper-radiosensitivity.}
+DNA Repair. 2010;9(1):48-57.
+
+\bibitem{Polgar2022}
+Polgár S, Schofield PN, Madas BG.
+\textit{Datasets of in vitro clonogenic assays showing low dose hyper-radiosensitivity and induced radioresistance.}
+Sci Data. 2022;9(1):555.
+
+\end{thebibliography}
+
+\end{document}

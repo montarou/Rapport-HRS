@@ -1,0 +1,825 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=2cm]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{bm}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\usetikzlibrary{positioning, arrows.meta, shapes.geometric, shapes, arrows, decorations.pathreplacing, calc, 3d, patterns}
+\usepackage[most]{tcolorbox}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{pifont}
+\usepackage{fancyvrb}
+\usepackage{fvextra}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{listings}
+\usepackage{textcomp}
+\usepackage{setspace}
+\singlespacing
+
+% ============================================================================
+% CONFIGURATION DE LISTINGS POUR C++
+% ============================================================================
+\lstdefinestyle{cppstyle}{
+    language=C++,
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{darkgreen},
+    stringstyle=\color{red!70!black},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    numbersep=5pt,
+    frame=single,
+    breaklines=true,
+    breakatwhitespace=true,
+    showstringspaces=false,
+    tabsize=4,
+    captionpos=b,
+    upquote=true,
+    columns=fullflexible,
+    keepspaces=true,
+    literate=
+        {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+        {à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+        {â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
+        {ã}{{\~a}}1 {õ}{{\~o}}1 {ç}{{\c{c}}}1
+}
+\lstset{style=cppstyle}
+
+% ============================================================================
+% CONFIGURATION DES CAPTIONS
+% ============================================================================
+\captionsetup{font=footnotesize, labelfont=bf, textfont=it, skip=0pt}
+
+% ============================================================================
+% ESPACES
+% ============================================================================
+\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\floatsep}{8pt plus 2pt minus 2pt}
+\setlength{\intextsep}{8pt plus 2pt minus 2pt}
+\setlength{\abovecaptionskip}{4pt}
+\setlength{\belowcaptionskip}{0pt}
+
+\setlist[itemize]{itemsep=0pt, topsep=2pt, parsep=0pt, partopsep=0pt}
+\setlist[enumerate]{itemsep=0pt, topsep=2pt, parsep=0pt, partopsep=0pt}
+
+\titlespacing*{\section}{0pt}{2ex plus 1ex minus .2ex}{1ex plus .5ex minus .2ex}
+\titlespacing*{\subsection}{0pt}{1.5ex plus .5ex minus .2ex}{0.7ex plus .3ex minus .1ex}
+
+\setlength{\abovedisplayskip}{6pt}
+\setlength{\belowdisplayskip}{6pt}
+\setlength{\abovedisplayshortskip}{4pt}
+\setlength{\belowdisplayshortskip}{4pt}
+
+% ============================================================================
+% COULEURS
+% ============================================================================
+\definecolor{darkblue}{RGB}{0,51,102}
+\definecolor{lightblue}{RGB}{220,235,255}
+\definecolor{lightgreen}{RGB}{230,250,230}
+\definecolor{lightorange}{RGB}{255,240,220}
+\definecolor{lightred}{RGB}{255,230,230}
+\definecolor{lightgray}{RGB}{245,245,245}
+\definecolor{successgreen}{RGB}{39,174,96}
+\definecolor{warningorange}{RGB}{243,156,18}
+\definecolor{errorred}{RGB}{231,76,60}
+\definecolor{infoblue}{RGB}{52,152,219}
+\definecolor{methode1}{RGB}{70,130,180}
+\definecolor{methode1bis}{RGB}{60,179,113}
+\definecolor{methode2}{RGB}{255,140,0}
+\definecolor{theoriecolor}{RGB}{0,100,180}
+\definecolor{wpetg}{RGB}{34,139,34}
+\definecolor{inox}{RGB}{192,192,192}
+\definecolor{water}{RGB}{100,149,237}
+\definecolor{watercolor}{RGB}{100,180,255}
+\definecolor{source}{RGB}{255,215,0}
+\definecolor{sourcecolor}{RGB}{255,100,100}
+\definecolor{gamma}{RGB}{255,69,0}
+\definecolor{gammacolor}{RGB}{255,200,0}
+\definecolor{bismuth}{RGB}{180,100,160}
+\definecolor{upstreamcolor}{RGB}{80,80,255}
+\definecolor{downstreamcolor}{RGB}{255,80,80}
+\definecolor{detectorcolor}{RGB}{100,200,100}
+\definecolor{kermacolor}{RGB}{100,255,255}
+\definecolor{aircolor}{RGB}{200,230,255}
+\definecolor{conecolor}{RGB}{255,180,100}
+\definecolor{envelopecolor}{RGB}{230,230,230}
+\definecolor{slabcolor}{RGB}{255,230,100}
+\definecolor{transmitcolor}{RGB}{46,204,113}
+\definecolor{absorbcolor}{RGB}{231,76,60}
+\definecolor{scattercolor}{RGB}{241,196,15}
+
+\definecolor{darkgreen}{rgb}{0,0.6,0}
+\definecolor{billeA}{RGB}{218,165,32}
+\definecolor{billeB}{RGB}{205,92,92}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+
+% ============================================================================
+% COMMANDES PERSONNALISÉES
+% ============================================================================
+\newcommand{\codeTight}{\fontsize{8pt}{9pt}\selectfont}
+\newcommand{\cmark}{\textcolor{successgreen}{\ding{51}}}
+\newcommand{\xmark}{\textcolor{errorred}{\ding{55}}}
+\newcommand{\wmark}{\textcolor{warningorange}{\ding{45}}}
+
+% ============================================================================
+% BOÎTES TCOLORBOX
+% ============================================================================
+\newtcolorbox{databox}[1]{
+    colback=blue!5,
+    colframe=blue!75!black,
+    fonttitle=\bfseries,
+    title=#1
+}
+
+\newtcolorbox{resultbox}[1]{
+    colback=green!5,
+    colframe=green!75!black,
+    fonttitle=\bfseries,
+    title=#1
+}
+
+\newtcolorbox{warningbox}[1]{
+    colback=orange!5,
+    colframe=orange!75!black,
+    fonttitle=\bfseries,
+    title=#1
+}
+
+% ============================================================================
+% REDÉFINITION DES SECTIONS ET SUBSECTIONS ENCADRÉES
+% ============================================================================
+
+% Compteurs pour numérotation
+\newcounter{coloredsection}
+\newcounter{coloredsubsection}[coloredsection]
+
+% Commande pour section encadrée orange
+\newcommand{\sectionbox}[1]{%
+    \refstepcounter{coloredsection}%
+    \begin{tcolorbox}[
+        colback=orange!20,
+        colframe=orange!50!black,
+        boxrule=0.5pt,
+        arc=2mm
+    ]
+    {\Large\bfseries\color{blue} \thecoloredsection. #1}
+    \end{tcolorbox}
+    \addcontentsline{toc}{section}{\protect\numberline{\thecoloredsection}#1}
+    \vspace{0.3cm}
+}
+
+% Commande pour subsection encadrée vert foncé
+\newcommand{\subsectionbox}[1]{%
+    \refstepcounter{coloredsubsection}%
+    \begin{tcolorbox}[
+        colback=green!10,
+        colframe=green!50!black,
+        boxrule=0.5pt,
+        arc=2mm
+    ]
+    {\large\bfseries\color{green!40!black} \thecoloredsection.\thecoloredsubsection. #1}
+    \end{tcolorbox}
+    \addcontentsline{toc}{subsection}{\protect\numberline{\thecoloredsection.\thecoloredsubsection}#1}
+    \vspace{0.2cm}
+}
+
+
+
+% ============================================================================
+% DÉBUT DU DOCUMENT
+% ============================================================================
+\begin{document}
+
+% ============================================================================
+% TITRE PERSONNALISÉ
+% ============================================================================
+\begin{center}
+    {\LARGE\bfseries\color{blue} Hypersensibilit\'e Cellulaire aux Faibles Doses de Radiation}\\[0.3cm]
+    {\LARGE\bfseries\color{blue} Ph\'enom\`ene HRS/IRR dans le Domaine des Centigrays}\\[0.5cm]
+    {\large M\'ecanismes Mol\'eculaires et Mod\`eles Explicatifs}\\[0.2cm]
+    {\normalsize Rapport de synthése --- \today}
+\end{center}
+
+\vspace{0.5cm}
+
+% ============================================================================
+% ABSTRACT ENCADRÉ EN BLEU
+% ============================================================================
+\begin{tcolorbox}[
+    colback=blue!5,
+    colframe=blue!70!black,
+    title=\textbf{Résumé},
+    fonttitle=\color{white},
+    colbacktitle=blue!70!black,
+    arc=3mm,
+    boxrule=1pt
+]
+\footnotesize
+Ce document présente l'analyse détaillée de la fonction \texttt{CreateBillesEmpilement} qui génère un empilement hexagonal compact (HCP --- \textit{Hexagonal Close-Packed}) de billes sphériques dans une simulation Geant4.
+
+L'arrangement hexagonal compact est l'un des deux arrangements les plus denses possibles pour des sphères identiques, avec une compacité théorique de 74.05\%.
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\tableofcontents
+
+\newpage
+
+%==============================================================================
+\normalsize 
+\sectionbox{Paramètres Géométriques}
+\footnotesize 
+%==============================================================================
+
+\normalsize 
+\subsectionbox{Dimensions de base}
+\footnotesize 
+
+\begin{table}[h!]
+\centering
+\captionsetup{labelformat=empty}
+\caption{\footnotesize Paramètres dimensionnels de l'empilement}
+\begin{tabular}{@{}llc@{}}
+\toprule
+\footnotesize \textbf{Paramètre}&\footnotesize \textbf{Symbole}&\footnotesize \textbf{Valeur} \\
+\midrule
+\footnotesize Diamètre des billes&\footnotesize $\bm{d}$&\footnotesize \SI{2.0}{\milli\meter} \\
+\footnotesize Rayon des billes&\footnotesize $\bm{r} = \bm{d/2}$&\footnotesize \SI{1.0}{\milli\meter} \\
+\footnotesize Dimension container X&\footnotesize $\bm{L_x}$&\footnotesize \SI{50.0}{\milli\meter} \\
+\footnotesize Dimension container Y&\footnotesize $\bm{L_y}$&\footnotesize \SI{50.0}{\milli\meter} \\
+\footnotesize Nombre de plans&\footnotesize $\bm{N_{\text{plans}}}$&\footnotesize 5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\normalsize 
+\subsectionbox{Constantes d'empilement hexagonal}
+\footnotesize 
+
+\noindent Les constantes géométriques de l'empilement hexagonal compact sont dérivées de considérations trigonométriques :
+
+\begin{table}[h!]
+\centering
+\captionsetup{labelformat=empty}
+\caption{\footnotesize Constantes de l'empilement hexagonal compact}
+\begin{tabular}{@{}llcc@{}}
+\toprule
+\footnotesize \textbf{Constante}&\footnotesize \textbf{Formule}&\footnotesize \textbf{Expression}&\footnotesize \textbf{Valeur (mm)}\\
+\midrule
+\footnotesize Espacement \textbf{Y} (rangées)&\footnotesize $\bm{\Delta y_{\text{hex}}}$&\footnotesize $\bm{d} \cdot \dfrac{\sqrt{\bm{3}}}{\bm{2}}$&\footnotesize  1.732 \\[0.3cm]
+\footnotesize Espacement \textbf{Z} (plans)&\footnotesize $\bm{\Delta z}$&\footnotesize $\bm{d} \cdot \sqrt{\dfrac{\bm{2}}{\bm{3}}}$&\footnotesize 1.633 \\[0.3cm]
+\footnotesize Décalage \textbf{X} (plans B)&\footnotesize $\bm{\delta x_B}$&\footnotesize $\dfrac{\bm{d}}{\bm{2}}$&\footnotesize 1.000 \\[0.3cm]
+\footnotesize Décalage \textbf{Y} (plans B)&\footnotesize $\bm{\delta y_B}$&\footnotesize $\dfrac{\bm{d}}{\bm{2}\sqrt{\bm{3}}}$&\footnotesize  0.577 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%==============================================================================
+\normalsize 
+\sectionbox{Structure de l'empilement}
+\footnotesize 
+%==============================================================================
+
+\normalsize 
+\subsectionbox{Séquence des plans ABABA}
+\footnotesize 
+
+\noindent L'empilement hexagonal compact utilise une \color{blue}\textbf{séquence alternée de deux types de plans}\color{black} :
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[scale=0.5, >=Stealth]
+
+% Titre
+\node[font=\large\bfseries] at (6,9) {\footnotesize Séquence des Plans ABABA};
+
+% Axe Z
+\draw[->, thick] (0,0) -- (0,8) node[above] {$\bm{z}$};
+
+% Paramètres
+\def\dz{1.4}
+\def\baseZ{0.5}
+
+% Plan 1 (A)
+\def\z{0.5}
+\fill[billeA!70] (1,\z) circle (0.4);
+\fill[billeA!70] (2.2,\z) circle (0.4);
+\fill[billeA!70] (3.4,\z) circle (0.4);
+\fill[billeA!70] (4.6,\z) circle (0.4);
+\fill[billeA!70] (5.8,\z) circle (0.4);
+\node[right] at (11,\z) {\footnotesize \textbf{Plan 1 (Type A)} --- $\bm{z} = \bm{r}$};
+\draw[dashed, gray] (0,\z) -- (0.6,\z);
+
+% Plan 2 (B)
+\def\z{1.9}
+\fill[billeB!70] (1.6,\z) circle (0.4);
+\fill[billeB!70] (2.8,\z) circle (0.4);
+\fill[billeB!70] (4.0,\z) circle (0.4);
+\fill[billeB!70] (5.2,\z) circle (0.4);
+\node[right] at (11,\z) {\footnotesize \textbf{Plan 2 (Type B)} --- $\bm{z} = \bm{r} + \bm{\Delta z}$};
+\draw[dashed, gray] (0,\z) -- (1.2,\z);
+
+% Plan 3 (A)
+\def\z{3.3}
+\fill[billeA!70] (1,\z) circle (0.4);
+\fill[billeA!70] (2.2,\z) circle (0.4);
+\fill[billeA!70] (3.4,\z) circle (0.4);
+\fill[billeA!70] (4.6,\z) circle (0.4);
+\fill[billeA!70] (5.8,\z) circle (0.4);
+\node[right] at (11,\z) {\footnotesize \textbf{Plan 3 (Type A)} --- $\bm{z} = \bm{r} + \bm{2\Delta z}$};
+\draw[dashed, gray] (0,\z) -- (0.6,\z);
+
+% Plan 4 (B)
+\def\z{4.7}
+\fill[billeB!70] (1.6,\z) circle (0.4);
+\fill[billeB!70] (2.8,\z) circle (0.4);
+\fill[billeB!70] (4.0,\z) circle (0.4);
+\fill[billeB!70] (5.2,\z) circle (0.4);
+\node[right] at (11,\z) {\footnotesize \textbf{Plan 4 (Type B)} --- $\bm{z} = \bm{r} + \bm{3\Delta z}$};
+\draw[dashed, gray] (0,\z) -- (1.2,\z);
+
+% Plan 5 (A)
+\def\z{6.1}
+\fill[billeA!70] (1,\z) circle (0.4);
+\fill[billeA!70] (2.2,\z) circle (0.4);
+\fill[billeA!70] (3.4,\z) circle (0.4);
+\fill[billeA!70] (4.6,\z) circle (0.4);
+\fill[billeA!70] (5.8,\z) circle (0.4);
+\node[right] at (11,\z) {\footnotesize \textbf{Plan 5 (Type A)} --- $\bm{z} = \bm{r} + \bm{4\Delta z}$};
+\draw[dashed, gray] (0,\z) -- (0.6,\z);
+
+% Accolade épaisseur totale
+\draw[decorate, decoration={brace, amplitude=10pt, raise=5pt}, thick]
+    (7.5,0.1) -- (7.5,6.5) node[midway, right=15pt] {$\bm{h_{\text{total}}}$};
+
+% Légende
+\fill[billeA!70] (-3,-1) circle (0.3);
+\node[right] at (-2.5,-1) { \textbf{\footnotesize Plan Type A (décalage nul)} };
+\fill[billeB!70] (10,-1) circle (0.3);
+\node[right] at (10.5,-1) { \textbf{\footnotesize Plan Type B (décalé)}};
+
+\end{tikzpicture}
+\captionsetup{labelformat=empty}
+\caption{\footnotesize Vue en coupe XZ de l'empilement ABABA. Les plans de type B sont décalés horizontalement pour s'insérer dans les creux des plans A.}
+\end{figure}
+
+\newpage
+
+
+\normalsize 
+\subsectionbox{Positions en $z$ des plans}
+\footnotesize 
+
+\begin{table}[h!]
+\centering
+\captionsetup{labelformat=empty}
+\caption{\footnotesize Positions verticales des 5 plans (avec $\bm{}\text{baseZ} = 0$)}
+\begin{tabular}{@{}cclc@{}}
+\toprule
+\footnotesize \textbf{Plan} &\footnotesize  \textbf{Type} &\footnotesize  \textbf{Formule} &\footnotesize  \textbf{Position $z$ (mm)} \\
+\midrule
+\footnotesize \textbf{1} &\footnotesize  \textbf{A} &\footnotesize  $\bm{r}$ &\footnotesize 1.000 \\
+\footnotesize \textbf{2} &\footnotesize  \textbf{B} &\footnotesize  $\bm{r} + \bm{\Delta} \bm{z}$ &\footnotesize 2.633 \\
+\footnotesize \textbf{3} &\footnotesize  \textbf{A} &\footnotesize  $\bm{r} + 2\bm{\Delta} \bm{z}$ &\footnotesize 4.266 \\
+\footnotesize \textbf{4} &\footnotesize  \textbf{B} &\footnotesize  $\bm{r} + 3\bm{\Delta} \bm{z}$ &\footnotesize5.899 \\
+\footnotesize \textbf{5} &\footnotesize  \textbf{A} &\footnotesize  $\bm{r} + 4\bm{\Delta} \bm{z}$ &\footnotesize 7.532 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%==============================================================================
+\normalsize 
+\sectionbox{Arrangement Hexagonal dans un Plan}
+\footnotesize 
+%==============================================================================
+
+\normalsize 
+\subsectionbox{Structure hexagonale}
+\footnotesize 
+
+\noindent Dans chaque plan, les billes sont arrangées selon un motif hexagonal où chaque bille est entourée de 6 voisines équidistantes.
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[scale=0.8, >=Stealth]
+
+% Titre
+\node[font=\large\bfseries] at (5,7.5) {\footnotesize Arrangement Hexagonal dans un Plan (Type A)};
+
+% Grille de billes
+\def\d{1.2}
+\def\dyh{1.039}  % d * sqrt(3)/2
+
+% Rangée 0 (y = 0)
+\foreach \i in {0,1,2,3,4,5,6,7} {
+    \fill[billeA!60] (\i*\d + 0.6, 0.6) circle (0.5);
+}
+
+% Rangée 1 (y = dy_hex, décalée de r)
+\foreach \i in {0,1,2,3,4,5,6,7} {
+    \fill[billeA!60] (\i*\d + 1.2, 0.6 + \dyh) circle (0.5);
+}
+
+% Rangée 2 (y = 2*dy_hex)
+\foreach \i in {0,1,2,3,4,5,6,7} {
+    \fill[billeA!60] (\i*\d + 0.6, 0.6 + 2*\dyh) circle (0.5);
+}
+
+% Rangée 3 (y = 3*dy_hex, décalée)
+\foreach \i in {0,1,2,3,4,5,6,7} {
+    \fill[billeA!60] (\i*\d + 1.2, 0.6 + 3*\dyh) circle (0.5);
+}
+
+% Rangée 4 (y = 4*dy_hex)
+\foreach \i in {0,1,2,3,4,5,6,7} {
+    \fill[billeA!60] (\i*\d + 0.6, 0.6 + 4*\dyh) circle (0.5);
+}
+
+% Rangée 5 (y = 5*dy_hex, décalée)
+\foreach \i in {0,1,2,3,4,5,6} {
+    \fill[billeA!60] (\i*\d + 1.2, 0.6 + 5*\dyh) circle (0.5);
+}
+
+% Axes
+\draw[->, thick] (0,0) -- (10.5,0) node[right] {$\bm{x}$};
+\draw[->, thick] (0,0) -- (0,6.5) node[above] {$\bm{y}$};
+
+% Cotations
+\draw[<->, thick, blue] (0.6, -0.5) -- (1.8, -0.5) node[midway, below] {$\bm{d}$};
+\draw[<->, thick, red] (-0.5, 0.6) -- (-0.5, 0.6 + \dyh) node[midway, left] {$\bm{\Delta y_{\text{hex}}}$};
+
+% Mise en évidence de l'hexagone
+\draw[very thick, orange, dashed] (3, 0.6 + 2*\dyh) -- (3.6, 0.6 + \dyh) -- (4.8, 0.6 + \dyh) 
+    -- (5.4, 0.6 + 2*\dyh) -- (4.8, 0.6 + 3*\dyh) -- (3.6, 0.6 + 3*\dyh) -- cycle;
+
+% Annotation hexagone
+\node[orange, font=\small] at (4.2, 0.6 + 2*\dyh) {6 voisins};
+
+\end{tikzpicture}
+\captionsetup{labelformat=empty}
+\caption{\footnotesize Vue de dessus d'un plan de type A montrant l'arrangement hexagonal. Chaque bille (sauf aux bords) possède 6 voisines équidistantes. Les rangées impaires sont décalées de $\bm{}r$ en $\bm{}x$.}
+\end{figure}
+ 
+\normalsize 
+\subsectionbox{Décalage des rangées}
+\footnotesize 
+
+\noindent L'algorithme de placement utilise un décalage alterné des rangées :
+
+\begin{equation*}
+\bm{x_{\text{offset}}}(\bm{\text{row}}) = 
+\begin{cases}
+\bm{0} & \bm{}\text{si row est pair} \\
+\bm{r} = \dfrac{\bm{d}}{\bm{2}} & \bm{\text{si row est impair}}
+\end{cases}
+\end{equation*}
+
+\newpage
+
+%==============================================================================
+\normalsize 
+\sectionbox{Différence entre Plans A et B}
+\footnotesize 
+%==============================================================================
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[scale=0.8, >=Stealth]
+
+% ============== PLAN A (gauche) ==============
+\node[font=\bfseries] at (3,6) {\footnotesize Plan Type A};
+\node[font=\small] at (3,5.5) {(\footnotesize Plans 1, 3, 5)};
+
+\def\d{0.9}
+\def\dyh{0.78}
+
+% Rangées plan A
+\foreach \i in {0,1,2,3,4,5} {
+    \fill[billeA!70] (\i*\d + 0.5, 0.5) circle (0.35);
+}
+\foreach \i in {0,1,2,3,4,5} {
+    \fill[billeA!70] (\i*\d + 0.95, 0.5 + \dyh) circle (0.35);
+}
+\foreach \i in {0,1,2,3,4,5} {
+    \fill[billeA!70] (\i*\d + 0.5, 0.5 + 2*\dyh) circle (0.35);
+}
+\foreach \i in {0,1,2,3,4,5} {
+    \fill[billeA!70] (\i*\d + 0.95, 0.5 + 3*\dyh) circle (0.35);
+}
+\foreach \i in {0,1,2,3,4,5} {
+    \fill[billeA!70] (\i*\d + 0.5, 0.5 + 4*\dyh) circle (0.35);
+}
+
+% Axes plan A
+\draw[->, thick] (0,0) -- (6,0) node[right] {$x$};
+\draw[->, thick] (0,0) -- (0,4.5) node[above] {$y$};
+
+% Point origine
+\fill[red] (0,0) circle (0.08);
+\node[red, below left, font=\small] at (0,0) {$(0,0)$};
+
+% ============== PLAN B (droite) ==============
+\begin{scope}[xshift=8cm]
+\node[font=\bfseries] at (3,6) {Plan Type B};
+\node[font=\small] at (3,5.5) {(Plans 2, 4)};
+
+% Décalages
+\def\dxB{0.45}
+\def\dyB{0.26}
+
+% Rangées plan B (décalées)
+\foreach \i in {0,1,2,3,4,5} {
+    \fill[billeB!70] (\i*\d + 0.5 + \dxB, 0.5 + \dyB) circle (0.35);
+}
+\foreach \i in {0,1,2,3,4,5} {
+    \fill[billeB!70] (\i*\d + 0.95 + \dxB, 0.5 + \dyh + \dyB) circle (0.35);
+}
+\foreach \i in {0,1,2,3,4,5} {
+    \fill[billeB!70] (\i*\d + 0.5 + \dxB, 0.5 + 2*\dyh + \dyB) circle (0.35);
+}
+\foreach \i in {0,1,2,3,4,5} {
+    \fill[billeB!70] (\i*\d + 0.95 + \dxB, 0.5 + 3*\dyh + \dyB) circle (0.35);
+}
+\foreach \i in {0,1,2,3,4} {
+    \fill[billeB!70] (\i*\d + 0.5 + \dxB, 0.5 + 4*\dyh + \dyB) circle (0.35);
+}
+
+% Axes plan B
+\draw[->, thick] (0,0) -- (6,0) node[right] {$x$};
+\draw[->, thick] (0,0) -- (0,4.5) node[above] {$y$};
+
+% Point origine et décalage
+\fill[red] (0,0) circle (0.08);
+\node[red, below left, font=\small] at (0,0) {$(0,0)$};
+
+% Flèches de décalage
+\draw[->, very thick, green!60!black] (0,0) -- (\dxB, \dyB);
+\node[green!60!black, right, font=\small] at (\dxB + 0.1, \dyB + 0.2) {$(\delta x_B, \delta y_B)$};
+
+\end{scope}
+
+% Tableau comparatif en bas
+\node at (7, -1.5) {
+\begin{tabular}{|c|c|c|}
+\hline
+\footnotesize \textbf{Type} &\footnotesize \textbf{Décalage X} &\footnotesize \textbf{Décalage Y} \\
+\hline
+\footnotesize A &\footnotesize 0 &\footnotesize 0 \\
+\hline
+\footnotesize B &\footnotesize $\bm{d}/\bm{2} = \bm{1.0}$ mm &\footnotesize $\bm{d}/(\bm{2}\sqrt{\bm{3}}) = \bm{0.577}$ mm \\
+\hline
+\end{tabular}
+};
+
+\end{tikzpicture}
+\captionsetup{labelformat=empty}
+\caption{\footnotesize Comparaison des plans de type A et B. Le plan B est décalé de $(\bm{\delta x_B}, \bm{\delta y_B})$ pour que ses billes s'insèrent dans les interstices du plan A.}
+\end{figure}
+
+%==============================================================================
+\normalsize 
+\sectionbox{Compacité de l'Empilement}
+\footnotesize 
+%==============================================================================
+
+\normalsize 
+\subsectionbox{Compacité théorique}
+\footnotesize 
+
+\noindent L'arrangement hexagonal compact (HCP) possède une compacité théorique de :
+
+\begin{equation*}
+\bm{\eta_{\text{HCP}}} = \frac{\bm{\pi}}{\bm{3}\sqrt{\bm{2}}} \approx \bm{74.05}\%
+\end{equation*}
+
+\noindent C'est la densité de remplissage maximale pour un empilement de sphères identiques, partagée avec l'arrangement cubique à faces centrées (CFC).
+
+\normalsize 
+\subsectionbox{Comparaison des arrangements}
+\footnotesize 
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,
+    bar width=1.8cm,
+    width=14cm,
+    height=8cm,
+    ylabel={Compacité (\%)},
+    symbolic x coords={Cubique Simple, Cubique Centré, CFC/HCP},
+    xtick=data,
+    ymin=0,
+    ymax=85,
+    nodes near coords,
+    nodes near coords align={vertical},
+    every node near coord/.append style={font=\bfseries},
+    grid=major,
+    ymajorgrids=true,
+    legend pos=north west,
+]
+\addplot[fill=blue!50] coordinates {(Cubique Simple, 52.4) (Cubique Centré, 68.0) (CFC/HCP, 74.05)};
+\end{axis}
+\end{tikzpicture}
+\captionsetup{labelformat=empty}
+\caption{Comparaison des compacités pour différents arrangements cristallins de sphères.}
+\end{figure}
+
+\begin{table}[h!]
+\centering
+\captionsetup{labelformat=empty}
+\caption{\footnotesize Comparaison des différents arrangements}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\footnotesize \textbf{Arrangement}&\footnotesize \textbf{Compacité}&\footnotesize \textbf{Coordination}&\footnotesize \textbf{Gain vs CS} \\
+\midrule
+\footnotesize Cubique Simple (CS) &\footnotesize  52.4\% &\footnotesize  6 &\footnotesize  Référence \\
+\footnotesize Cubique Centré (CC) &\footnotesize  68.0\% &\footnotesize  8 &\footnotesize  +30\% \\
+\footnotesize \textbf{CFC / HCP} &\footnotesize  \textbf{74.05\%} &\footnotesize  \textbf{12} &\footnotesize  \textbf{+41\%} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%==============================================================================
+\normalsize 
+\sectionbox{Dimensions de l'Empilement}
+\footnotesize 
+%==============================================================================
+
+\normalsize 
+\subsectionbox{Épaisseur totale}
+\footnotesize 
+
+\noindent L'épaisseur totale de l'empilement de 5 plans est :
+
+\begin{equation*}
+\bm{h_{\text{total}}} = \bm{r} + \bm{4} \cdot \bm{\Delta z} + \bm{r} = \bm{d} + \bm{4} \cdot \bm{d}\sqrt{\frac{\bm{2}}{\bm{3}}}
+\end{equation*}
+
+\begin{equation*}
+\bm{h_{\text{total}}} = \bm{2} + \bm{4} \times \bm{1.633} = \bm{8.53 \text{ mm}}
+\end{equation*}
+
+\normalsize 
+\subsectionbox{Schéma des dimensions}
+\footnotesize 
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[scale=0.6, >=Stealth]
+
+% Container
+\draw[thick, dashed, gray] (0,0) rectangle (10,8);
+\node[gray, above] at (5,8) {Container $50 \times 50$ mm²};
+
+% Billes (coupe XZ)
+\def\dz{1.3}
+\def\r{0.5}
+
+% Plan 1
+\foreach \x in {1,2.2,3.4,4.6,5.8,7,8.2,9.4} {
+    \fill[billeA!70] (\x, 1) circle (\r);
+}
+\node[left] at (0,1) {$\bm{z_1}$};
+
+% Plan 2
+\foreach \x in {1.6,2.8,4,5.2,6.4,7.6,8.8} {
+    \fill[billeB!70] (\x, 1+\dz) circle (\r);
+}
+\node[left] at (0,1+\dz) {$\bm{z_2}$};
+
+% Plan 3
+\foreach \x in {1,2.2,3.4,4.6,5.8,7,8.2,9.4} {
+    \fill[billeA!70] (\x, 1+2*\dz) circle (\r);
+}
+\node[left] at (0,1+2*\dz) {$\bm{z_3}$};
+
+% Plan 4
+\foreach \x in {1.6,2.8,4,5.2,6.4,7.6,8.8} {
+    \fill[billeB!70] (\x, 1+3*\dz) circle (\r);
+}
+\node[left] at (0,1+3*\dz) {$\bm{z_4}$};
+
+% Plan 5
+\foreach \x in {1,2.2,3.4,4.6,5.8,7,8.2,9.4} {
+    \fill[billeA!70] (\x, 1+4*\dz) circle (\r);
+}
+\node[left] at (0,1+4*\dz) {$\bm{z_5}$};
+
+% Cotations
+\draw[<->, thick, blue] (10.5, 1-\r) -- (10.5, 1+4*\dz+\r) 
+    node[midway, right, font=\small] {$\bm{h} = \bm{8.53}$ mm};
+
+\draw[<->, thick, red] (11.5, 1) -- (11.5, 1+\dz) 
+    node[midway, right, font=\small] {$\bm{\Delta z} = \bm{1.63}$ mm};
+
+% Base Z
+\draw[dashed] (0, 1-\r) -- (10.5, 1-\r);
+\node[below, font=\small] at (5, 1-\r-0.2) {baseZ};
+
+% Axe
+\draw[->, thick] (-0.5,-0.5) -- (11,-0.5) node[right] {$\bm{x}$};
+\draw[->, thick] (-0.5,-0.5) -- (-0.5,8.5) node[above] {$\bm{z}$};
+
+\end{tikzpicture}
+\captionsetup{labelformat=empty}
+\caption{Coupe XZ montrant les dimensions de l'empilement. L'épaisseur totale est de 8.53 mm pour 5 plans.}
+\end{figure}
+
+%==============================================================================
+\normalsize 
+\sectionbox{Estimation du Nombre de Billes}
+\footnotesize 
+%==============================================================================
+
+\normalsize 
+\subsectionbox{Calcul théorique}
+\footnotesize 
+
+\noindent Pour un container de $50 \times 50$ mm² :
+
+\begin{itemize}
+    \item \textbf{Billes par rangée} : $N_x = \lfloor L_x / d \rfloor = \lfloor 50/2 \rfloor = 25$
+    \item \textbf{Rangées par plan} : $N_y = \lfloor L_y / \Delta y_{\text{hex}} \rfloor = \lfloor 50/1.732 \rfloor \approx 28-29$
+    \item \textbf{Billes par plan} : $N_{\text{plan}} \approx 25 \times 28 \approx 625-700$
+    \item \textbf{Total (5 plans)} : $N_{\text{total}} \approx 3200-3500$ billes
+\end{itemize}
+
+
+\newpage
+
+%==============================================================================
+\normalsize 
+\sectionbox{Algorithme de Placement}
+\footnotesize 
+%==============================================================================
+
+\normalsize 
+\subsectionbox{Pseudo-code}
+\footnotesize 
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[node distance=1.2cm, auto,
+    block/.style={rectangle, draw, fill=blue!20, text width=8cm, text centered, rounded corners, minimum height=1cm},
+    decision/.style={diamond, draw, fill=green!20, text width=3cm, text centered, aspect=2},
+    line/.style={draw, -Stealth, thick}]
+
+\node[block] (init) {Initialiser : $d$, $r$, $L_x$, $L_y$, baseZ};
+\node[block, below=of init] (calcul) {Calculer : $\Delta y_{\text{hex}}$, $\Delta z$, $\delta x_B$, $\delta y_B$, $z[5]$};
+\node[block, below=of calcul] (loop1) {\textbf{Pour} plan = 0 à 4};
+\node[block, below=of loop1] (type) {Déterminer type : A (plan pair) ou B (plan impair)};
+\node[block, below=of type] (offset) {Calculer décalages : offX, offY};
+\node[block, below=of offset] (loop2) {\textbf{Pour} chaque rangée row};
+\node[block, below=of loop2] (ypos) {$y_c = y_0 + \text{row} \times \Delta y_{\text{hex}}$};
+\node[block, below=of ypos] (loop3) {\textbf{Pour} chaque position x};
+\node[block, below=of loop3] (place) {Placer bille à $(x_c, y_c, z[\text{plan}])$};
+
+\path[line] (init) -- (calcul);
+\path[line] (calcul) -- (loop1);
+\path[line] (loop1) -- (type);
+\path[line] (type) -- (offset);
+\path[line] (offset) -- (loop2);
+\path[line] (loop2) -- (ypos);
+\path[line] (ypos) -- (loop3);
+\path[line] (loop3) -- (place);
+
+\end{tikzpicture}
+
+\caption{Organigramme simplifié de l'algorithme de placement des billes.}
+\end{figure}
+
+\newpage
+
+\normalsize 
+\subsectionbox{Code source C++}
+\footnotesize 
+
+
+% Inclusion du code depuis un fichier externe
+% Placez le fichier CreateBillesEmpilement.cpp dans le meme repertoire
+\lstinputlisting[
+    language=C++,title={Fonction CreateBillesEmpilement pour Geant4}
+]{CreateBillesEmpilement.cpp}
+
+
+\end{document}

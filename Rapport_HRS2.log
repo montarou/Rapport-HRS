@@ -1,0 +1,2075 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.8)  26 DEC 2025 10:34
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./Rapport_HRS2.tex
+(Rapport_HRS2.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-06>
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/base\article
+.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.
+clo
+File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\palat
+ino.sty
+Package: palatino 2020/03/25 PSNFSS-v9.3 (SPQR) 
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc
+.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 11
+6.
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ppl
+.fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/base\inputen
+c.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geo
+metry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/graphics\key
+val.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvt
+ex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifte
+x.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count283
+\Gm@cntv=\count284
+\c@Gm@tempcnt=\count285
+\Gm@bindingoffset=\dimen149
+\Gm@wd@mp=\dimen150
+\Gm@odd@mp=\dimen151
+\Gm@even@mp=\dimen152
+\Gm@layoutwidth=\dimen153
+\Gm@layoutheight=\dimen154
+\Gm@layouthoffset=\dimen155
+\Gm@layoutvoffset=\dimen156
+\Gm@dimlist=\toks20
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geo
+metry.cfg))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/graphics\gra
+phicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/graphics\gra
+phics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/graphics\tri
+g.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg
+\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def
+\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen157
+\Gin@req@width=\dimen158
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsm
+ath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amst
+ext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsg
+en.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen159
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsb
+sy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen160
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amso
+pn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count286
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count287
+\leftroot@=\count288
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count289
+\DOTSCASE@=\count290
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen161
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count291
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count292
+\dotsspace@=\muskip17
+\c@parentequation=\count293
+\dspbrk@lvl=\count294
+\tag@help=\toks22
+\row@=\count295
+\column@=\count296
+\maxfields@=\count297
+\andhelp@=\toks23
+\eqnshift@=\dimen162
+\alignsep@=\dimen163
+\tagshift@=\dimen164
+\tagwidth@=\dimen165
+\totwidth@=\dimen166
+\lineht@=\dimen167
+\@envbody=\toks24
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ams
+symb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ams
+fonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
+Package: bm 2025/10/21 v1.2g Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siun
+itx.sty
+Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count298
+\l__siunitx_number_exponent_fixed_int=\count299
+\l__siunitx_number_min_decimal_int=\count300
+\l__siunitx_number_min_integer_int=\count301
+\l__siunitx_number_round_precision_int=\count302
+\l__siunitx_number_lower_threshold_int=\count303
+\l__siunitx_number_upper_threshold_int=\count304
+\l__siunitx_number_group_first_int=\count305
+\l__siunitx_number_group_size_int=\count306
+\l__siunitx_number_group_minimum_int=\count307
+\l__siunitx_angle_tmp_dim=\dimen168
+\l__siunitx_angle_marker_box=\box55
+\l__siunitx_angle_unit_box=\box56
+\l__siunitx_compound_count_int=\count308
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/translations
+\translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
+ (CN)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\eto
+olbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count309
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds
+\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\
+infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\lt
+xcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+\l__siunitx_table_tmp_box=\box57
+\l__siunitx_table_tmp_dim=\dimen169
+\l__siunitx_table_column_width_dim=\dimen170
+\l__siunitx_table_integer_box=\box58
+\l__siunitx_table_decimal_box=\box59
+\l__siunitx_table_uncert_box=\box60
+\l__siunitx_table_before_box=\box61
+\l__siunitx_table_after_box=\box62
+\l__siunitx_table_before_dim=\dimen171
+\l__siunitx_table_carry_dim=\dimen172
+\l__siunitx_unit_tmp_int=\count310
+\l__siunitx_unit_position_int=\count311
+\l__siunitx_unit_total_int=\count312
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.
+sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen173
+\ar@mcellbox=\box63
+\extrarowheight=\dimen174
+\NC@list=\toks26
+\extratabsurround=\skip54
+\backup@length=\skip55
+\ar@cellbox=\box64
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\boo
+ktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen175
+\lightrulewidth=\dimen176
+\cmidrulewidth=\dimen177
+\belowrulesep=\dimen178
+\belowbottomsep=\dimen179
+\aboverulesep=\dimen180
+\abovetopsep=\dimen181
+\cmidrulesep=\dimen182
+\cmidrulekern=\dimen183
+\defaultaddspace=\dimen184
+\@cmidla=\count313
+\@cmidlb=\count314
+\@aboverulesep=\dimen185
+\@belowrulesep=\dimen186
+\@thisruleclass=\count315
+\@lastruleclass=\count316
+\@thisrulewidth=\dimen187
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/multirow\mul
+tirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip56
+\multirow@cntb=\count317
+\multirow@dima=\skip57
+\bigstrutjot=\dimen188
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/float\float.
+sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count318
+\float@exts=\toks27
+\float@box=\box65
+\@float@everytoks=\toks28
+\@floatcapt=\box66
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyp
+erref.sty
+Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kv
+setkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/kvdefineke
+ys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\
+pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hyco
+lor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nam
+eref.sty
+Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/refcount\ref
+count.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/gettitlest
+ring\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kv
+options.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count319
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\
+stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen189
+\Hy@linkcounter=\count320
+\Hy@pagecounter=\count321
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1
+enc.def
+File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\in
+tcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count322
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pue
+nc.def
+File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4195.
+Package hyperref Info: Link nesting OFF on input line 4200.
+Package hyperref Info: Hyper index ON on input line 4203.
+Package hyperref Info: Plain pages OFF on input line 4210.
+Package hyperref Info: Backreferencing OFF on input line 4215.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4462.
+\c@Hy@tempcnt=\count323
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4801.
+\XeTeXLinkMargin=\dimen190
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bit
+set.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc
+\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count324
+\Field@Width=\dimen191
+\Fld@charsize=\dimen192
+Package hyperref Info: Hyper figures OFF on input line 6078.
+Package hyperref Info: Link nesting OFF on input line 6083.
+Package hyperref Info: Hyper index ON on input line 6086.
+Package hyperref Info: backreferencing OFF on input line 6093.
+Package hyperref Info: Link coloring OFF on input line 6098.
+Package hyperref Info: Link coloring with OCG OFF on input line 6103.
+Package hyperref Info: PDF/A mode OFF on input line 6108.
+\Hy@abspage=\count325
+\c@Item=\count326
+\c@Hfootnote=\count327
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpd
+ftex.def
+File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
+\Fld@listcount=\count328
+\c@bookmark@seq@number=\count329
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/rerunfileche
+ck\rerunfilecheck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/uniquecoun
+ter\uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
+)
+\Hy@SectionHShift=\skip58
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\boo
+kmark.sty
+Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm
+-pdftex.def
+File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
+)
+\BKM@id=\count330
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolo
+r.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg
+\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mat
+hcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\col
+ortbl.sty
+Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
+\everycr=\toks29
+\minrowclearance=\skip59
+\rownum=\count331
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvi
+psnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\svgna
+m.def
+File: svgnam.def 2024/09/29 v3.02 Predefined colors according to SVG 1.1 (UK)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\x11na
+m.def
+File: x11nam.def 2024/09/29 v3.02 Predefined colors according to Unix/X11 (UK)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontend
+layer\tikz.sty
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclay
+er\pgf.sty
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilitie
+s\pgfrcs.sty
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilit
+ies\pgfutil-common.tex
+\pgfutil@everybye=\toks30
+\pgfutil@tempdima=\dimen193
+\pgfutil@tempdimb=\dimen194
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilit
+ies\pgfutil-latex.def
+\pgfutil@abb=\box67
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilit
+ies\pgfrcs.code.tex
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.re
+vision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclay
+er\pgfcore.sty
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemla
+yer\pgfsys.sty
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/system
+layer\pgfsys.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilit
+ies\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilit
+ies\pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks33
+))
+\pgf@x=\dimen195
+\pgf@y=\dimen196
+\pgf@xa=\dimen197
+\pgf@ya=\dimen198
+\pgf@xb=\dimen199
+\pgf@yb=\dimen256
+\pgf@xc=\dimen257
+\pgf@yc=\dimen258
+\pgf@xd=\dimen259
+\pgf@yd=\dimen260
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count332
+\c@pgf@countb=\count333
+\c@pgf@countc=\count334
+\c@pgf@countd=\count335
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
+\pgf@sys@id@count=\count336
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/system
+layer\pgf.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/system
+layer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/system
+layer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/system
+layer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count337
+\pgfsyssoftpath@bigbuffer@items=\count338
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/system
+layer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basicl
+ayer\pgfcore.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\p
+gfmath.code.tex
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\p
+gfmathutil.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\p
+gfmathparser.code.tex
+\pgfmath@dimen=\dimen261
+\pgfmath@count=\count339
+\pgfmath@box=\box68
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\p
+gfmathfunctions.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\p
+gfmathfunctions.basic.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\p
+gfmathfunctions.trigonometric.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\p
+gfmathfunctions.random.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\p
+gfmathfunctions.comparison.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\p
+gfmathfunctions.base.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\p
+gfmathfunctions.round.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\p
+gfmathfunctions.misc.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\p
+gfmathfunctions.integerarithmetics.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\p
+gfmathcalc.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\p
+gfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count340
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\p
+gfint.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basicl
+ayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen262
+\pgf@picmaxx=\dimen263
+\pgf@picminy=\dimen264
+\pgf@picmaxy=\dimen265
+\pgf@pathminx=\dimen266
+\pgf@pathmaxx=\dimen267
+\pgf@pathminy=\dimen268
+\pgf@pathmaxy=\dimen269
+\pgf@xx=\dimen270
+\pgf@xy=\dimen271
+\pgf@yx=\dimen272
+\pgf@yy=\dimen273
+\pgf@zx=\dimen274
+\pgf@zy=\dimen275
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basicl
+ayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen276
+\pgf@path@lasty=\dimen277
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basicl
+ayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen278
+\pgf@shorten@start@additional=\dimen279
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basicl
+ayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box69
+\pgf@hbox=\box70
+\pgf@layerbox@main=\box71
+\pgf@picture@serial@count=\count341
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basicl
+ayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen280
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basicl
+ayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen281
+\pgf@pt@y=\dimen282
+\pgf@pt@temp=\dimen283
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basicl
+ayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basicl
+ayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basicl
+ayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basicl
+ayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen284
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basicl
+ayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen285
+\pgf@sys@shading@range@num=\count342
+\pgf@shadingcount=\count343
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basicl
+ayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basicl
+ayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box72
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basicl
+ayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basicl
+ayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basicl
+ayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basicl
+ayer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/module
+s\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box73
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/module
+s\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatib
+ility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen286
+\pgf@nodesepend=\dimen287
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatib
+ility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilitie
+s\pgffor.sty
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilitie
+s\pgfkeys.sty
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilit
+ies\pgfkeys.code.tex))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgf
+math.sty
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\p
+gfmath.code.tex))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilit
+ies\pgffor.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen288
+\pgffor@skip=\dimen289
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fronte
+ndlayer/tikz\tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/librar
+ies\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count344
+\pgfplotmarksize=\dimen290
+)
+\tikz@lastx=\dimen291
+\tikz@lasty=\dimen292
+\tikz@lastxsaved=\dimen293
+\tikz@lastysaved=\dimen294
+\tikz@lastmovetox=\dimen295
+\tikz@lastmovetoy=\dimen296
+\tikzleveldistance=\dimen297
+\tikzsiblingdistance=\dimen298
+\tikz@figbox=\box74
+\tikz@figbox@bg=\box75
+\tikz@tempbox=\box76
+\tikz@tempbox@bg=\box77
+\tikztreelevel=\count345
+\tikznumberofchildren=\count346
+\tikznumberofcurrentchild=\count347
+\tikz@fig@count=\count348
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/module
+s\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count349
+\pgfmatrixcurrentcolumn=\count350
+\pgf@matrix@numberofcolumns=\count351
+)
+\tikz@expandcount=\count352
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fronte
+ndlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tikz-3dplot\
+tikz-3dplot.sty
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.
+sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fronte
+ndlayer/tikz/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fronte
+ndlayer/tikz/libraries\tikzlibrary3d.code.tex
+File: tikzlibrary3d.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fronte
+ndlayer/tikz/libraries\tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/librar
+ies\pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\arrowsize=\dimen299
+)))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgf
+plots.sty
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\p
+gfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\p
+gfplots.code.tex
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\p
+gfplotscore.code.tex
+\t@pgfplots@toka=\toks42
+\t@pgfplots@tokb=\toks43
+\t@pgfplots@tokc=\toks44
+\pgfplots@tmpa=\dimen300
+\c@pgfplots@coordindex=\count353
+\c@pgfplots@scanlineindex=\count354
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/s
+ys\pgfplotssysgeneric.code.tex))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/l
+ibs\pgfplotslibrary.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/o
+ldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/librar
+ies\pgflibraryfpu.code.tex)
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks45
+\t@pgf@tokb=\toks46
+\t@pgf@tokc=\toks47
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/o
+ldpgfcompatib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/u
+til\pgfplotsutil.code.tex
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/l
+iststructure\pgfplotsliststructure.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/l
+iststructure\pgfplotsliststructureext.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/l
+iststructure\pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count355
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/l
+iststructure\pgfplotsmatrix.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/n
+umtable\pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count356
+\t@pgfplotstable@a=\toks48
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/l
+iststructure\pgfplotsdeque.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/u
+til\pgfplotsbinary.code.tex
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/u
+til\pgfplotsbinary.data.code.tex))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/u
+til\pgfplotsutil.verb.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/l
+ibs\pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count357
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/s
+ys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def)))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/u
+til\pgfplotscolormap.code.tex
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/u
+til\pgfplotscolor.code.tex))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\p
+gfplotsstackedplots.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\p
+gfplotsplothandlers.code.tex
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\p
+gfplotsmeshplothandler.code.tex
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\p
+gfplotsmeshplotimage.code.tex)))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\p
+gfplots.scaling.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\p
+gfplotscoordprocessing.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\p
+gfplots.errorbars.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\p
+gfplots.markers.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\p
+gfplotsticks.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\p
+gfplots.paths.code.tex)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fronte
+ndlayer/tikz/libraries\tikzlibrarydecorations.code.tex
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/module
+s\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen301
+\pgfdecoratedremainingdistance=\dimen302
+\pgfdecoratedinputsegmentcompleteddistance=\dimen303
+\pgfdecoratedinputsegmentremainingdistance=\dimen304
+\pgf@decorate@distancetomove=\dimen305
+\pgf@decorate@repeatstate=\count358
+\pgfdecorationsegmentamplitude=\dimen306
+\pgfdecorationsegmentlength=\dimen307
+)
+\tikz@lib@dec@box=\box78
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fronte
+ndlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/librar
+ies/decorations\pgflibrarydecorations.pathmorphing.code.tex))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fronte
+ndlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/librar
+ies/decorations\pgflibrarydecorations.pathreplacing.code.tex))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/l
+ibs\tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count359
+\pgfplots@xmin@reg=\dimen308
+\pgfplots@xmax@reg=\dimen309
+\pgfplots@ymin@reg=\dimen310
+\pgfplots@ymax@reg=\dimen311
+\pgfplots@zmin@reg=\dimen312
+\pgfplots@zmax@reg=\dimen313
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fronte
+ndlayer/tikz/libraries\tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/librar
+ies\pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fronte
+ndlayer/tikz/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/librar
+ies\pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowinset=\dimen314
+\pgfarrowlength=\dimen315
+\pgfarrowwidth=\dimen316
+\pgfarrowlinewidth=\dimen317
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fronte
+ndlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/librar
+ies/shapes\pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fronte
+ndlayer/tikz/libraries\tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fronte
+ndlayer/tikz/libraries\tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/librar
+ies/shapes\pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fronte
+ndlayer/tikz/libraries\tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/librar
+ies/shapes\pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fronte
+ndlayer/tikz/libraries\tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/librar
+ies/shapes\pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fronte
+ndlayer/tikz/libraries\tikzlibraryshapes.callouts.code.tex
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/librar
+ies/shapes\pgflibraryshapes.callouts.code.tex))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fronte
+ndlayer/tikz/libraries\tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/librar
+ies/shapes\pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodepartlowerbox=\box79
+\pgfnodeparttwobox=\box80
+\pgfnodepartthreebox=\box81
+\pgfnodepartfourbox=\box82
+\pgfnodeparttwentybox=\box83
+\pgfnodepartnineteenbox=\box84
+\pgfnodeparteighteenbox=\box85
+\pgfnodepartseventeenbox=\box86
+\pgfnodepartsixteenbox=\box87
+\pgfnodepartfifteenbox=\box88
+\pgfnodepartfourteenbox=\box89
+\pgfnodepartthirteenbox=\box90
+\pgfnodeparttwelvebox=\box91
+\pgfnodepartelevenbox=\box92
+\pgfnodeparttenbox=\box93
+\pgfnodepartninebox=\box94
+\pgfnodeparteightbox=\box95
+\pgfnodepartsevenbox=\box96
+\pgfnodepartsixbox=\box97
+\pgfnodepartfivebox=\box98
+)))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fronte
+ndlayer/tikz/libraries\tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/librar
+ies\pgflibrarypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tc
+olorbox.sty
+Package: tcolorbox 2025/09/09 version 6.8.0 text color boxes
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbat
+im.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks49
+\verbatim@line=\toks50
+\verbatim@in@stream=\read3
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/environ\envi
+ron.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\t
+rimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box99
+\tcb@upperbox=\box100
+\tcb@lowerbox=\box101
+\tcb@phantombox=\box102
+\c@tcbbreakpart=\count360
+\c@tcblayer=\count361
+\c@tcolorbox@number=\count362
+\l__tcobox_tmpa_box=\box103
+\l__tcobox_tmpa_dim=\dimen318
+\tcb@temp=\box104
+\tcb@temp=\box105
+\tcb@temp=\box106
+\tcb@temp=\box107
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tc
+braster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '6.8.0'
+\c@tcbrastercolumn=\count363
+\c@tcbrasterrow=\count364
+\c@tcbrasternum=\count365
+\c@tcbraster=\count366
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tc
+bskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.8.0'
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tik
+zfill.image.sty
+Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tik
+zfill-common.sty
+Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tik
+zlibraryfill.image.code.tex
+File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
+\l__tikzfill_img_box=\box108
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tc
+bskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.8.0'
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tc
+bbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.8.0'
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/pdfcol\pdfco
+l.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+)
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box109
+\tcb@totalupperbox=\box110
+\tcb@totallowerbox=\box111
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tc
+bhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '6.8.0'
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tc
+btheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.8.0'
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tc
+bfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '6.8.0'
+\tcbfitdim=\dimen319
+\tcb@lowerfitdim=\dimen320
+\tcb@upperfitdim=\dimen321
+\tcb@cur@hbadness=\count367
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tc
+blistingsutf8.code.tex
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.8.0'
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tc
+blistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '6.8.0'
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/listings\lis
+tings.sty
+\lst@mode=\count368
+\lst@gtempboxa=\box112
+\lst@token=\toks51
+\lst@length=\count369
+\lst@currlwidth=\dimen322
+\lst@column=\count370
+\lst@pos=\count371
+\lst@lostspace=\dimen323
+\lst@width=\dimen324
+\lst@newlines=\count372
+\lst@lineno=\count373
+\lst@maxwidth=\dimen325
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/listings\lst
+patch.sty
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/listings\lst
+misc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+\c@lstnumber=\count374
+\lst@skipnumbers=\count375
+\lst@framebox=\box113
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/listings\lis
+tings.cfg
+File: listings.cfg 2025/11/14 1.11b listings configuration
+))
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
+
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11b (Carsten Heinz)
+    so I'm assuming it got fixed.
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tc
+blistingscore.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '6.8.0'
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tc
+bprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '6.8.0'
+)
+\c@tcblisting=\count376
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/listingsutf8
+\listingsutf8.sty
+Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tc
+bexternal.code.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '6.8.0'
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tc
+bmagazine.code.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '6.8.0'
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tc
+bvignette.code.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '6.8.0'
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/fronte
+ndlayer/tikz/libraries\tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/generic/pgf/librar
+ies\pgflibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tc
+bposter.code.tex
+Library (tcolorbox): 'tcbposter.code.tex' version '6.8.0'
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/caption\capt
+ion.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/caption\capt
+ion3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen326
+\captionmargin=\dimen327
+\caption@leftmargin=\dimen328
+\caption@rightmargin=\dimen329
+\caption@width=\dimen330
+\caption@indent=\dimen331
+\caption@parindent=\dimen332
+\caption@hangindent=\dimen333
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count377
+\c@continuedfloat=\count378
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enu
+mitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip60
+\enit@outerparindent=\dimen334
+\enit@toks=\toks52
+\enit@inbox=\box114
+\enit@count@id=\count379
+\enitdp@description=\count380
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\tit
+lesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box115
+\beforetitleunit=\skip61
+\aftertitleunit=\skip62
+\ttl@plus=\dimen335
+\ttl@minus=\dimen336
+\ttl@toksa=\toks53
+\titlewidth=\dimen337
+\titlewidthlast=\dimen338
+\titlewidthfirst=\dimen339
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\pifon
+t.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\upzd.
+fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\upsy.
+fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fan
+cyvrb.sty
+Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count381
+\FV@InFile=\read4
+\FV@TabBox=\box116
+\c@FancyVerbLine=\count382
+\FV@StepNumber=\count383
+\FV@OutFile=\write4
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/fvextra\fvex
+tra.sty
+Package: fvextra 2025/05/29 v1.13.2 fvextra - extensions and patches for fancyv
+rb
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/upquote\upqu
+ote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/base\textcom
+p.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/lineno\linen
+o.sty
+Package: lineno 2025/05/13 line numbers on paragraphs v5.5
+\linenopenalty=\count384
+\output=\toks54
+\linenoprevgraf=\count385
+\linenumbersep=\dimen340
+\linenumberwidth=\dimen341
+\c@linenumber=\count386
+\c@pagewiselinenumber=\count387
+\c@LN@truepage=\count388
+\c@internallinenumber=\count389
+\c@internallinenumbers=\count390
+\quotelinenumbersep=\dimen342
+\bframerule=\dimen343
+\bframesep=\dimen344
+\bframebox=\box117
+\@LN@amsmath@ams@eqpen=\count391
+)
+\c@FancyVerbWriteLine=\count392
+\c@FancyVerbBufferLine=\count393
+\c@FV@TrueTabGroupLevel=\count394
+\c@FV@TrueTabCounter=\count395
+\FV@TabBox@Group=\box118
+\FV@bgcolorstructbox=\box119
+\FV@TmpLength=\skip63
+\c@FV@HighlightLinesStart=\count396
+\c@FV@HighlightLinesStop=\count397
+\FV@LoopCount=\count398
+\FV@NCharsBox=\box120
+\FV@BreakIndent=\dimen345
+\FV@BreakIndentNChars=\count399
+\FV@BreakSymbolSepLeft=\dimen346
+\FV@BreakSymbolSepLeftNChars=\count400
+\FV@BreakSymbolSepRight=\dimen347
+\FV@BreakSymbolSepRightNChars=\count401
+\FV@BreakSymbolIndentLeft=\dimen348
+\FV@BreakSymbolIndentLeftNChars=\count402
+\FV@BreakSymbolIndentRight=\dimen349
+\FV@BreakSymbolIndentRightNChars=\count403
+\c@FancyVerbLineBreakLast=\count404
+\FV@LineBox=\box121
+\FV@LineIndentBox=\box122
+\c@FV@BreakBufferDepth=\count405
+\FV@LineWidth=\dimen350
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\a
+lgorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+\@float@every@algorithm=\toks55
+\c@algorithm=\count406
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\a
+lgorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count407
+\c@ALC@line=\count408
+\c@ALC@rem=\count409
+\c@ALC@depth=\count410
+\ALC@tlm=\skip64
+\algorithmicindent=\skip65
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/setspace\set
+space.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/comment\comm
+ent.sty
+\CommentStream=\write5
+ Excluding comment 'comment')
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/listings\lst
+lang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/listings\lst
+lang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/listings\lst
+misc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+)
+\c@coloredsection=\count411
+\c@coloredsubsection=\count412
+\c@coloredsubsubsection=\count413
+Package translations Info: No language package found. I am going to use `englis
+h' as default language. on input line 271.
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3
+backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count414
+) (Rapport_HRS2.aux)
+\openout1 = `Rapport_HRS2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 271.
+LaTeX Font Info:    ... okay on input line 271.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 271.
+LaTeX Font Info:    ... okay on input line 271.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 271.
+LaTeX Font Info:    ... okay on input line 271.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 271.
+LaTeX Font Info:    ... okay on input line 271.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 271.
+LaTeX Font Info:    ... okay on input line 271.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 271.
+LaTeX Font Info:    ... okay on input line 271.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 271.
+LaTeX Font Info:    ... okay on input line 271.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 271.
+LaTeX Font Info:    ... okay on input line 271.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 271.
+LaTeX Font Info:    ... okay on input line 271.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\
+supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count415
+\scratchdimen=\dimen351
+\scratchbox=\box123
+\nofMPsegments=\count416
+\nofMParguments=\count417
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count418
+\MPscratchDim=\dimen352
+\MPnumerator=\count419
+\makeMPintoPDFobject=\count420
+\everyMPtoPDFconversion=\toks57
+)
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg
+\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\eps
+topdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/translations
+/dicts\translations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `tra
+nslations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `english'. on input line 271.
+Package hyperref Info: Link coloring OFF on input line 271.
+
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+\c@lstlisting=\count421
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+(Rapport_HRS2.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ums
+a.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ums
+b.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{C:/Users/Gérard Montarou/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:
+/Users/Gérard Montarou/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.e
+nc}])
+\tf@toc=\write6
+\openout6 = `Rapport_HRS2.toc'.
+
+ [2]
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 325.
+
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 32
+5.
+
+<Figures/Figure1_Skov_1999.png, id=197, 149.358pt x 127.4361pt>
+File: Figures/Figure1_Skov_1999.png Graphic file (type png)
+<use Figures/Figure1_Skov_1999.png>
+Package pdftex.def Info: Figures/Figure1_Skov_1999.png  used on input line 338.
+
+(pdftex.def)             Requested size: 224.03642pt x 191.15366pt.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 36
+5.
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr
+.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 362--366
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--376
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 377--381
+
+ []
+
+[3 <./Figures/Figure1_Skov_1999.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 382--386
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 387--391
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--396
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 397--401
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--406
+
+ []
+
+
+LaTeX Warning: Hyper reference `sec:resume11' on page 4 undefined on input line
+ 407.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--411
+
+ []
+
+
+LaTeX Warning: Hyper reference `sec:resume12' on page 4 undefined on input line
+ 412.
+
+[4]
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 4
+79.
+
+(C:\Users\Gérard Montarou\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1pp
+l.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 449--490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 492--493
+
+ []
+
+
+Package caption Warning: \label without proper reference on input line 499.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `Figure1_Joiner_1997' on page 5 undefined on input lin
+e 494.
+
+
+Package caption Warning: \label without proper reference on input line 499.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `Figure1_Joiner_1997' on page 5 undefined on input lin
+e 494.
+
+<Figures/Figure1_Joiner_1997.png, id=262, 294.34969pt x 402.00188pt>
+File: Figures/Figure1_Joiner_1997.png Graphic file (type png)
+<use Figures/Figure1_Joiner_1997.png>
+Package pdftex.def Info: Figures/Figure1_Joiner_1997.png  used on input line 49
+8.
+(pdftex.def)             Requested size: 147.17447pt x 201.00044pt.
+
+LaTeX Warning: Citation `' on page 5 undefined on input line 505.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 505--507
+
+ []
+
+[5 <./Figures/Figure1_Joiner_1997.png>]
+
+LaTeX Warning: Citation `' on page 6 undefined on input line 539.
+
+
+LaTeX Warning: Citation `' on page 6 undefined on input line 553.
+
+
+LaTeX Warning: Citation `' on page 6 undefined on input line 555.
+
+
+LaTeX Warning: Citation `' on page 6 undefined on input line 557.
+
+
+LaTeX Warning: Citation `' on page 6 undefined on input line 559.
+
+
+LaTeX Warning: Citation `' on page 6 undefined on input line 563.
+
+
+LaTeX Warning: Citation `' on page 6 undefined on input line 565.
+
+
+LaTeX Warning: Citation `' on page 6 undefined on input line 587.
+
+
+LaTeX Warning: Citation `' on page 6 undefined on input line 589.
+
+
+LaTeX Warning: Citation `' on page 6 undefined on input line 591.
+
+
+LaTeX Warning: Citation `' on page 6 undefined on input line 593.
+
+
+LaTeX Warning: Citation `' on page 6 undefined on input line 595.
+
+
+LaTeX Warning: Citation `' on page 6 undefined on input line 597.
+
+
+LaTeX Warning: Citation `' on page 6 undefined on input line 617.
+
+
+LaTeX Warning: Citation `' on page 6 undefined on input line 617.
+
+
+LaTeX Warning: Citation `' on page 6 undefined on input line 619.
+
+
+LaTeX Warning: Citation `' on page 6 undefined on input line 621.
+
+[6]
+
+LaTeX Warning: Citation `' on page 7 undefined on input line 635.
+
+
+LaTeX Warning: Citation `' on page 7 undefined on input line 651.
+
+
+LaTeX Warning: Citation `' on page 7 undefined on input line 653.
+
+
+LaTeX Warning: Citation `' on page 7 undefined on input line 669.
+
+
+LaTeX Warning: Citation `' on page 7 undefined on input line 689.
+
+
+LaTeX Warning: Citation `' on page 7 undefined on input line 705.
+
+
+LaTeX Warning: Citation `' on page 7 undefined on input line 707.
+
+
+LaTeX Warning: Citation `' on page 7 undefined on input line 725.
+
+
+LaTeX Warning: Citation `' on page 7 undefined on input line 727.
+
+
+LaTeX Warning: Citation `' on page 7 undefined on input line 745.
+
+[7]
+
+LaTeX Warning: Citation `' on page 8 undefined on input line 777.
+
+
+LaTeX Warning: Citation `' on page 8 undefined on input line 779.
+
+
+LaTeX Warning: Citation `' on page 8 undefined on input line 781.
+
+
+LaTeX Warning: Citation `' on page 8 undefined on input line 799.
+
+
+LaTeX Warning: Citation `' on page 8 undefined on input line 801.
+
+
+LaTeX Warning: Citation `' on page 8 undefined on input line 821.
+
+
+LaTeX Warning: Citation `' on page 8 undefined on input line 823.
+
+
+LaTeX Warning: Citation `' on page 8 undefined on input line 841.
+
+
+LaTeX Warning: Citation `' on page 8 undefined on input line 869.
+
+
+LaTeX Warning: Citation `' on page 8 undefined on input line 883.
+
+[8] Excluding 'comment' comment. [9] [10] [11]
+Overfull \hbox (14.30557pt too wide) in paragraph at lines 1070--1071
+[]\T1/ppl/m/n/8 L'importance de la voie DNA-PK dans la r�-pa-ra-tion des dom-ma
+ges in-duits par ra-di-a-tion est rap-port�e comme r�-duite avec l'augmentation
+
+ []
+
+<Figures/Figure2_Skov_1999.png, id=325, 1701.35625pt x 1819.39725pt>
+File: Figures/Figure2_Skov_1999.png Graphic file (type png)
+<use Figures/Figure2_Skov_1999.png>
+Package pdftex.def Info: Figures/Figure2_Skov_1999.png  used on input line 1134
+.
+(pdftex.def)             Requested size: 411.14528pt x 439.66254pt.
+
+LaTeX Warning: Reference `fig:hrs_irr' on page 12 undefined on input line 1136.
+
+
+
+LaTeX Warning: Reference `fig:hrs_irr' on page 12 undefined on input line 1136.
+
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12]
+<Figures/Figure3_Skov_1999.png, id=330, 3138.32475pt x 2572.20975pt>
+File: Figures/Figure3_Skov_1999.png Graphic file (type png)
+<use Figures/Figure3_Skov_1999.png>
+Package pdftex.def Info: Figures/Figure3_Skov_1999.png  used on input line 1175
+.
+(pdftex.def)             Requested size: 386.95897pt x 317.12958pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13 <./Figures/Figure2_Skov_1999.png>]
+
+LaTeX Warning: Reference `fig:sf2_deficit' on page 14 undefined on input line 1
+194.
+
+
+LaTeX Warning: Reference `fig:neutrophils' on page 14 undefined on input line 1
+205.
+
+[14 <./Figures/Figure3_Skov_1999.png>]
+
+LaTeX Warning: Reference `fig:neutrophils' on page 15 undefined on input line 1
+257.
+
+
+LaTeX Warning: Reference `fig:neutrophils' on page 15 undefined on input line 1
+257.
+
+
+LaTeX Warning: Reference `fig:hrs_irr' on page 15 undefined on input line 1277.
+
+
+
+LaTeX Warning: Reference `fig:sf2_deficit' on page 15 undefined on input line 1
+277.
+
+
+Underfull \hbox (badness 3428) in paragraph at lines 1282--1282
+[]|\T1/ppl/m/n/9 Nouveaux tests pr�-dic-tifs pour
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1285--1285
+[]|\T1/ppl/b/n/9 Agents chim-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1285--1285
+[]|\T1/ppl/m/n/9 Nouveaux sen-si-bil-isa-teurs
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1285--1285
+\T1/ppl/m/n/9 (pr�venir IRR) ou pro-tecteurs
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1285--1286
+[]|\T1/ppl/m/n/9 Chimiopr�vention, fac-teurs nu-tri-
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15]
+Overfull \hbox (10.64058pt too wide) in paragraph at lines 1362--1362
+ [][]\T1/ppl/b/n/10 Checkpoint 
+ []
+
+[16]
+Overfull \hbox (5.30856pt too wide) in paragraph at lines 1403--1403
+ [][]\T1/ppl/b/n/9 Checkpoint 
+ []
+
+
+Overfull \hbox (7.87056pt too wide) in paragraph at lines 1426--1426
+ [][]\T1/ppl/b/n/10 R�paration 
+ []
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 1510.
+
+Missing character: There is no � in font cmbx8!
+[17]
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family ppl in TS1 encoding.
+            Default family used instead on input line 1625.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family ppl in TS1 encoding.
+            Default family used instead on input line 1625.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family ppl in TS1 encoding.
+            Default family used instead on input line 1701.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family ppl in TS1 encoding.
+            Default family used instead on input line 1702.
+ [18]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[20] Excluding 'comment' comment. [21] [22] [23] Excluding 'comment' comment.
+[24]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2638.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2638.
+
+<Figures/Joiner_RadRes_1988.png, id=433, 601.64775pt x 421.575pt>
+File: Figures/Joiner_RadRes_1988.png Graphic file (type png)
+<use Figures/Joiner_RadRes_1988.png>
+Package pdftex.def Info: Figures/Joiner_RadRes_1988.png  used on input line 265
+0.
+(pdftex.def)             Requested size: 361.92052pt x 253.60307pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2655.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2655.
+
+<Figures/Marples_RadRes_1993.png, id=434, 269.20575pt x 421.575pt>
+File: Figures/Marples_RadRes_1993.png Graphic file (type png)
+<use Figures/Marples_RadRes_1993.png>
+Package pdftex.def Info: Figures/Marples_RadRes_1993.png  used on input line 26
+67.
+(pdftex.def)             Requested size: 226.19946pt x 354.2235pt.
+[25 <./Figures/Joiner_RadRes_1988.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2673.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2673.
+
+[26 <./Figures/Marples_RadRes_1993.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2687.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2687.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2698.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2698.
+
+<Figures/Lambin_RadRes_1994.png, id=446, 258.9675pt x 374.5995pt>
+File: Figures/Lambin_RadRes_1994.png Graphic file (type png)
+<use Figures/Lambin_RadRes_1994.png>
+Package pdftex.def Info: Figures/Lambin_RadRes_1994.png  used on input line 270
+8.
+(pdftex.def)             Requested size: 226.19946pt x 327.2136pt.
+[27]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2712.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2712.
+
+<Figures/Wouters_RadRes_1994.png, id=451, 551.661pt x 254.1495pt>
+File: Figures/Wouters_RadRes_1994.png Graphic file (type png)
+<use Figures/Wouters_RadRes_1994.png>
+Package pdftex.def Info: Figures/Wouters_RadRes_1994.png  used on input line 27
+23.
+(pdftex.def)             Requested size: 226.19946pt x 104.20972pt.
+[28 <./Figures/Lambin_RadRes_1994.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2727.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2727.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2742.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2742.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2756.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2756.
+
+[29 <./Figures/Wouters_RadRes_1994.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2770.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2770.
+
+[30] [31] [32] (Rapport_HRS2.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-06>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 51280 strings out of 467871
+ 1236825 string characters out of 5413016
+ 1948059 words of memory out of 5000000
+ 79129 multiletter control sequences out of 15000+600000
+ 677592 words of font info for 146 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 84i,21n,96p,2440b,1328s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{coloredsection.13} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{coloredsubsection.12.2} has been referenced but doe
+s not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{coloredsubsection.12.1} has been referenced but doe
+s not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{coloredsection.12} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{coloredsubsection.11.2} has been referenced but doe
+s not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{coloredsubsection.11.1} has been referenced but doe
+s not exist, replaced by a fixed one
+
+ <C:\Users\Gérard Montarou\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
+i600\tcrm0900.pk><C:/Users/Gérard Montarou/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Users/Gérard Montarou/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmbsy6.pfb><C:/Users/Gérar
+d Montarou/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cm
+bsy8.pfb><C:/Users/Gérard Montarou/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmbx6.pfb><C:/Users/Gérard Montarou/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/Gérard Montarou/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/Gé
+rard Montarou/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra
+/cmex8.pfb><C:/Users/Gérard Montarou/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmmi10.pfb><C:/Users/Gérard Montarou/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Gérard Montarou/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users
+/Gérard Montarou/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmmi7.pfb><C:/Users/Gérard Montarou/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb><C:/Users/Gérard Montarou/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/Gérard Montarou/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/
+Gérard Montarou/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmex
+tra/cmmib6.pfb><C:/Users/Gérard Montarou/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cmextra/cmmib7.pfb><C:/Users/Gérard Montarou/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Users/Gér
+ard Montarou/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/
+cmmib9.pfb><C:/Users/Gérard Montarou/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmr10.pfb><C:/Users/Gérard Montarou/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Gérard Montarou/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Gé
+rard Montarou/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8
+.pfb><C:/Users/Gérard Montarou/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmr9.pfb><C:/Users/Gérard Montarou/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Gérard Montarou/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Gérard
+ Montarou/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pf
+b><C:/Users/Gérard Montarou/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb><C:/Users/Gérard Montarou/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/Gérard Montarou/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Gér
+ard Montarou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><
+C:/Users/Gérard Montarou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatin
+o/uplb8a.pfb><C:/Users/Gérard Montarou/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/urw/palatino/uplbi8a.pfb><C:/Users/Gérard Montarou/AppData/Local/Programs/M
+iKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/Gérard Montarou/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/Users/Gérard Mont
+arou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on Rapport_HRS2.pdf (32 pages, 1666658 bytes).
+PDF statistics:
+ 943 PDF objects out of 1000 (max. 8388607)
+ 223 named destinations out of 1000 (max. 500000)
+ 765 words of extra memory for PDF output out of 10000 (max. 10000000)
+

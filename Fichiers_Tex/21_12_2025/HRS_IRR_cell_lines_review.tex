@@ -1,0 +1,520 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+\geometry{margin=2cm}
+
+\definecolor{HRSpos}{RGB}{200,230,200}
+\definecolor{HRSneg}{RGB}{255,200,200}
+\definecolor{headerblue}{RGB}{70,130,180}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textit{Lignées cellulaires testées pour HRS/IRR}}
+\fancyhead[R]{\thepage}
+
+\title{\textbf{Revue Extensive des Lignées Cellulaires de Mammifères\\Testées pour l'Hyper-Radiosensibilité (HRS)\\et la Radiorésistance Induite (IRR)}}
+\author{Compilation bibliographique}
+\date{Décembre 2025}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+L'hyper-radiosensibilité aux faibles doses (HRS) et la radiorésistance induite (IRR) sont des phénomènes observés dans la courbe de survie cellulaire à des doses inférieures à 1 Gy. L'HRS se manifeste par une sensibilité accrue aux très faibles doses (<0.3 Gy), suivie d'une résistance relative (IRR) entre 0.3 et 1 Gy.
+
+Cette revue compile les lignées cellulaires de mammifères testées pour ces phénomènes, basée sur plus de 46 publications et 101 jeux de données identifiés dans la littérature (Polgár et al., 2022).
+
+\textbf{Légende des tableaux :}
+\begin{itemize}
+    \item \colorbox{HRSpos}{Vert} = HRS positive (phénomène observé)
+    \item \colorbox{HRSneg}{Rouge} = HRS négative (pas de phénomène observé)
+    \item $\alpha_s$ = pente initiale (région HRS)
+    \item $\alpha_r$ = pente extrapolée des hautes doses
+    \item SF2 = Fraction survivante à 2 Gy
+\end{itemize}
+
+\section{Lignées Cellulaires de Hamster}
+
+\subsection{V79 - Fibroblastes de Hamster Chinois}
+
+La lignée V79 est la première lignée de mammifères dans laquelle l'HRS/IRR a été clairement caractérisée (Marples \& Joiner, 1993).
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|l|}
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Lignée}} & \textcolor{white}{\textbf{HRS}} & \textcolor{white}{\textbf{$\alpha_s/\alpha_r$}} & \textcolor{white}{\textbf{SF2}} & \textcolor{white}{\textbf{Rayonnement}} & \textcolor{white}{\textbf{Référence}} \\
+\hline
+\rowcolor{HRSpos}
+V79 (aérobie) & + & 5-10 & 0.65 & Rayons X & Marples 1993 \\
+\rowcolor{HRSpos}
+V79 (hypoxie) & + & $\sim$5 & 0.85 & Rayons X & Marples 1993 \\
+\rowcolor{HRSpos}
+V79-379A & + & -- & -- & $\pi$-mésons & Marples 1996 \\
+\rowcolor{HRSneg}
+V79 & -- & 1 & -- & Neutrons haut TEL & Marples 1993 \\
+\rowcolor{HRSpos}
+V79 & + & -- & -- & $^4$He$^{2+}$ (58.9 keV/$\mu$m) & 2002 \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Mutants de Réparation de l'ADN (Hamster)}
+
+\begin{center}
+\begin{tabular}{|l|l|c|c|l|}
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Lignée}} & \textcolor{white}{\textbf{Déficience}} & \textcolor{white}{\textbf{HRS}} & \textcolor{white}{\textbf{IRR}} & \textcolor{white}{\textbf{Référence}} \\
+\hline
+\rowcolor{HRSneg}
+XR-V15B & Ku80 (NHEJ) & + & -- & Skov 1994 \\
+\rowcolor{HRSneg}
+xrs5 & Ku80 (NHEJ) & + & -- & Skov 1994 \\
+\rowcolor{HRSneg}
+UV-20 & NER (excision nucléotides) & Exp. & -- & Skov 1994 \\
+\rowcolor{HRSpos}
+EM9 & BER (excision bases) & + & + & Skov 1994 \\
+\rowcolor{HRSpos}
+CHO-K1 & Type sauvage & + & + & Référence \\
+\rowcolor{HRSneg}
+irs1SF & Recombinaison HR & + & -- & Rothkamm 2003 \\
+\rowcolor{HRSneg}
+V3 & DNA-PKcs & + & -- & Rothkamm 2003 \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Note :} Les cellules déficientes en NHEJ (Ku80, DNA-PKcs) montrent l'HRS mais pas l'IRR, suggérant que la voie DNA-PK est essentielle pour le développement de la radiorésistance induite.
+
+\section{Lignées Cellulaires Humaines - Gliomes}
+
+Les gliomes représentent l'un des types tumoraux les plus étudiés pour l'HRS/IRR en raison de leur radiorésistance clinique.
+
+\begin{center}
+\begin{longtable}{|l|c|c|c|c|l|}
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Lignée}} & \textcolor{white}{\textbf{HRS}} & \textcolor{white}{\textbf{$\alpha_s$ (Gy$^{-1}$)}} & \textcolor{white}{\textbf{$\alpha_s/\alpha_r$}} & \textcolor{white}{\textbf{SF2}} & \textcolor{white}{\textbf{Référence}} \\
+\hline
+\endfirsthead
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Lignée}} & \textcolor{white}{\textbf{HRS}} & \textcolor{white}{\textbf{$\alpha_s$ (Gy$^{-1}$)}} & \textcolor{white}{\textbf{$\alpha_s/\alpha_r$}} & \textcolor{white}{\textbf{SF2}} & \textcolor{white}{\textbf{Référence}} \\
+\hline
+\endhead
+\rowcolor{HRSpos}
+T98G & + & 2.5-4.0 & 8-15 & 0.58-0.65 & Short 1999, Joiner 2001 \\
+\rowcolor{HRSneg}
+U373 & -- & $\sim\alpha_r$ & $\sim$1 & 0.63 & Short 1999 \\
+\rowcolor{HRSpos}
+U87 (U87MG) & + & -- & >5 & 0.55 & Short 1999 \\
+\rowcolor{HRSpos}
+U138MG & + & -- & -- & -- & Martin 2013 \\
+\rowcolor{HRSpos}
+A7 & + & >2 & >10 & 0.62 & Short 1999 \\
+\rowcolor{HRSpos}
+HGL21 & + & >2 & >8 & 0.58 & Short 1999 \\
+\rowcolor{HRSneg}
+MO59J & -- & -- & -- & très bas & DNA-PKcs déficient \\
+\rowcolor{HRSpos}
+MO59K & + & -- & -- & -- & DNA-PKcs compétent \\
+\hline
+\end{longtable}
+\end{center}
+
+\section{Lignées Cellulaires Humaines - Carcinomes}
+
+\subsection{Carcinome Colorectal}
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|l|}
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Lignée}} & \textcolor{white}{\textbf{HRS}} & \textcolor{white}{\textbf{$\alpha_s/\alpha_r$}} & \textcolor{white}{\textbf{SF2}} & \textcolor{white}{\textbf{Notes}} & \textcolor{white}{\textbf{Référence}} \\
+\hline
+\rowcolor{HRSpos}
+HT29 & + & 5-8 & 0.55-0.60 & Bien documentée & Wouters 1996, 1997 \\
+\rowcolor{HRSneg}
+SW48 & -- & $\sim$1 & 0.25-0.30 & Très radiosensible & Lambin 1996 \\
+\rowcolor{HRSpos}
+DLD-1 & + & -- & -- & -- & Andaur 2018 \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Carcinome de la Vessie}
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|l|}
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Lignée}} & \textcolor{white}{\textbf{HRS}} & \textcolor{white}{\textbf{$\alpha_s/\alpha_r$}} & \textcolor{white}{\textbf{SF2}} & \textcolor{white}{\textbf{Référence}} \\
+\hline
+\rowcolor{HRSpos}
+RT112 & + & 5-7 & 0.50-0.55 & Lambin 1994 \\
+\rowcolor{HRSpos}
+UM-UC-3 & + & -- & -- & Joiner 2001 \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Carcinome de la Prostate}
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|l|}
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Lignée}} & \textcolor{white}{\textbf{HRS}} & \textcolor{white}{\textbf{$\alpha_s/\alpha_r$}} & \textcolor{white}{\textbf{SF2}} & \textcolor{white}{\textbf{Référence}} \\
+\hline
+\rowcolor{HRSpos}
+DU145 & + & -- & 0.50-0.55 & Hermann 2008 \\
+\rowcolor{HRSpos}
+PC-3 & + & -- & -- & Hermann 2008 \\
+\rowcolor{HRSpos}
+LNCaP & + & -- & -- & -- \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Carcinome Pulmonaire}
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|l|}
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Lignée}} & \textcolor{white}{\textbf{Type}} & \textcolor{white}{\textbf{HRS}} & \textcolor{white}{\textbf{$\alpha_s/\alpha_r$}} & \textcolor{white}{\textbf{SF2}} & \textcolor{white}{\textbf{Référence}} \\
+\hline
+\rowcolor{HRSpos}
+A549 & Adénocarcinome & + & 3-5 & 0.60-0.70 & Dai 2009 \\
+\rowcolor{HRSpos}
+H460 (NCI-H460) & NSCLC & + & -- & 0.40-0.50 & -- \\
+\rowcolor{HRSpos}
+H1299 & NSCLC (p53 null) & + & -- & 0.55 & -- \\
+\rowcolor{HRSpos}
+Calu-1 & Épidermoïde & + & -- & -- & -- \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Carcinome du Col Utérin}
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|l|}
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Lignée}} & \textcolor{white}{\textbf{HRS}} & \textcolor{white}{\textbf{Dc (cGy)}} & \textcolor{white}{\textbf{Notes}} & \textcolor{white}{\textbf{Référence}} \\
+\hline
+\rowcolor{HRSpos}
+HeLa & + & 25-40 & Dose de transition variable & Harshitha 2015 \\
+\rowcolor{HRSneg}
+SiHa & -- & -- & Pas d'HRS détectée & Joiner 2001 \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Carcinome Hépatocellulaire}
+
+\begin{center}
+\begin{tabular}{|l|c|c|l|}
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Lignée}} & \textcolor{white}{\textbf{HRS}} & \textcolor{white}{\textbf{Mécanisme étudié}} & \textcolor{white}{\textbf{Référence}} \\
+\hline
+\rowcolor{HRSpos}
+HepG2 & + & Cdc25C, G2/M checkpoint & Xue 2016 \\
+\rowcolor{HRSpos}
+SMMC-7721 & + & ATM, cycle cellulaire & Wang 2014 \\
+\rowcolor{HRSpos}
+Hep3B & + & -- & -- \\
+\rowcolor{HRSpos}
+Bel-7402 & + & -- & -- \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Mélanomes}
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|l|}
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Lignée}} & \textcolor{white}{\textbf{HRS}} & \textcolor{white}{\textbf{$\alpha_s/\alpha_r$}} & \textcolor{white}{\textbf{SF2}} & \textcolor{white}{\textbf{Référence}} \\
+\hline
+\rowcolor{HRSpos}
+Be11 & + & >5 & 0.55-0.60 & Lambin 1996 \\
+\rowcolor{HRSpos}
+MeWo & + & -- & -- & Lambin 1996 \\
+\rowcolor{HRSpos}
+U1 & + & -- & -- & Joiner 2001 \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Carcinome Mammaire}
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|l|}
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Lignée}} & \textcolor{white}{\textbf{HRS}} & \textcolor{white}{\textbf{$\alpha_s/\alpha_r$}} & \textcolor{white}{\textbf{Notes}} & \textcolor{white}{\textbf{Référence}} \\
+\hline
+\rowcolor{HRSpos}
+T-47D & + & -- & Cellule reporter TGF-$\beta$3 & Edin 2015 \\
+\rowcolor{HRSneg}
+MCF7 & -- & $\sim$1 & Caspase-3 inactive & Krueger 2007 \\
+\rowcolor{HRSpos}
+MDA-MB-231 & + & -- & Triple négatif & -- \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Neuroblastome}
+
+\begin{center}
+\begin{tabular}{|l|c|c|l|}
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Lignée}} & \textcolor{white}{\textbf{HRS}} & \textcolor{white}{\textbf{SF2}} & \textcolor{white}{\textbf{Référence}} \\
+\hline
+\rowcolor{HRSpos}
+Lignées neuroblastome & + & Variable & Joiner 2001 \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Fibroblastes Humains Normaux et Pathologiques}
+
+\subsection{Fibroblastes Normaux}
+
+\begin{center}
+\begin{tabular}{|l|c|c|l|}
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Lignée}} & \textcolor{white}{\textbf{HRS}} & \textcolor{white}{\textbf{Notes}} & \textcolor{white}{\textbf{Référence}} \\
+\hline
+\rowcolor{HRSpos}
+GM38 & + & Fibroblastes cutanés normaux & Krueger 2007 \\
+\rowcolor{HRSpos}
+CRL2522 & + & Fibroblastes normaux & Krueger 2007 \\
+\rowcolor{HRSpos}
+AG1522 & + & Fibroblastes normaux & Al-Mayah 2022 \\
+\rowcolor{HRSpos}
+MRC-5 & + & Fibroblastes pulmonaires & -- \\
+\rowcolor{HRSneg}
+HX142 & -- & Très radiosensible & Joiner 2001 \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Fibroblastes Ataxie-Télangiectasie (ATM déficients)}
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|l|}
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Lignée}} & \textcolor{white}{\textbf{HRS}} & \textcolor{white}{\textbf{IRR}} & \textcolor{white}{\textbf{Notes}} & \textcolor{white}{\textbf{Référence}} \\
+\hline
+\rowcolor{HRSneg}
+AT5BI & + & -- & ATM$^{-/-}$ & Krueger 2007 \\
+\rowcolor{HRSneg}
+AT2BE & + & -- & ATM$^{-/-}$ & Krueger 2007 \\
+\rowcolor{HRSneg}
+AT5BIVA & + & -- & ATM$^{-/-}$ & -- \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Observation clé :} Les cellules AT montrent l'HRS mais PAS l'IRR, démontrant que la protéine ATM est essentielle pour l'induction de la radiorésistance mais pas pour l'hyper-radiosensibilité initiale.
+
+\section{Cellules Épithéliales}
+
+\begin{center}
+\begin{tabular}{|l|c|c|l|}
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Lignée}} & \textcolor{white}{\textbf{Type}} & \textcolor{white}{\textbf{HRS}} & \textcolor{white}{\textbf{Référence}} \\
+\hline
+\rowcolor{HRSneg}
+HaCaT & Kératinocytes immortalisés & -- & Ryan 2009 \\
+\rowcolor{HRSneg}
+HPV-G & Kératinocytes HPV+ & -- & Ryan 2009 \\
+\rowcolor{HRSpos}
+Cellules épithéliales pulmonaires & Non malignes & + & Joiner 2001 \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Autres Lignées}
+
+\subsection{Carcinome Œsophagien}
+
+\begin{center}
+\begin{tabular}{|l|c|l|}
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Lignée}} & \textcolor{white}{\textbf{HRS}} & \textcolor{white}{\textbf{Référence}} \\
+\hline
+\rowcolor{HRSpos}
+Adénocarcinome œsophagien & + & Hanu 2017 \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Carcinome Nasopharyngé}
+
+\begin{center}
+\begin{tabular}{|l|c|l|}
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Lignée}} & \textcolor{white}{\textbf{HRS}} & \textcolor{white}{\textbf{Référence}} \\
+\hline
+\rowcolor{HRSpos}
+CNE-2 & + & -- \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Cellules de Lépidoptères (Insectes)}
+
+\begin{center}
+\begin{tabular}{|l|c|c|l|}
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Lignée}} & \textcolor{white}{\textbf{HRS}} & \textcolor{white}{\textbf{Notes}} & \textcolor{white}{\textbf{Référence}} \\
+\hline
+\rowcolor{HRSpos}
+TN-368 & + & Air et azote, OER similaire & Koval 1984 \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Sphéroïdes Multicellulaires}
+
+\begin{center}
+\begin{tabular}{|l|c|l|}
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Modèle}} & \textcolor{white}{\textbf{HRS}} & \textcolor{white}{\textbf{Référence}} \\
+\hline
+\rowcolor{HRSpos}
+Sphéroïdes tumoraux multicellulaires & + & Guirado 2012 \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Synthèse Statistique}
+
+\subsection{Prévalence de l'HRS}
+
+D'après la base de données de Polgár et al. (2022) et les revues de Joiner et al. (2001) et Marples \& Collis (2008) :
+
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Paramètre}} & \textcolor{white}{\textbf{Valeur}} \\
+\hline
+Nombre total de lignées testées & >50 \\
+Pourcentage HRS positive & $\sim$80\% \\
+Nombre de publications analysées & 46 \\
+Nombre de jeux de données & 101 \\
+Période couverte & 1993-2021 \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Corrélations Observées}
+
+\begin{enumerate}
+    \item \textbf{Radiorésistance à haute dose vs HRS :} Les lignées les plus radiorésistantes à 2 Gy tendent à montrer l'HRS la plus marquée (rapport $\alpha_s/\alpha_r$ élevé), mais cette corrélation n'est plus statistiquement significative sur les grands ensembles de données.
+    
+    \item \textbf{Phase du cycle cellulaire :} L'HRS est maximale en phase G2, ce qui explique pourquoi les populations asynchrones montrent des niveaux d'HRS variables.
+    
+    \item \textbf{Voies de réparation de l'ADN :}
+    \begin{itemize}
+        \item Déficience en NHEJ (Ku80, DNA-PKcs) : HRS sans IRR
+        \item Déficience en ATM : HRS sans IRR
+        \item Déficience en BER : HRS et IRR préservées
+        \item Déficience en NER : Réponse exponentielle
+    \end{itemize}
+    
+    \item \textbf{TEL du rayonnement :} Les rayonnements à haut TEL induisent moins d'HRS/IRR que les rayonnements à bas TEL pour des doses uniques.
+\end{enumerate}
+
+\section{Lignées Clés pour les Études Mécanistiques}
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+\rowcolor{headerblue}
+\textcolor{white}{\textbf{Comparaison}} & \textcolor{white}{\textbf{HRS+}} & \textcolor{white}{\textbf{HRS--}} \\
+\hline
+Radiorésistance similaire & T98G, A7, Be11 & U373, SiHa \\
+Même origine tissulaire & HT29 & SW48 \\
+Paire isogénique ATM & ATCL8 (ATM+) & AT5BIVA (ATM--) \\
+Paire DNA-PK & MO59K & MO59J \\
+Caspase-3 & T-47D, A549 & MCF7 \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Références Principales}
+
+\begin{enumerate}
+    \item Polgár S, Schofield PN, Madas BG. \textit{Datasets of in vitro clonogenic assays showing low dose hyper-radiosensitivity and induced radioresistance.} Sci Data. 2022;9:555.
+    
+    \item Joiner MC, Marples B, Lambin P, Short SC, Turesson I. \textit{Low-dose hypersensitivity: current status and possible mechanisms.} Int J Radiat Oncol Biol Phys. 2001;49(2):379-389.
+    
+    \item Marples B, Joiner MC. \textit{The response of Chinese hamster V79 cells to low radiation doses: evidence of enhanced sensitivity of the whole cell population.} Radiat Res. 1993;133:41-51.
+    
+    \item Marples B, Collis SJ. \textit{Low-dose hyper-radiosensitivity: past, present, and future.} Int J Radiat Oncol Biol Phys. 2008;70(5):1310-1318.
+    
+    \item Wouters BG, Skarsgard LD. \textit{Low-dose hypersensitivity and increased radioresistance in a panel of human tumor cell lines with different radiosensitivity.} Radiat Res. 1996;146:399-413.
+    
+    \item Marples B, Lambin P, Skov KA, Joiner MC. \textit{Low dose hyper-radiosensitivity and increased radioresistance in mammalian cells.} Int J Radiat Biol. 1997;71:721-735.
+    
+    \item Short SC, Woodcock M, Marples B, Joiner MC. \textit{Effects of cell cycle phase on low-dose hyper-radiosensitivity.} Int J Radiat Biol. 2003;79:99-105.
+    
+    \item Krueger SA, Collis SJ, Joiner MC, Wilson GD, Marples B. \textit{Transition in survival from low-dose hyper-radiosensitivity to increased radioresistance is independent of activation of ATM Ser1981 activity.} Int J Radiat Oncol Biol Phys. 2007;69(4):1262-1271.
+    
+    \item Skov K, Marples B, Matthews JB, Joiner MC, Zhou H. \textit{A preliminary investigation into the extent of increased radioresistance or hyper-radiosensitivity in cells of hamster cell lines known to be deficient in DNA repair.} Radiat Res. 1994;138:S126-S129.
+    
+    \item Xue J, Zong Y, Li PD, et al. \textit{Low-dose hyper-radiosensitivity in human hepatocellular HepG2 cells is associated with Cdc25C-mediated G2/M cell cycle checkpoint control.} Int J Radiat Biol. 2016;92(10):543-547.
+    
+    \item Dai X, Tao D, Wu H, et al. \textit{Low dose hyper-radiosensitivity in human lung cancer cell line A549 and its possible mechanisms.} J Huazhong Univ Sci Technol Med Sci. 2009;29:101-106.
+\end{enumerate}
+
+\section{Base de Données Disponible}
+
+Une base de données numérisée des courbes de survie HRS/IRR est disponible sur STOREDB :
+
+\textbf{URL :} \url{https://storedb.org/}
+
+Cette base contient les données brutes de 101 jeux de données provenant de 46 publications, permettant la méta-analyse et la validation de modèles biophysiques.
+
+\vspace{2em}
+\begin{center}
+\rule{0.6\textwidth}{0.4pt}\\[0.5em]
+\textit{Document compilé à partir d'une recherche bibliographique extensive}\\
+\textit{Décembre 2025}\\
+\rule{0.6\textwidth}{0.4pt}
+\end{center}
+
+\end{document}

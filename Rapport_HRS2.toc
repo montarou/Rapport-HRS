@@ -1,0 +1,71 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{coloredsection.1}%
+\contentsline {subsection}{\numberline {1.1}Caractérisation expérimentale du phénomène HRS/IRR}{3}{coloredsubsection.1.1}%
+\contentsline {section}{\numberline {2}Historique}{3}{coloredsection.2}%
+\contentsline {subsection}{\numberline {2.1}Premi\`eres \'etudes in vitro sur lign\'ees cellulaires (1993--1997)}{3}{coloredsubsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Premi\`eres \'Etudes sur des lign\'ees spécifiques (1999--2004)}{4}{coloredsubsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Publications récentes (2020--2025)}{4}{coloredsubsection.2.3}%
+\contentsline {section}{\numberline {3}Présentation globale de l'HRS/IRR}{5}{coloredsection.3}%
+\contentsline {subsection}{\numberline {3.1}Base de données expérimentales}{5}{coloredsubsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Lignées Cellulaires de Hamster}{6}{coloredsubsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}V79 - Fibroblastes de Hamster Chinois}{6}{coloredsubsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Mutants de Réparation de l'ADN (Hamster)}{6}{coloredsubsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}Lignées Cellulaires Humaines - Gliomes}{6}{coloredsubsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Lignées Cellulaires Humaines - Carcinomes}{6}{coloredsubsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Carcinome Colorectal}{6}{coloredsubsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Carcinome de la Vessie}{7}{coloredsubsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Carcinome de la Prostate}{7}{coloredsubsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.4}Carcinome Pulmonaire}{7}{coloredsubsubsection.3.4.4}%
+\contentsline {subsubsection}{\numberline {3.4.5}Carcinome du Col Utérin}{7}{coloredsubsubsection.3.4.5}%
+\contentsline {subsubsection}{\numberline {3.4.6}Carcinome Hépatocellulaire}{7}{coloredsubsubsection.3.4.6}%
+\contentsline {subsection}{\numberline {3.5}Mélanomes}{7}{coloredsubsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Carcinome Mammaire}{7}{coloredsubsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Neuroblastome}{7}{coloredsubsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Fibroblastes Humains Normaux et Pathologiques}{8}{coloredsubsection.3.8}%
+\contentsline {subsubsection}{\numberline {3.8.1}Fibroblastes Normaux}{8}{coloredsubsubsection.3.8.1}%
+\contentsline {subsubsection}{\numberline {3.8.2}Fibroblastes Ataxie-Télangiectasie (ATM déficients)}{8}{coloredsubsubsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.9}Cellules Épithéliales}{8}{coloredsubsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Autres Lignées}{8}{coloredsubsection.3.10}%
+\contentsline {subsubsection}{\numberline {3.10.1}Carcinome oesophagien}{8}{coloredsubsubsection.3.10.1}%
+\contentsline {subsubsection}{\numberline {3.10.2}Carcinome Nasopharyngé}{8}{coloredsubsubsection.3.10.2}%
+\contentsline {subsubsection}{\numberline {3.10.3}Cellules de Lépidoptères (Insectes)}{8}{coloredsubsubsection.3.10.3}%
+\contentsline {subsection}{\numberline {3.11}Sphéroïdes Multicellulaires}{9}{coloredsubsection.3.11}%
+\contentsline {subsection}{\numberline {3.12}Synthèse Statistique}{9}{coloredsubsection.3.12}%
+\contentsline {subsubsection}{\numberline {3.12.1}Prévalence de l'HRS}{9}{coloredsubsubsection.3.12.1}%
+\contentsline {subsubsection}{\numberline {3.12.2}Corrélations Observées}{9}{coloredsubsubsection.3.12.2}%
+\contentsline {subsection}{\numberline {3.13}Lignées Clés pour les Études Mécanistiques}{9}{coloredsubsection.3.13}%
+\contentsline {subsection}{\numberline {3.14}Mécanismes possibles}{12}{coloredsubsection.3.14}%
+\contentsline {subsubsection}{\numberline {3.14.1}Approches moléculaires}{13}{coloredsubsubsection.3.14.1}%
+\contentsline {section}{\numberline {4}Pertinence possible des concepts d'IRR pour l'exposition aux radiations}{13}{coloredsection.4}%
+\contentsline {subsection}{\numberline {4.1}Réponses dans les tissus/cellules normaux}{14}{coloredsubsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Sensibilité individuelle}{14}{coloredsubsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Protecteurs}{14}{coloredsubsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Considérations sur le TEL, l'amorçage et le débit de dose}{15}{coloredsubsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Structures et seuils}{15}{coloredsubsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Amorçage et protéines}{15}{coloredsubsubsection.4.4.2}%
+\contentsline {section}{\numberline {5}Tableau récapitulatif : Domaines de chevauchement}{15}{coloredsection.5}%
+\contentsline {section}{\numberline {6}Role du Checkpoint G2/M}{16}{coloredsection.6}%
+\contentsline {subsection}{\numberline {6.1}Le cycle cellulaire et la phase G2}{16}{coloredsubsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Détection des dommages par ATM}{16}{coloredsubsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}La cascade de signalisation}{18}{coloredsubsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Le problème aux faibles doses : le seuil d'activation d'ATM}{20}{coloredsubsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Mécanisme détaillé de l'hyper-radiosensibilité}{21}{coloredsubsection.6.5}%
+\contentsline {section}{\numberline {7}Schéma récapitulatif}{22}{coloredsection.7}%
+\contentsline {section}{\numberline {8}Conclusion}{23}{coloredsection.8}%
+\contentsline {subsection}{\numberline {8.1}Plages de doses caractéristiques}{23}{coloredsubsection.8.1}%
+\contentsline {section}{\numberline {9}Modèles mathématiques}{23}{coloredsection.9}%
+\contentsline {subsection}{\numberline {9.1}Modèle Linéaire-Quadratique (LQ)}{23}{coloredsubsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Modèle de Réparation Induite (IR)}{23}{coloredsubsection.9.2}%
+\contentsline {section}{\numberline {10}Mécanismes moléculaires}{24}{coloredsection.10}%
+\contentsline {subsection}{\numberline {10.1}Rôle du checkpoint G2/M}{24}{coloredsubsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Cascade de signalisation ATM}{24}{coloredsubsection.10.2}%
+\contentsline {section}{\numberline {11}Implications cliniques}{24}{coloredsection.11}%
+\contentsline {section}{\numberline {A}\color {blue}\textbf {Joiner MC, Johns H (1988)}\color {black}}{25}{appendix.A}%
+\contentsline {section}{\numberline {B}\color {blue}\textbf {Marples B, Joiner MC (1993)}\color {black}}{26}{appendix.B}%
+\contentsline {section}{\numberline {C}\color {blue}\textbf {P Lambin, B Marples, B Fertil, E P Malaise, M C Joiner (1993)}\color {black}}{27}{appendix.C}%
+\contentsline {section}{\numberline {D}\color {blue}\textbf {E P Malaise,~P Lambin,~M C Joiner (1994)}\color {black}}{27}{appendix.D}%
+\contentsline {section}{\numberline {E}\color {blue}\textbf {P. Lambin, B. Fertil, E. P. Malaise, M. C. Joiner (1994)}\color {black}}{28}{appendix.E}%
+\contentsline {section}{\numberline {F}\color {blue}\textbf {B G Wouters ,~L D Skarsgard (1994)}\color {black}}{29}{appendix.F}%
+\contentsline {section}{\numberline {G}\color {blue}\textbf {Marples B, Adomat H, Koch CJ, Skov KA (1996)}\color {black}}{29}{appendix.G}%
+\contentsline {section}{\numberline {H}\color {blue}\textbf {B G Wouters,~A M Sy,~L D Skarsgard (1996)}\color {black}}{29}{appendix.H}%
+\contentsline {section}{\numberline {I}\color {blue}\textbf {L D Skarsgard,~M W Skwarchuk,~B G Wouters,~R E Durand (1996)}\color {black}}{30}{appendix.I}%
+\contentsline {section}{\numberline {J}\color {blue}\textbf {L D Skarsgard, M W Skwarchuk,~B G Wouters,~R E Durand (1996)}\color {black}}{30}{appendix.J}%

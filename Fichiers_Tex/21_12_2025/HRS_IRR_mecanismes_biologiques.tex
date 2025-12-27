@@ -1,0 +1,782 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\geometry{margin=2.5cm}
+
+\definecolor{checkpoint}{RGB}{70,130,180}
+\definecolor{repair}{RGB}{150,50,50}
+\definecolor{apoptosis}{RGB}{50,120,50}
+\definecolor{model}{RGB}{100,50,150}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textit{Mécanismes Biologiques de l'HRS/IRR}}
+\fancyhead[R]{\thepage}
+
+\title{\textbf{Paramètres Biologiques de\\l'Hyper-Radiosensibilité (HRS) et de la\\Radiorésistance Induite (IRR)}\\[1em]
+\large Mécanismes Moléculaires et Cellulaires}
+\author{Revue Synthétique}
+\date{Décembre 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+L'hyper-radiosensibilité aux faibles doses (HRS) et la radiorésistance induite (IRR) sont des phénomènes radiobiologiques observés dans la majorité des lignées cellulaires de mammifères. Ce document présente une synthèse des paramètres biologiques impliqués dans ces phénomènes, incluant le checkpoint G2/M, la signalisation ATM, les voies de réparation de l'ADN, l'apoptose, et les effets du transfert linéique d'énergie. Chaque mécanisme est décrit avec ses bases moléculaires et étayé par les références princeps de la littérature.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+%==============================================================================
+\section{Introduction : Définition du Phénomène}
+%==============================================================================
+
+\subsection{Description de l'HRS/IRR}
+
+L'hyper-radiosensibilité (HRS) et la radiorésistance induite (IRR) décrivent une déviation de la courbe de survie cellulaire par rapport au modèle linéaire-quadratique classique dans le domaine des faibles doses (<1 Gy).
+
+\begin{tcolorbox}[colback=checkpoint!10, colframe=checkpoint, title=\textbf{Définitions}]
+\begin{itemize}[leftmargin=*]
+    \item \textbf{HRS (Hyper-Radiosensitivity)} : Sensibilité accrue aux très faibles doses (typiquement <0.3 Gy), se manifestant par une pente initiale $\alpha_s$ supérieure à la pente extrapolée des hautes doses $\alpha_r$.
+    \item \textbf{IRR (Increased Radioresistance)} : Résistance relative observée entre $\sim$0.3 et 1 Gy, où la survie cellulaire est supérieure à celle prédite par l'extrapolation linéaire.
+\end{itemize}
+\end{tcolorbox}
+
+Ce phénomène a été décrit pour la première fois de manière systématique par \textbf{Marples et Joiner (1993)} \cite{Marples1993} dans les cellules V79 de hamster chinois, bien que des observations antérieures aient été rapportées par Koval (1984) \cite{Koval1984} dans des cellules d'insectes.
+
+\subsection{Modèle Mathématique : Induced Repair}
+
+Le modèle « Induced Repair » de Joiner et Johns \cite{Joiner2001} décrit la survie cellulaire par :
+
+\begin{equation}
+S(D) = \exp\left[-\alpha_r D \left(1 + \left(\frac{\alpha_s}{\alpha_r} - 1\right) e^{-D/D_c}\right) - \beta D^2\right]
+\end{equation}
+
+où :
+\begin{itemize}
+    \item $\alpha_s$ = pente initiale (région HRS), typiquement 1-5 Gy$^{-1}$
+    \item $\alpha_r$ = pente extrapolée des hautes doses, typiquement 0.1-0.5 Gy$^{-1}$
+    \item $D_c$ = dose de transition HRS$\rightarrow$IRR, typiquement 20-50 cGy
+    \item $\beta$ = composante quadratique, typiquement 0.02-0.05 Gy$^{-2}$
+    \item $\alpha_s/\alpha_r$ = amplitude de l'HRS (5-15 pour les lignées HRS+)
+\end{itemize}
+
+\subsection{Prévalence}
+
+D'après la méta-analyse de Polgár et al. (2022) \cite{Polgar2022} portant sur 101 jeux de données :
+\begin{itemize}
+    \item $\sim$80\% des lignées cellulaires testées montrent l'HRS
+    \item Le phénomène est observé chez les rongeurs, humains, et même les insectes
+    \item Il est aboli par les rayonnements à haut TEL
+\end{itemize}
+
+%==============================================================================
+\section{Le Checkpoint G2/M : Mécanisme Central}
+%==============================================================================
+
+\subsection{Rôle de la Phase G2 dans l'HRS}
+
+Le checkpoint G2/M est le \textbf{déterminant majeur} du phénomène HRS/IRR. Les travaux de Short et al. (2003) \cite{Short2003} ont démontré que :
+
+\begin{tcolorbox}[colback=checkpoint!10, colframe=checkpoint, title=\textbf{Observations Clés}]
+\begin{itemize}[leftmargin=*]
+    \item L'HRS est \textbf{maximale} dans les cellules en phase G2
+    \item Les cellules en phase G1 montrent \textbf{peu ou pas d'HRS}
+    \item Les cellules en phase S montrent une HRS \textbf{intermédiaire}
+    \item La synchronisation en G2 \textbf{amplifie} le phénomène HRS
+\end{itemize}
+\end{tcolorbox}
+
+\subsection{Le Checkpoint G2 Précoce (Early G2 Checkpoint)}
+
+Xu et al. (2002) \cite{Xu2002} ont identifié un checkpoint G2 « précoce » distinct du checkpoint G2/M classique :
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Caractéristique} & \textbf{Checkpoint G2 précoce} & \textbf{Checkpoint G2/M classique} \\
+\midrule
+Dose d'activation & $\sim$20-30 cGy & >1 Gy \\
+Dépendance ATM & Oui & Oui \\
+Temps d'activation & Minutes & 1-2 heures \\
+Rôle dans HRS/IRR & Essentiel (IRR) & Non directement impliqué \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Mécanisme Moléculaire du Checkpoint G2}
+
+\subsubsection{Description du Checkpoint G2/M}
+
+Le checkpoint G2/M est un point de contrôle du cycle cellulaire qui empêche l'entrée en mitose des cellules présentant des dommages à l'ADN. Il implique une cascade de signalisation :
+
+\begin{enumerate}
+    \item \textbf{Détection} : Les cassures double-brin (DSB) sont détectées par le complexe MRN (Mre11-Rad50-Nbs1)
+    \item \textbf{Signalisation} : Activation d'ATM par autophosphorylation (Ser1981)
+    \item \textbf{Transduction} : ATM phosphoryle Chk2 (Thr68), qui phosphoryle Cdc25C (Ser216)
+    \item \textbf{Effecteur} : Cdc25C phosphorylée est séquestrée par 14-3-3, empêchant l'activation de Cdk1/Cycline B
+    \item \textbf{Arrêt} : Le complexe Cdk1/Cycline B reste inactif $\rightarrow$ arrêt en G2
+\end{enumerate}
+
+\subsubsection{Régulateurs Clés}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{Protéine} & \textbf{Fonction} & \textbf{Rôle dans HRS/IRR} \\
+\midrule
+ATM & Kinase senseur des DSB & Essentiel pour IRR \\
+Chk1/Chk2 & Kinases de transduction & Transduction du signal \\
+Cdc25C & Phosphatase activant Cdk1 & Cible du checkpoint \\
+Cdk1 & Kinase mitotique & Effecteur de l'entrée en mitose \\
+Cycline B1 & Partenaire de Cdk1 & Régulateur du timing \\
+p21$^{CIP1}$ & Inhibiteur de CDK & Arrêt prolongé \\
+14-3-3$\sigma$ & Séquestration de Cdc25C & Maintien de l'arrêt \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Hypothèse du Seuil d'Activation}
+
+\begin{tcolorbox}[colback=model!10, colframe=model, title=\textbf{Modèle du Seuil}]
+À très faibles doses (<20-30 cGy) :
+\begin{itemize}[leftmargin=*]
+    \item Seulement 1-2 DSB par cellule sont induites
+    \item Ce niveau de dommages est \textbf{insuffisant} pour activer pleinement ATM
+    \item Le checkpoint G2 précoce \textbf{n'est pas déclenché}
+    \item Les cellules en G2 progressent vers la mitose avec des dommages non réparés
+    \item $\rightarrow$ \textbf{Mort cellulaire} (HRS)
+\end{itemize}
+
+Au-delà de $\sim$30 cGy :
+\begin{itemize}[leftmargin=*]
+    \item Le seuil de détection ATM est atteint
+    \item Le checkpoint G2 précoce \textbf{est activé}
+    \item Les cellules s'arrêtent, réparent leurs dommages
+    \item $\rightarrow$ \textbf{Survie accrue} (IRR)
+\end{itemize}
+\end{tcolorbox}
+
+%==============================================================================
+\section{Signalisation ATM}
+%==============================================================================
+
+\subsection{Structure et Fonction d'ATM}
+
+ATM (Ataxia Telangiectasia Mutated) est une sérine/thréonine kinase de la famille des PI3K-like kinases (PIKKs). C'est le \textbf{senseur principal} des cassures double-brin de l'ADN.
+
+\subsubsection{Activation d'ATM}
+
+En conditions normales, ATM existe sous forme de \textbf{dimères inactifs}. Lors de la détection de DSB :
+
+\begin{enumerate}
+    \item Le complexe MRN recrute ATM aux sites de cassures
+    \item ATM subit une \textbf{autophosphorylation} sur Ser1981
+    \item Les dimères se dissocient en \textbf{monomères actifs}
+    \item ATM phosphoryle ses substrats (>700 cibles identifiées)
+\end{enumerate}
+
+\subsubsection{Substrats d'ATM Pertinents pour l'HRS/IRR}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{Substrat} & \textbf{Site} & \textbf{Conséquence} \\
+\midrule
+H2AX & Ser139 ($\gamma$-H2AX) & Recrutement des facteurs de réparation \\
+Chk2 & Thr68 & Activation de la cascade checkpoint \\
+p53 & Ser15 & Stabilisation, activation transcriptionnelle \\
+BRCA1 & Multiple & Réparation par HR \\
+SMC1 & Ser957, Ser966 & Checkpoint intra-S \\
+Nbs1 & Ser343 & Amplification du signal \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{ATM et le Phénomène HRS/IRR}
+
+\subsubsection{Études sur les Cellules AT (ATM-déficientes)}
+
+Les cellules de patients atteints d'Ataxie-Télangiectasie (AT) sont \textbf{dépourvues d'ATM fonctionnel}. Les études de Marples et al. \cite{Marples1997} et Krueger et al. (2007) \cite{Krueger2007} ont montré :
+
+\begin{tcolorbox}[colback=repair!10, colframe=repair, title=\textbf{Phénotype des Cellules AT}]
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Lignée} & \textbf{Statut ATM} & \textbf{HRS} & \textbf{IRR} \\
+\midrule
+GM38, CRL2522 & ATM$^{+/+}$ & + & + \\
+AT5BI & ATM$^{-/-}$ & + & \textbf{--} \\
+AT2BE & ATM$^{-/-}$ & + & \textbf{--} \\
+AT5BIVA & ATM$^{-/-}$ & + & \textbf{--} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Conclusion} : ATM est \textbf{essentiel pour l'IRR} mais \textbf{non requis pour l'HRS}.
+\end{tcolorbox}
+
+\subsubsection{Seuil d'Activation ATM-Ser1981}
+
+Krueger et al. (2007) \cite{Krueger2007} ont quantifié la phosphorylation ATM-Ser1981 en fonction de la dose :
+
+\begin{itemize}
+    \item À 10 cGy : phosphorylation ATM-Ser1981 \textbf{non détectable}
+    \item À 20-30 cGy : phosphorylation \textbf{détectable mais faible}
+    \item À >50 cGy : phosphorylation \textbf{robuste}
+\end{itemize}
+
+Ce seuil coïncide avec la dose de transition $D_c$ de l'HRS vers l'IRR.
+
+\subsubsection{Paradoxe de Krueger}
+
+Cependant, Krueger et al. ont également observé que la transition HRS$\rightarrow$IRR peut se produire \textbf{indépendamment} de la phosphorylation ATM-Ser1981 détectable dans certaines conditions, suggérant :
+\begin{itemize}
+    \item D'autres voies de signalisation parallèles
+    \item Une sensibilité de détection insuffisante
+    \item Un rôle de l'activité basale d'ATM
+\end{itemize}
+
+\subsection{ATR : Kinase Apparentée}
+
+ATR (ATM and Rad3-related) est activée par l'ADN simple-brin (résection des DSB, stress réplicatif). Son rôle dans l'HRS/IRR est moins bien caractérisé, mais :
+\begin{itemize}
+    \item ATR contribue au checkpoint G2 via Chk1
+    \item L'inhibition d'ATR peut modifier le phénotype HRS/IRR
+    \item ATR et ATM ont des substrats partiellement redondants
+\end{itemize}
+
+%==============================================================================
+\section{Voies de Réparation de l'ADN}
+%==============================================================================
+
+\subsection{Les Cassures Double-Brin : Lésions Critiques}
+
+Les cassures double-brin (DSB) sont les lésions les plus délétères induites par les radiations ionisantes. Une seule DSB non réparée peut être létale. Deux voies majeures réparent les DSB :
+
+\begin{enumerate}
+    \item \textbf{NHEJ} (Non-Homologous End Joining) : rapide, actif dans tout le cycle
+    \item \textbf{HR} (Homologous Recombination) : fidèle, restreint à S/G2
+\end{enumerate}
+
+\subsection{NHEJ : Voie Essentielle pour l'IRR}
+
+\subsubsection{Description de la Voie NHEJ}
+
+Le NHEJ est la voie principale de réparation des DSB chez les mammifères :
+
+\begin{enumerate}
+    \item \textbf{Reconnaissance} : L'hétérodimère Ku70/Ku80 se lie aux extrémités de la cassure
+    \item \textbf{Recrutement} : DNA-PKcs est recrutée, formant le complexe DNA-PK
+    \item \textbf{Processing} : Artémis (activée par DNA-PKcs) processe les extrémités
+    \item \textbf{Ligation} : Le complexe XRCC4/Ligase IV/XLF effectue la ligation
+\end{enumerate}
+
+\subsubsection{Études sur les Mutants NHEJ}
+
+Les travaux de Skov et al. (1994) \cite{Skov1994} et Rothkamm et al. (2003) \cite{Rothkamm2003} ont utilisé des mutants de la voie NHEJ :
+
+\begin{tcolorbox}[colback=repair!10, colframe=repair, title=\textbf{Phénotype des Mutants NHEJ}]
+\begin{center}
+\begin{tabular}{llccc}
+\toprule
+\textbf{Lignée} & \textbf{Déficience} & \textbf{HRS} & \textbf{IRR} & \textbf{Référence} \\
+\midrule
+CHO-K1 & Aucune (contrôle) & + & + & Skov 1994 \\
+xrs5 & Ku80 & + & \textbf{--} & Skov 1994 \\
+XR-V15B & Ku80 & + & \textbf{--} & Skov 1994 \\
+V3 & DNA-PKcs & + & \textbf{--} & Rothkamm 2003 \\
+MO59J & DNA-PKcs & -- & \textbf{--} & Lees-Miller 1995 \\
+MO59K & Aucune (contrôle) & + & + & Lees-Miller 1995 \\
+irs1SF & XRCC3 (HR) & + & \textbf{--} & Rothkamm 2003 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Conclusion} : La voie DNA-PK/Ku/NHEJ est \textbf{indispensable pour l'IRR}.
+\end{tcolorbox}
+
+\subsubsection{Interprétation Mécanistique}
+
+L'IRR nécessite une \textbf{réparation efficace} des DSB induites par les faibles doses. Sans NHEJ fonctionnel :
+\begin{itemize}
+    \item Le checkpoint G2 peut être activé (via ATM)
+    \item Mais les cellules ne peuvent pas réparer efficacement
+    \item L'arrêt G2 devient permanent ou aboutit à la mort
+    \item $\rightarrow$ Pas de bénéfice de survie (pas d'IRR)
+\end{itemize}
+
+\subsection{Autres Voies de Réparation}
+
+\subsubsection{BER (Base Excision Repair)}
+
+Le BER répare les bases endommagées et les cassures simple-brin. Les cellules EM9 (déficientes en XRCC1/BER) montrent \textbf{HRS et IRR préservées} \cite{Skov1994}, indiquant que le BER n'est pas critique pour ces phénomènes.
+
+\subsubsection{NER (Nucleotide Excision Repair)}
+
+Le NER répare les lésions volumineuses (dimères de pyrimidine, adduits). Les cellules déficientes en NER montrent une \textbf{réponse exponentielle} sans HRS distincte, suggérant un rôle indirect.
+
+\subsubsection{HR (Homologous Recombination)}
+
+La recombinaison homologue utilise la chromatide sœur comme matrice. Les cellules irs1SF (déficientes en XRCC3) montrent HRS+ mais IRR-- \cite{Rothkamm2003}, similaire aux mutants NHEJ.
+
+\subsection{Cinétique de Réparation des DSB}
+
+\subsubsection{Foci $\gamma$-H2AX}
+
+L'histone H2AX phosphorylée sur Ser139 ($\gamma$-H2AX) est un marqueur sensible des DSB. Rothkamm et Löbrich (2003) \cite{Rothkamm2003} ont montré :
+
+\begin{tcolorbox}[colback=model!10, colframe=model, title=\textbf{Observations sur les Foci $\gamma$-H2AX}]
+\begin{itemize}[leftmargin=*]
+    \item À très faibles doses (<5 cGy) : les DSB induites (1-2 par cellule) \textbf{persistent non réparées} pendant plusieurs heures
+    \item Le temps de demi-vie des foci est \textbf{prolongé} à faibles doses vs hautes doses
+    \item Les cellules en G0/G1 confluentes montrent une réparation encore plus lente
+    \item Ces DSB persistantes pourraient être la cause de l'HRS
+\end{itemize}
+\end{tcolorbox}
+
+\subsubsection{Seuil de Réparation}
+
+L'hypothèse d'un \textbf{seuil de réparation} propose que :
+\begin{itemize}
+    \item 1-2 DSB isolées ne sont pas efficacement détectées/réparées
+    \item Au-delà de 2-3 DSB, les mécanismes de réparation sont pleinement activés
+    \item Ce seuil coïncide avec $D_c$ ($\sim$20-30 cGy $\approx$ 2-3 DSB/cellule)
+\end{itemize}
+
+%==============================================================================
+\section{Apoptose et Mort Cellulaire}
+%==============================================================================
+
+\subsection{Mécanismes de Mort Cellulaire Radio-induite}
+
+Plusieurs types de mort cellulaire peuvent résulter de l'irradiation :
+
+\begin{enumerate}
+    \item \textbf{Apoptose} : mort programmée, activation des caspases
+    \item \textbf{Catastrophe mitotique} : mort pendant/après mitose aberrante
+    \item \textbf{Sénescence} : arrêt permanent du cycle cellulaire
+    \item \textbf{Nécrose} : mort non programmée
+\end{enumerate}
+
+\subsection{Rôle des Caspases dans l'HRS}
+
+\subsubsection{La Caspase-3 : Exécuteur de l'Apoptose}
+
+La caspase-3 est la principale caspase effectrice de l'apoptose. Elle clive de nombreux substrats cellulaires conduisant au phénotype apoptotique (fragmentation ADN, condensation chromatine, corps apoptotiques).
+
+\subsubsection{Études sur MCF7 et T-47D}
+
+La lignée MCF7 (carcinome mammaire) est naturellement \textbf{déficiente en caspase-3} en raison d'une délétion du gène CASP3. Comparée à T-47D (caspase-3 fonctionnelle) :
+
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Lignée} & \textbf{Caspase-3} & \textbf{HRS} & \textbf{Référence} \\
+\midrule
+T-47D & Active & + & Enns 2004 \\
+A549 & Active & + & Dai 2009 \\
+MCF7 & \textbf{Inactive} & \textbf{--} & Enns 2004 \\
+MCF7 + CASP3 & Restaurée & + & Enns 2004 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsubsection{Interprétation}
+
+Ces résultats suggèrent que l'HRS, dans certaines lignées, résulte d'une \textbf{apoptose précoce} des cellules non réparées :
+\begin{itemize}
+    \item Les cellules avec DSB non réparées qui entrent en mitose activent l'apoptose
+    \item Sans caspase-3, cette voie de mort est bloquée
+    \item Les cellules survivent malgré les dommages $\rightarrow$ pas d'HRS apparente
+\end{itemize}
+
+\textbf{Attention} : Ce mécanisme n'est pas universel. Certaines lignées HRS+ n'utilisent pas l'apoptose caspase-3-dépendante.
+
+\subsection{Catastrophe Mitotique}
+
+La catastrophe mitotique est probablement le mécanisme de mort dominant dans l'HRS :
+
+\begin{itemize}
+    \item Les cellules G2 avec DSB non réparées entrent en mitose
+    \item La ségrégation chromosomique est aberrante
+    \item Les cellules meurent pendant ou après la mitose
+    \item Ce processus peut impliquer ou non les caspases
+\end{itemize}
+
+%==============================================================================
+\section{Transfert Linéique d'Énergie (TEL)}
+%==============================================================================
+
+\subsection{Définition du TEL}
+
+Le TEL (Linear Energy Transfer, LET en anglais) mesure l'énergie déposée par unité de longueur de trajectoire d'une particule ionisante :
+
+\begin{equation}
+\text{TEL} = \frac{dE}{dx} \quad (\text{keV}/\mu\text{m})
+\end{equation}
+
+\begin{center}
+\begin{tabular}{lc}
+\toprule
+\textbf{Rayonnement} & \textbf{TEL (keV/$\mu$m)} \\
+\midrule
+Rayons X, $\gamma$ & 0.2-2 \\
+Protons (haute énergie) & 0.5-5 \\
+Particules $\alpha$ & 100-200 \\
+Ions carbone & 50-200 \\
+Neutrons rapides & 20-100 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Effet du TEL sur l'HRS/IRR}
+
+\subsubsection{Observations Expérimentales}
+
+Les travaux de Marples et al. \cite{Marples1993, Marples1997} ont montré :
+
+\begin{tcolorbox}[colback=checkpoint!10, colframe=checkpoint, title=\textbf{Effet du TEL sur l'HRS/IRR}]
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+\textbf{TEL} & \textbf{HRS/IRR} & \textbf{Exemple} \\
+\midrule
+Bas (<10 keV/$\mu$m) & \textbf{Marqué} & Rayons X, $\gamma$ \\
+Intermédiaire (10-50 keV/$\mu$m) & Réduit & Protons basse énergie \\
+Haut (>50 keV/$\mu$m) & \textbf{Absent} & Neutrons, ions lourds \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{tcolorbox}
+
+\subsubsection{Interprétation Mécanistique}
+
+Les rayonnements à haut TEL produisent des \textbf{dommages complexes} (clustered DNA damage) :
+
+\begin{itemize}
+    \item Multiples lésions dans un rayon de 10-20 paires de bases
+    \item Ces dommages sont toujours détectés par ATM, même à faible dose
+    \item Le checkpoint G2 est \textbf{toujours activé}
+    \item Pas de « fuite » des cellules G2 vers la mitose
+    \item $\rightarrow$ Pas d'HRS
+\end{itemize}
+
+À l'inverse, les rayonnements à bas TEL produisent des dommages plus dispersés :
+\begin{itemize}
+    \item DSB isolées, plus difficiles à détecter à très faibles doses
+    \item Possibilité de « fuite » à travers le checkpoint
+    \item $\rightarrow$ HRS manifeste
+\end{itemize}
+
+\subsection{Implications pour la Hadronthérapie}
+
+La hadronthérapie (protons, ions carbone) utilise des particules à TEL variable :
+\begin{itemize}
+    \item TEL bas en entrée (plateau) $\rightarrow$ HRS possible
+    \item TEL élevé au pic de Bragg $\rightarrow$ pas d'HRS
+    \item Implications pour le fractionnement et la radiosensibilité tumorale
+\end{itemize}
+
+%==============================================================================
+\section{Stress Oxydatif et Dommages Indirects}
+%==============================================================================
+
+\subsection{Dommages Directs vs Indirects}
+
+Les radiations ionisantes induisent des dommages à l'ADN par deux mécanismes :
+
+\begin{enumerate}
+    \item \textbf{Effet direct} : ionisation directe de l'ADN ($\sim$35\% des dommages)
+    \item \textbf{Effet indirect} : radiolyse de l'eau $\rightarrow$ ROS $\rightarrow$ attaque de l'ADN ($\sim$65\%)
+\end{enumerate}
+
+\subsection{Espèces Réactives de l'Oxygène (ROS)}
+
+La radiolyse de l'eau génère :
+\begin{itemize}
+    \item Radical hydroxyle (OH$^{\bullet}$) : très réactif, demi-vie $\sim$ns
+    \item Électron hydraté (e$^-_{aq}$) : réducteur
+    \item Radical hydrogène (H$^{\bullet}$)
+    \item Peroxyde d'hydrogène (H$_2$O$_2$) : plus stable
+\end{itemize}
+
+\subsection{Rôle des ROS dans l'HRS}
+
+\subsubsection{Hypothèse}
+
+À très faibles doses, la proportion relative des dommages indirects pourrait être plus importante :
+\begin{itemize}
+    \item Les ROS diffusent et peuvent affecter des régions éloignées du dépôt d'énergie primaire
+    \item Les systèmes antioxydants ne sont pas saturés mais peuvent être insuffisants localement
+    \item Les dommages oxydatifs peuvent contribuer à l'HRS
+\end{itemize}
+
+\subsubsection{Effet Oxygène}
+
+L'HRS est observée en conditions aérobies ET hypoxiques \cite{Marples1993} :
+\begin{itemize}
+    \item V79 en hypoxie : HRS présente mais atténuée
+    \item OER (Oxygen Enhancement Ratio) similaire pour HRS et hautes doses
+    \item L'oxygène n'est pas le déterminant principal de l'HRS
+\end{itemize}
+
+\subsection{Systèmes Antioxydants}
+
+Les cellules disposent de systèmes de défense :
+\begin{itemize}
+    \item \textbf{Enzymatiques} : SOD, catalase, glutathion peroxydase
+    \item \textbf{Non-enzymatiques} : glutathion (GSH), vitamines C et E
+\end{itemize}
+
+La capacité antioxydante pourrait moduler l'HRS, mais les données expérimentales sont limitées.
+
+%==============================================================================
+\section{Modèle Intégré de l'HRS/IRR}
+%==============================================================================
+
+\subsection{Schéma Mécanistique Global}
+
+\begin{tcolorbox}[colback=model!10, colframe=model, title=\textbf{Modèle Intégré}]
+\textbf{TRÈS FAIBLE DOSE (<20-30 cGy)}
+\begin{enumerate}
+    \item Induction de 1-2 DSB par cellule
+    \item Activation ATM insuffisante (sous le seuil)
+    \item Checkpoint G2 précoce \textbf{non activé}
+    \item Cellules G2 progressent vers mitose avec dommages
+    \item Catastrophe mitotique / apoptose
+    \item $\rightarrow$ \textbf{MORT CELLULAIRE (HRS)}
+\end{enumerate}
+
+\textbf{DOSE MODÉRÉE (>30-50 cGy)}
+\begin{enumerate}
+    \item Induction de >2-3 DSB par cellule
+    \item Activation ATM robuste (Ser1981-P)
+    \item Cascade Chk1/Chk2 $\rightarrow$ inhibition Cdc25C
+    \item Checkpoint G2 précoce \textbf{activé}
+    \item Arrêt G2 $\rightarrow$ réparation par NHEJ
+    \item $\rightarrow$ \textbf{SURVIE ACCRUE (IRR)}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsection{Facteurs Modulant l'HRS/IRR}
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Facteur} & \textbf{Effet sur HRS} & \textbf{Effet sur IRR} \\
+\midrule
+Déficience ATM & Aucun & Abolit \\
+Déficience DNA-PK/Ku & Aucun & Abolit \\
+Déficience Caspase-3 & Abolit (certaines lignées) & Aucun \\
+Phase G2 & Amplifie & Amplifie \\
+Haut TEL & Abolit & Abolit \\
+Hypoxie & Atténue & Atténue \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Questions Non Résolues}
+
+Malgré les avancées, plusieurs questions restent ouvertes :
+
+\begin{enumerate}
+    \item \textbf{Seuil exact} : Quelle est la nature moléculaire précise du seuil ATM ?
+    \item \textbf{Hétérogénéité} : Pourquoi $\sim$20\% des lignées ne montrent pas d'HRS ?
+    \item \textbf{Corrélation clinique} : L'HRS in vitro prédit-elle la réponse tumorale ?
+    \item \textbf{Effets tissulaires} : L'HRS existe-t-elle in vivo à l'échelle tissulaire ?
+    \item \textbf{Fractionnement} : Comment exploiter l'HRS thérapeutiquement ?
+\end{enumerate}
+
+%==============================================================================
+\section{Implications Cliniques et Thérapeutiques}
+%==============================================================================
+
+\subsection{Radiothérapie Ultra-Fractionnée (LDFRT)}
+
+L'existence de l'HRS a conduit à proposer des schémas de fractionnement exploitant ce phénomène :
+
+\begin{itemize}
+    \item \textbf{LDFRT} (Low-Dose Fractionated Radiotherapy) : fractions de 0.5-0.7 Gy
+    \item Objectif : maintenir les cellules dans la région HRS
+    \item Éviter la transition vers l'IRR
+    \item Études cliniques en cours (gliomes, cancers récidivants)
+\end{itemize}
+
+\subsection{Prédiction de la Radiosensibilité}
+
+L'amplitude de l'HRS ($\alpha_s/\alpha_r$) pourrait être un biomarqueur :
+\begin{itemize}
+    \item Prédiction de la réponse aux faibles doses par fraction
+    \item Personnalisation du fractionnement
+    \item Identification des tumeurs candidates à la LDFRT
+\end{itemize}
+
+\subsection{Radioprotection}
+
+La compréhension de l'HRS/IRR a des implications pour la radioprotection :
+\begin{itemize}
+    \item Effets des expositions chroniques à très faibles doses
+    \item Expositions professionnelles, environnementales
+    \item Missions spatiales de longue durée
+\end{itemize}
+
+%==============================================================================
+\section{Conclusion}
+%==============================================================================
+
+L'hyper-radiosensibilité aux faibles doses (HRS) et la radiorésistance induite (IRR) sont des phénomènes biologiques complexes résultant de l'interaction de multiples voies de signalisation et de réparation. Les mécanismes clés incluent :
+
+\begin{enumerate}
+    \item Le \textbf{checkpoint G2 précoce} dépendant d'ATM, avec un seuil d'activation de $\sim$20-30 cGy
+    \item La voie \textbf{DNA-PK/NHEJ} essentielle pour la réparation permettant l'IRR
+    \item La \textbf{phase du cycle cellulaire} (G2 sensible, G1 résistante)
+    \item Le \textbf{TEL du rayonnement} (bas TEL favorise HRS, haut TEL l'abolit)
+    \item L'\textbf{apoptose caspase-3-dépendante} dans certaines lignées
+\end{enumerate}
+
+La compréhension de ces mécanismes ouvre des perspectives pour l'optimisation de la radiothérapie et la radioprotection des expositions à faibles doses.
+
+%==============================================================================
+\section{Références}
+%==============================================================================
+
+\begin{thebibliography}{99}
+
+\bibitem{Marples1993}
+Marples B, Joiner MC.
+\textit{The response of Chinese hamster V79 cells to low radiation doses: evidence of enhanced sensitivity of the whole cell population.}
+Radiat Res. 1993;133(1):41-51.
+
+\bibitem{Joiner2001}
+Joiner MC, Marples B, Lambin P, Short SC, Turesson I.
+\textit{Low-dose hypersensitivity: current status and possible mechanisms.}
+Int J Radiat Oncol Biol Phys. 2001;49(2):379-389.
+
+\bibitem{Polgar2022}
+Polgár S, Schofield PN, Madas BG.
+\textit{Datasets of in vitro clonogenic assays showing low dose hyper-radiosensitivity and induced radioresistance.}
+Sci Data. 2022;9:555.
+
+\bibitem{Koval1984}
+Koval TM.
+\textit{Multiphasic survival response of a radioresistant lepidopteran insect cell line.}
+Radiat Res. 1984;98(3):642-648.
+
+\bibitem{Short2003}
+Short SC, Woodcock M, Marples B, Joiner MC.
+\textit{Effects of cell cycle phase on low-dose hyper-radiosensitivity.}
+Int J Radiat Biol. 2003;79(2):99-105.
+
+\bibitem{Xu2002}
+Xu B, Kim ST, Lim DS, Kastan MB.
+\textit{Two molecularly distinct G2/M checkpoints are induced by ionizing irradiation.}
+Mol Cell Biol. 2002;22(4):1049-1059.
+
+\bibitem{Krueger2007}
+Krueger SA, Collis SJ, Joiner MC, Wilson GD, Marples B.
+\textit{Transition in survival from low-dose hyper-radiosensitivity to increased radioresistance is independent of activation of ATM Ser1981 activity.}
+Int J Radiat Oncol Biol Phys. 2007;69(4):1262-1271.
+
+\bibitem{Marples1997}
+Marples B, Lambin P, Skov KA, Joiner MC.
+\textit{Low dose hyper-radiosensitivity and increased radioresistance in mammalian cells.}
+Int J Radiat Biol. 1997;71(6):721-735.
+
+\bibitem{Skov1994}
+Skov K, Marples B, Matthews JB, Joiner MC, Zhou H.
+\textit{A preliminary investigation into the extent of increased radioresistance or hyper-radiosensitivity in cells of hamster cell lines known to be deficient in DNA repair.}
+Radiat Res. 1994;138(1 Suppl):S126-S129.
+
+\bibitem{Rothkamm2003}
+Rothkamm K, Löbrich M.
+\textit{Evidence for a lack of DNA double-strand break repair in human cells exposed to very low x-ray doses.}
+Proc Natl Acad Sci USA. 2003;100(9):5057-5062.
+
+\bibitem{MarplesCollis2008}
+Marples B, Collis SJ.
+\textit{Low-dose hyper-radiosensitivity: past, present, and future.}
+Int J Radiat Oncol Biol Phys. 2008;70(5):1310-1318.
+
+\bibitem{Enns2004}
+Enns L, Bogen KT, Wizniak J, Murtha AD, Weinfeld M.
+\textit{Low-dose radiation hypersensitivity is associated with p53-dependent apoptosis.}
+Mol Cancer Res. 2004;2(10):557-566.
+
+\bibitem{Dai2009}
+Dai X, Tao D, Wu H, et al.
+\textit{Low dose hyper-radiosensitivity in human lung cancer cell line A549 and its possible mechanisms.}
+J Huazhong Univ Sci Technol Med Sci. 2009;29(1):101-106.
+
+\bibitem{Wouters1996}
+Wouters BG, Skarsgard LD.
+\textit{Low-dose hypersensitivity and increased radioresistance in a panel of human tumor cell lines with different radiosensitivity.}
+Radiat Res. 1996;146(4):399-413.
+
+\bibitem{Lambin1994}
+Lambin P, Marples B, Fertil B, Malaise EP, Joiner MC.
+\textit{Hypersensitivity of a human tumour cell line to very low radiation doses.}
+Int J Radiat Biol. 1994;63(5):639-650.
+
+\bibitem{Bakkenist2003}
+Bakkenist CJ, Kastan MB.
+\textit{DNA damage activates ATM through intermolecular autophosphorylation and dimer dissociation.}
+Nature. 2003;421(6922):499-506.
+
+\bibitem{Shiloh2003}
+Shiloh Y.
+\textit{ATM and related protein kinases: safeguarding genome integrity.}
+Nat Rev Cancer. 2003;3(3):155-168.
+
+\bibitem{Lieber2010}
+Lieber MR.
+\textit{The mechanism of double-strand DNA break repair by the nonhomologous DNA end-joining pathway.}
+Annu Rev Biochem. 2010;79:181-211.
+
+\bibitem{Goodhead1994}
+Goodhead DT.
+\textit{Initial events in the cellular effects of ionizing radiations: clustered damage in DNA.}
+Int J Radiat Biol. 1994;65(1):7-17.
+
+\bibitem{Ward1988}
+Ward JF.
+\textit{DNA damage produced by ionizing radiation in mammalian cells: identities, mechanisms of formation, and reparability.}
+Prog Nucleic Acid Res Mol Biol. 1988;35:95-125.
+
+\bibitem{Short1999}
+Short SC, Mitchell SA, Boulton P, Woodcock M, Joiner MC.
+\textit{The response of human glioma cell lines to low-dose radiation exposure.}
+Int J Radiat Biol. 1999;75(11):1341-1348.
+
+\bibitem{Joiner1996}
+Joiner MC, Johns H.
+\textit{Renal damage in the mouse: the response to very small doses per fraction.}
+Radiat Res. 1988;114(2):385-398.
+
+\end{thebibliography}
+
+\vspace{2em}
+\begin{center}
+\rule{0.6\textwidth}{0.4pt}\\[0.5em]
+\textit{Document de synthèse - Décembre 2025}\\
+\rule{0.6\textwidth}{0.4pt}
+\end{center}
+
+\end{document}
